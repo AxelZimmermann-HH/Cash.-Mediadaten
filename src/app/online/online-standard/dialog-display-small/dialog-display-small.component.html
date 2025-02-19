@@ -1,0 +1,25 @@
+<div class="dialog-container">
+    <button (click)="closeDialog()" class="button-left-bottom-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>close</mat-icon>
+    </button>
+    <h1>{{ data.title }}</h1>
+    <p>{{ getTranslation(data.subtitle) }}</p>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>Desktop</th>
+                <th>Tablet</th>
+                <th>Mobile</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ getTranslation(data.plimage) }} {{ data.widthD }} x {{ data.heightD }} px</td>
+                <td>{{ getTranslation(data.plimage) }} {{ data.widthT }} x {{ data.heightT }} px</td>
+                <td>{{ getTranslation(data.plimage) }} {{ data.widthM }} x {{ data.heightM }} px</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>{{ data.price }} {{ getTranslation('ONLINE.STANDARD.CURRENCY') }}</h1>
+    <p>{{ data.infos }}</p>
+</div>

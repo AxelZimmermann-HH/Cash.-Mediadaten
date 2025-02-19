@@ -1,0 +1,32 @@
+<div class="header">
+    <div class="header-content">
+        <div class="header-left">
+            <img class="header-logo" src="assets/img/cash-logo-white.png" alt="">
+            <h1>{{ getTranslation('START.HEADLINE') }} 2025</h1>
+        </div>
+        <div class="header-right">
+            <!-- <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                <mat-button-toggle (click)="setActiveLang('de')" [checked]="true" >DE</mat-button-toggle>
+                <mat-button-toggle (click)="setActiveLang('en')" >EN</mat-button-toggle>
+            </mat-button-toggle-group> -->
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [(value)]="activeLang">
+                <mat-button-toggle (click)="setActiveLang('de')" value="de">DE</mat-button-toggle>
+                <mat-button-toggle (click)="setActiveLang('en')" value="en">EN</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+</div>
+<div class="start-container">
+    <button>
+        {{ getTranslation('START.BUTTON1') }} 
+        <mat-icon>double_arrow</mat-icon>
+    </button>
+    <button>
+        PRINT
+        <mat-icon>double_arrow</mat-icon>
+    </button>
+    <button routerLink="/online">
+        ONLINE
+        <mat-icon>double_arrow</mat-icon>
+    </button>
+</div>

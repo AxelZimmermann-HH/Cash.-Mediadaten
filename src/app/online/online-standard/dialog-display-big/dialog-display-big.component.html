@@ -1,0 +1,108 @@
+<div class="dialog-container">
+    <button (click)="closeDialog()" class="button-left-bottom-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <div class="ad-element">
+        <img src="assets/img/icons/leaderboard.png" alt="">
+        <h1>{{ data.lbTitle }}</h1>
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Desktop</th>
+                    <th>Tablet</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ data.lbWidthD }} x {{ data.lbHeightD }} px</td>
+                    <td>{{ data.lbWidthT }} x {{ data.lbHeightT }} px</td>
+                    <td>{{ data.lbWidthM }} x {{ data.lbHeightM }} px</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>{{ data.lbPrice }} {{ getTranslation('ONLINE.STANDARD.CURRENCY') }}</h1>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="ad-element">
+        <div class="ss-images">
+            <img src="assets/img/icons/sky-left.png" alt="">
+            <p>oder</p>
+            <img src="assets/img/icons/sky-right.png" alt="">
+        </div>
+        
+        <h1>{{ data.ssTitle }}</h1>
+        <p>{{ getTranslation('ONLINE.STANDARD.SUBTITLE_BIG') }}</p>
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Desktop</th>
+                    <th>Tablet</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ data.ssWidthD }} x {{ data.ssHeightD }} px</td>
+                    <td>–</td>
+                    <td>–</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>{{ data.ssPrice }} {{ getTranslation('ONLINE.STANDARD.CURRENCY') }}</h1>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="ad-element">
+        <img src="assets/img/icons/wallpaper.png" alt="">
+        <h1>{{ data.wpTitle }}</h1>
+        <p>{{ getTranslation('ONLINE.STANDARD.SUBTITLE_BIG') }}</p>
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Desktop</th>
+                    <th>Tablet</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ data.wpSizeComplete }}</td>
+                    <td>–</td>
+                    <td>–</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>{{ data.wpPrice }} {{ getTranslation('ONLINE.STANDARD.CURRENCY') }}</h1>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="ad-element">
+        <img src="assets/img/icons/double-sitebar.png" alt="">
+        <h1>{{ data.dsTitle }}</h1>
+        <p>{{ getTranslation('ONLINE.STANDARD.SUBTITLE_BIG') }}</p>
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>Desktop</th>
+                    <th>Tablet</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ data.dsSizeComplete }}</td>
+                    <td>–</td>
+                    <td>–</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>{{ data.dsPrice }} {{ getTranslation('ONLINE.STANDARD.CURRENCY') }}</h1>
+    </div>
+
+</div>

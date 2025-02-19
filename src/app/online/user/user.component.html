@@ -1,0 +1,91 @@
+<div class="container">
+    <div class="h-container">
+        <h1>{{ getTranslation('ONLINE.USER.HEADLINE1') }}</h1> 
+    </div>  
+    <p class="sub-headline">{{ getTranslation('ONLINE.USER.SUBHEADLINE1') }}</p>
+    <div class="zg-row">
+        <div class="zg-element"
+            *ngFor="let element of zgElements; let i = index"
+            (click)="toggleInfoOverlay(i, 'zgElements', $event)"
+            (mouseenter)="showOverlay(i, 'zgElements')"
+            (mouseleave)="hideOverlay(i, 'zgElements')">
+            
+            <img class="zg-icon" [src]="element.icon" alt="">
+
+            <div class="info-overlay" *ngIf="infoVisibleIndex['zgElements'] === i">
+                <div class="info-overlay-top">
+                    <h3 [innerHTML]="getTranslation(element.titleKey)"></h3>
+                    <p [innerHTML]="getTranslation(element.subtitleKey)"></p>
+                </div>
+                <div class="zg-anteile">
+                    <p class="number">{{ element.percent1 }}</p>
+                    <p>auf Cash.Online</p>
+                    <p class="number">{{ element.percent2 }}</p>
+                    <p>im Cash-5vor5-Newsletter</p>
+                    <p class="number">{{ element.percent3 }}</p>
+                    <p>im Cash.OnVista-Newsletter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="h-container">
+        <h1>{{ getTranslation('ONLINE.USER.HEADLINE2') }}</h1>
+    </div> 
+    <div class="zg-row products">
+        <div class="product-element"
+            *ngFor="let product of products; let i = index"
+            (click)="toggleInfoOverlay(i, 'products', $event)"
+            (mouseenter)="showOverlay(i, 'products')"
+            (mouseleave)="hideOverlay(i, 'products')">
+            
+            <img class="zg-icon" [src]="product.icon" alt="">
+
+            <div class="info-overlay" *ngIf="infoVisibleIndex['products'] === i">
+                <div class="info-overlay-top">
+                    <h3 [innerHTML]="getTranslation(product.titleKey)"></h3>
+                    <!-- <p [innerHTML]="getTranslation(product.subtitleKey)"></p> -->
+                </div>
+                <div class="zg-anteile">
+                    <p class="number">{{ product.percent1 }}</p>
+                    <p>auf Cash.Online</p>
+                    <p class="number">{{ product.percent2 }}</p>
+                    <p>im Cash-5vor5-Newsletter</p>
+                    <p class="number">{{ product.percent3 }}</p>
+                    <p>im Cash.OnVista-Newsletter</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+    <div class="h-container">
+        <h1>{{ getTranslation('ONLINE.USER.HEADLINE3') }}</h1> 
+    </div>  
+    <div class="zg-row products">
+        <div class="kpi-element"
+            *ngFor="let kpi of kpis; let i = index"
+            (click)="toggleInfoOverlay(i, 'kpis', $event)"
+            (mouseenter)="showOverlay(i, 'kpis')"
+            (mouseleave)="hideOverlay(i, 'kpis')">
+            
+            <img class="zg-icon" [src]="kpi.icon" alt="">
+
+            <div class="info-overlay" *ngIf="infoVisibleIndex['kpis'] === i">
+                <div class="info-overlay-top">
+                    <h3 [innerHTML]="getTranslation(kpi.titleKey)"></h3>
+                    <p [innerHTML]="getTranslation(kpi.subtitleKey)"></p>
+                </div>
+                <div class="zg-anteile">
+                    <p class="number">{{ kpi.number }}</p>
+                    <p>{{ kpi.source }}</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    
+</div>

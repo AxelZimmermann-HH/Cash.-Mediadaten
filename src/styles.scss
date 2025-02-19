@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@mixin dFlex($fd: column, $jc: flex-start, $ai: center) { 
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+h1 {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2 {
+    margin: 0 !important;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+p {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.custom-dialog .mat-mdc-dialog-container {
+    border-radius: 15px !important; // Hier den gewünschten Wert setzen
+    max-height: 60vh; // Maximale Höhe für den Dialog
+    overflow-y: auto; // Scrollbar für vertikale Überläufe
+}

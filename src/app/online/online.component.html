@@ -1,0 +1,53 @@
+<mat-drawer-container class="mat-drawer-container">
+
+    <!-- SIDEBAR -->
+    <mat-drawer #drawer class="sidenav" [mode]="drawerMode" [opened]="drawerOpened">
+      <div class="sidenav-top">
+        <div (click)="toggleDrawer()" routerLink="/" routerLinkActive="active" class="logo">
+          <img src="assets/img/cash-logo-red.png" alt="Logo">
+          <h2>ONLINE {{ getTranslation('ONLINE.HEADLINE') }} 2025</h2>
+        </div>
+        <ul>
+          <li (click)="toggleDrawer()" routerLink="/online" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"> 
+            <mat-icon>group</mat-icon>{{ getTranslation('ONLINE.MENU1') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/standard" routerLinkActive="active">
+            <mat-icon>picture_in_picture</mat-icon>{{ getTranslation('ONLINE.MENU2') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/layer" routerLinkActive="active">
+            <mat-icon>picture_in_picture</mat-icon>{{ getTranslation('ONLINE.MENU3') }}
+          </li>
+        </ul>
+      </div>
+  
+    <div class="siegel">
+      <img src="assets/img/siegel1.jpg" alt="">
+      <img src="assets/img/siegel2.jpg" alt="">
+      <img src="assets/img/siegel3.jpg" alt="">
+    </div>
+    </mat-drawer>
+  
+    <!-- TOP BAR -->
+    <div>
+      <mat-toolbar class="topbar">
+        <button mat-icon-button (click)="drawer.toggle()" class="icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+  
+        <img routerLink="/" routerLinkActive="active" src="assets/img/cash-logo-red.png" alt="">
+
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [(value)]="activeLang">
+          <mat-button-toggle (click)="setActiveLang('de')" value="de">DE</mat-button-toggle>
+          <mat-button-toggle (click)="setActiveLang('en')" value="en">EN</mat-button-toggle>
+      </mat-button-toggle-group>
+      </mat-toolbar>
+      
+  
+      <!-- ROUTER CONTENT -->
+      <div class="router-container">
+        <router-outlet></router-outlet>
+      </div>
+  
+    </div>
+  
+  </mat-drawer-container>

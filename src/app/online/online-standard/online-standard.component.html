@@ -1,0 +1,41 @@
+<div class="website-container">
+    <div  class="side ad top-ads" (click)="openDialogBig(topAds)">
+        <img src="assets/img/icons/cursor-white.svg" alt="">
+    </div>
+    <div class="middle">
+        <div class="leaderboard ad top-ads" (click)="openDialogBig(topAds)">
+            <img src="assets/img/icons/cursor-white.svg" alt="">
+        </div>
+        <div class="website-header"></div>
+        <div class="billboard solo-ad" (click)="openDialogSmall(ads.billboard)">
+            <img src="assets/img/icons/cursor-white.svg" alt="">
+        </div>
+        <div class="top-slider">
+            <div class="mr-top-bg"></div>
+            <div class="mr-top solo-ad" (click)="openDialogSmall(ads.mrTop)">
+                <img src="assets/img/icons/cursor-white.svg" alt="">
+            </div>
+        </div>
+        <div class="cat1">
+            <div class="promolink-bg"></div>
+            <div class="promolink solo-ad" (click)="openDialogSmall(ads.promolink)">
+                <div class="pl-pic"></div>
+                <div class="pl-line" *ngFor="let _ of lines"></div>
+            </div>
+            <div class="mr-content solo-ad" (click)="openDialogSmall(ads.mrContent)">
+                <img src="assets/img/icons/cursor-white.svg" alt="">
+            </div>
+            <!-- <div class="mr-content-bg"></div> -->
+            <div class="article-overlay"></div>
+        </div>
+        <div class="cat2">
+            <div class="mr-bottom-bg"></div>
+            <div class="mr-bottom solo-ad" (click)="openDialogSmall(ads.mrBottom)">
+                <img src="assets/img/icons/cursor-white.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="side ad top-ads" (click)="openDialogBig(topAds)">
+        <img src="assets/img/icons/cursor-white.svg" alt="">
+    </div>
+</div>

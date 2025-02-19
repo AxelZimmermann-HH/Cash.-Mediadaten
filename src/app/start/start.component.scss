@@ -1,0 +1,190 @@
+@import '../../styles.scss';
+
+.header {
+    width: 100vw;
+    height: 250px;
+    background-color: rgba(183,13,32,1);
+    @include dFlex($fd: row, $jc: center, $ai: flex-end);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    max-width: 1150px;
+    gap: 20px;
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-end);
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.header-left {
+    @include dFlex($fd: row, $jc: flex-start, $ai: flex-end);
+    gap: 20px;
+    > h1 {
+        font-size: 60px;
+        font-weight: 200;
+        color: white;
+        padding-bottom: 6px;
+    }
+}
+
+.header-logo {
+
+    width: 200px;
+}
+
+.header-right {
+    @include dFlex($fd: row, $jc: flex-start, $ai: flex-start);
+    height: 210px;
+}
+
+mat-button-toggle-group {
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    > mat-button-toggle {
+        width: 50%;
+    }
+}
+
+mat-button-toggle {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.start-container {
+    width: 100vw;
+    @include dFlex($fd: row, $jc: center, $ai: center);
+    height: calc(100vh - 250px);
+    gap: 20px;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/img/titles2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+        // filter: blur(2px);
+        z-index: -1; 
+    }
+
+    > button {
+        @include dFlex($fd: row, $jc: center, $ai: center);
+        border: none;
+        width: 370px;
+        height: 200px;
+        background-color: rgba(183, 13, 32, 0.8);
+        border-radius: 30px;
+        color: white;
+        font-size: 40px;
+        font-weight: 200;
+        cursor: pointer;
+        position: relative;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: rgba(183, 13, 32, 1);
+
+            mat-icon {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        > mat-icon {
+            position: absolute;
+            right: 40px; // Abstand zum Rand, anpassen nach Bedarf
+            width: 50px;
+            height: 50px;
+            font-size: 50px;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateX(-10px);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        @include dFlex($fd: row, $jc: center, $ai: flex-start);
+        padding: 20px;
+        height: 190px;
+    }
+    .header-content {
+        gap: 20px;
+        @include dFlex($fd: column, $jc: center, $ai: center);
+    }
+    .header-right {
+        @include dFlex($fd: row, $jc: flex-start, $ai: flex-start);
+        height: auto;
+    }
+    .header-left {
+        gap: 10px;
+        padding: 10px;
+        > h1 {
+            font-size: 30px;
+            padding-bottom: 0;
+        }
+    }
+    .header-logo {
+        width: 100px;
+        padding-bottom: 4.5px;
+    }
+    .start-container {
+        @include dFlex($fd: column, $jc: center, $ai: center);
+        // height: calc(100vh - 170px);
+    }
+}
+
+@media (max-width: 670px) {
+    .header-left {
+        gap: 10px;
+        padding: 10px;
+        > h1 {
+            font-size: 24px;
+            padding-bottom: 0;
+        }
+    }
+    .header-logo {
+        width: 80px;
+        padding-bottom: 7px;
+    }
+    .header-content {
+        padding: 10px 0 10px 0;
+    }
+    .start-container {
+        > button {
+            @include dFlex($fd: row, $jc: center, $ai: center);
+            width: 200px;
+            height: 100px;
+            font-size: 20px;
+            font-weight: 200;
+    
+            > mat-icon {
+                position: absolute;
+                right: 20px; // Abstand zum Rand, anpassen nach Bedarf
+                width: 30px;
+                height: 30px;
+                font-size: 30px;
+                padding-bottom: 2px;
+                opacity: 0;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                transform: translateX(-10px);
+            }
+        }
+    }
+}
