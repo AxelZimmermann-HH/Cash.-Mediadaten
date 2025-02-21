@@ -113,9 +113,7 @@ export class OnlineStandardComponent {
       dsPrice: '90,– ', 
   }
 
-  constructor (public dialog: MatDialog) {
-
-  }
+  constructor (public dialog: MatDialog) {}
 
   openDialog(component: any) {
     const dialogRef = this.dialog.open(component, {
@@ -129,8 +127,8 @@ export class OnlineStandardComponent {
     this.dialog.open(DialogDisplaySmallComponent, {
       width: '98%',
       maxWidth: '600px',
-      panelClass: 'custom-dialog', // definiert in styles.css
-      data: ad // Hier wird das komplette Ad-Objekt übergeben
+      panelClass: 'custom-dialog', 
+      data: ad 
     });
   }
 

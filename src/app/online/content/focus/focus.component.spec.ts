@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayerAdsComponent } from './layer-ads.component';
+import { FocusComponent } from './focus.component';
 
-describe('LayerAdsComponent', () => {
-  let component: LayerAdsComponent;
-  let fixture: ComponentFixture<LayerAdsComponent>;
+describe('FocusComponent', () => {
+  let component: FocusComponent;
+  let fixture: ComponentFixture<FocusComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LayerAdsComponent]
+      imports: [FocusComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(LayerAdsComponent);
+    fixture = TestBed.createComponent(FocusComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

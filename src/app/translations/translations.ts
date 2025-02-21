@@ -8,7 +8,8 @@ export const translations = {
             HEADLINE: 'MEDIA KIT',
             MENU1: 'Readership + Circulation',
             MENU2: 'Standard formats',
-            
+            MENU3: 'Layer formats',
+            MENU4: 'Content formats',
             USER: {
                 HEADLINE1: 'TARGET GROUP',
                 SUBHEADLINE1: '64% of users are visiting www.cash-online.de daily to several times a week.',
@@ -40,7 +41,39 @@ export const translations = {
                 SUBTITLE_BIG: '(desktop only)',
                 PL_SUBTITLE: 'Ad in the look of an editorial article with a direct link to your URL. Can be displayed on the home page, all department and article pages. Image delivery only necessary in the largest format.',
                 PL_IMAGE: 'img up to'
-            }
+            },
+            LAYER: {
+                TEXT_INTER: 'Surprising and attention-grabbing! The interstitial ad is placed over the content of the website and thus ensures maximum attention from the user.',
+                TEXT_STICKY: 'A layer ad like the interstitial, sticky at the bottom of the screen. Immediately catches the eye and yet offers unrestricted reading pleasure.',
+                TEXT_PARA: 'Content-oriented, informative advertising format that reveals the ad on a background layer when scrolling.',
+            },
+            CONTENT: {
+                MENU_UIF: 'Company in focus',
+                ADV_IMG1: 'Placeholder on all pages',
+                ADV_IMG2: 'Advertorial in the look of an editorial article',
+                ADV1: 'Creation of an editorial article (advertorial) on a current topic in cooperation between client and Cash. Editorial content, such as an interview, FAQ on a subject, information on new regulations, etc.',
+                ADV2: 'Publication of the advertorial for an unlimited run time on Cash. Online on the respective department pages',
+                ADV3: 'Placement of attention-grabbing teasers / banners that link to the advertorial on the home page as well as on all department-, author- and article pages with at least 40,000 ad impressions – for a run time of one week',
+                ADV4: 'One Placement of the teaser / banner in the Cash. 5vor5-Newsletter (10,300 subscribers) with a link to the advertorial',
+                ADV5: 'One Placement of the teaser / banner in the Cash. OnVista-Newsletter (13,000 subscribers) with a link to the advertorial',
+                ADV6: 'Run of site on desktop, tablet and mobile via responsive web design',
+                ADV7: 'Package price: 2,190 Euros*',
+                ADV7A: 'Additional booking options:',
+                ADV8: 'Further run of sites in the newsletter for 300 Euros each',
+                ADV9: 'Facebook post with 10.000 ad impressions for 500 Euros',
+                ADV10: 'LinkedIn Post with 10.000 Ad Impressions for 900 Euros',
+                ADV11: 'XING Post with 10.000 Ad Impressions for 900 Euros',
+                SAM1: 'Editorial design of a client-specific newsletter',
+                SAM2: 'Emailing to a list with a wide reach of Cash. newsletter subscribers',
+                SAM3: 'Creation of the client-specific standalone newsletter in close coordination between the client and Cash. - both in terms of content and appearance',
+                SAM4: 'This enables direct client-specific addressing of the target group',
+                SAM5: 'Integration of statistics, images, videos, links to the client‘s website, etc. optional',
+                SAM6: '(4,500 subscribers)',
+                SAM7: '1,990 Euros',
+                SAM8: '(13,000 subscribers)',
+                SAM9: '2,990 Euros'
+            },
+
         }
     },
     de: {
@@ -52,7 +85,8 @@ export const translations = {
             HEADLINE: 'MEDIADATEN',
             MENU1: 'User + Leistungswerte',
             MENU2: 'Standard-Werbeformate',
-            MENU3: 'Layer-Formate',
+            MENU3: 'Layer-Werbeformate',
+            MENU4: 'Content-Werbeformate',
             USER: {
                 HEADLINE1: 'ZIELGRUPPE',
                 SUBHEADLINE1: '64% der User nutzen www.cash-online.de täglich bis mehrmals die Woche.',
@@ -84,6 +118,37 @@ export const translations = {
                 SUBTITLE_BIG: '(ausschließlich Desktop)',
                 PL_SUBTITLE: 'Anzeige im Look eines redaktionellen Beitrags mit direktem Link auf Ihre URL. Kann auf der Start-, allen Ressort- und Artikelseiten angezeigt werden. Bildanlieferung nur im größten Format notwendig.',
                 PL_IMAGE: 'Bild bis zu'
+            },
+            LAYER: {
+                TEXT_INTER: 'Überraschend und aufmerksamkeitsstark! Das Interstitial Ad legt sich über den Content der Website und sorgt so für maximale Aufmerksamkeit beim User.',
+                TEXT_STICKY: 'Eine Layer-Ad wie das Interstitial, sticky am unteren Bildschirmrand. Sticht sofort ins Auge und bietet dennoch uneingeschränktes Lesevergnügen.',
+                TEXT_PARA: 'Contentnahes, informatives Werbeformat, dass beim Scrollen die Ad auf einer Hintergrundebene freigibt.',
+            },
+            CONTENT: {
+                MENU_UIF: 'Unternehmen im Fokus',
+                ADV_IMG1: 'Platzhalter auf allen Seiten',
+                ADV_IMG2: 'Advertorial im Look eines redaktionellen Beitrags',
+                ADV1: 'Erstellung eines redaktionellen Artikels (Advertorial) zu einem aktuellen Thema in Zusammenarbeit zwischen Kunde und Cash. Redaktion, wie z.B. Interview, FAQ zu einem Sachthema, Hinweise auf neue Regelungen o.ä.',
+                ADV2: 'Veröffentlichung des Advertorials zeitlich unbegrenzt auf Cash.Online auf den jeweiligen Ressortseiten',
+                ADV3: 'Platzierung von aufmerksamkeitsstarken Teasern/Bannern auf der Startseite und allen Ressort-, Autoren- und Artikelseiten mit mindestens 40.000 Ad Impressions für eine Woche',
+                ADV4: 'Eine Platzierung des Teasers/Banners im Cash. 5vor5-Newsletter (10.300 Abonnenten) mit Verlinkung zum Advertorial',
+                ADV5: 'Eine Platzierung des Teasers/Banners im Cash. OnVista-Newsletter (13.000 Abonnenten) mit Verlinkung zum Advertorial',
+                ADV6: 'Ausspielung auf Desktop, Tablet und Mobile via responsive Webdesign',
+                ADV7: 'Paketpreis: 2.190,– Euro*',
+                ADV7A: 'Zubuchungsoptionen',
+                ADV8: 'Weitere Ausspielungen im Newsletter für je 300,- Euro',
+                ADV9: 'Facebook Post mit 10.000 Ad Impressions für 500,- Euro',
+                ADV10: 'LinkedIn Post mit 10.000 Ad Impressions für 900,- Euro',
+                ADV11: 'Xing Post mit 10.000 Ad Impressions für 900,- Euro',
+                SAM1: 'Redaktionelle Gestaltung eines kundenspezifischen Newsletters',
+                SAM2: 'Versand an den reichweitenstarken Verteiler der Cash. Newsletter-Abonnenten',
+                SAM3: 'Erstellung des kundenspezifischen Standalone-Newsletters in enger Abstimmung zwischen dem Kunden und Cash. – sowohl inhaltlich als auch optisch',
+                SAM4: 'Damit ist eine kundenspezifische direkte Ansprache der Zielgruppe erreichbar',
+                SAM5: 'Einbindung von Statistiken, Bilder, Videos, Verlinkungen zur Website des Kunden, etc. optional',
+                SAM6: 'mit 4.500 Abonnenten',
+                SAM7: '1.990 Euro',
+                SAM8: 'mit 13.000 Abonnenten',
+                SAM9: '2.990 Euro'
             }
         }
     }

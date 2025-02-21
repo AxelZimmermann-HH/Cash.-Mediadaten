@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OnlineStandardComponent } from './online-standard.component';
+import { StandaloneComponent } from './standalone.component';
 
-describe('OnlineStandardComponent', () => {
-  let component: OnlineStandardComponent;
-  let fixture: ComponentFixture<OnlineStandardComponent>;
+describe('StandaloneComponent', () => {
+  let component: StandaloneComponent;
+  let fixture: ComponentFixture<StandaloneComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [OnlineStandardComponent]
+      imports: [StandaloneComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(OnlineStandardComponent);
+    fixture = TestBed.createComponent(StandaloneComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

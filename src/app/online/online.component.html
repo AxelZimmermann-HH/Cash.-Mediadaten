@@ -15,7 +15,10 @@
             <mat-icon>picture_in_picture</mat-icon>{{ getTranslation('ONLINE.MENU2') }}
           </li>
           <li (click)="toggleDrawer()" routerLink="/online/layer" routerLinkActive="active">
-            <mat-icon>picture_in_picture</mat-icon>{{ getTranslation('ONLINE.MENU3') }}
+            <mat-icon>layers</mat-icon>{{ getTranslation('ONLINE.MENU3') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/content" routerLinkActive="active">
+            <mat-icon>article</mat-icon>{{ getTranslation('ONLINE.MENU4') }}
           </li>
         </ul>
       </div>

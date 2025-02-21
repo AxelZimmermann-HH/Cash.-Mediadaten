@@ -39,16 +39,16 @@ export class OnlineComponent {
   }
 
   translationData = inject(TranslationService);
-    activeLang: 'en' | 'de' = this.translationData.getCurrentLanguage();
-  
-    setActiveLang(lang: 'en' | 'de') {
-      this.activeLang = lang;
-      this.translationData.setLanguage(lang);  
-    }
-  
-    getTranslation(key: string): string {
-      return this.translationData.getTranslation(key);  
-    }
+  activeLang: 'en' | 'de' = this.translationData.getCurrentLanguage();
+
+  setActiveLang(lang: 'en' | 'de') {
+    this.activeLang = lang;
+    this.translationData.setLanguage(lang);  
+  }
+
+  getTranslation(key: string): string {
+    return this.translationData.getTranslation(key);  
+  }
 
   /**
    * Showing or hiding the sidebar.

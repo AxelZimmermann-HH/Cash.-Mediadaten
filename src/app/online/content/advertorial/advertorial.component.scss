@@ -1,0 +1,257 @@
+@import '../../../../styles.scss';
+
+
+.main-container {
+    width: 100%;
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
+
+}
+
+.left {
+    width: 22%;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+}
+
+.img1 {
+    width: 100%;
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.53);
+    position: relative;
+    > img {
+        width: 100%;
+    } 
+    > .cursor {
+        position: absolute;
+        top: 20%;
+        left: 42%;
+        width: 15%;
+        filter: drop-shadow(0px 0px 5px white);
+        animation: clickEffect 1.5s infinite ease-in-out;
+    }
+}
+
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.arrow-down {
+    width: 15%;
+    padding-left: 30%;
+    animation: slideDown 2s infinite ease-in-out;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    95% {
+        transform: translateY(50px); // Bewegt sich nach rechts
+        opacity: 0; // Verschwindet
+    }
+    100% {
+        transform: translateY(0); // Springt zurück an den Anfang
+        opacity: 0; // Bleibt unsichtbar beim Reset
+    }
+}
+
+.arrow-right {
+    width: 10%;
+    padding-top: 6%;
+    animation: slideRight 2s infinite ease-in-out;
+    display: none;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    95% {
+        transform: translateX(50px); // Bewegt sich nach rechts
+        opacity: 0; // Verschwindet
+    }
+    100% {
+        transform: translateX(0); // Springt zurück an den Anfang
+        opacity: 0; // Bleibt unsichtbar beim Reset
+    }
+}
+
+
+.right {
+    width: 60%;
+}
+
+.img2 {
+    width: 116%;
+    margin-left: 50%;
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.53);
+    position: relative;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    > img {
+        width: 100%;
+    }
+}
+
+.site-bu {
+    padding: 10px;
+    background-color: rgba(63,88,131,1);
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    > p {
+        color: white;
+    }
+}
+
+.advertorial-box {
+    background: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 0 20px 20px 20px;
+    // max-width: 600px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.advertorial-box h2 {
+    text-align: center;
+    color: #b70d20;
+    font-size: 1.5em;
+}
+
+.advertorial-list {
+    list-style: none;
+    padding: 0;
+}
+
+.advertorial-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.advertorial-list li::before {
+    content: "✔"; /* Alternativ ein Icon */
+    color: #b70d20;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.advertorial-price {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #b70d20;
+    margin-top: 15px;
+}
+
+.zusatz {
+    background: #f9f9f9;
+    // width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 0 20px 20px 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding-top: 10px;
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
+    gap: 5px;
+}
+
+.zusatz h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #b70d20;
+    margin-top: 15px;
+}
+
+.zusatz-element {
+    @include dFlex($fd: row, $jc: flex-start, $ai: center);
+    gap: 10px;
+    > img {
+        width: 25px;
+    }
+    > p {
+        font-size: 1rem;
+        color: #333;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    
+    }
+    .left {
+        width: 100%;
+        @include dFlex($fd: row, $jc: space-between, $ai: center);
+    }
+    .img1 {
+        width: 50%;
+        box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.53);
+        position: relative;
+        > img {
+            width: 100%;
+        } 
+        > .cursor {
+            position: absolute;
+            top: 20%;
+            left: 42%;
+            width: 15%;
+            filter: drop-shadow(0px 0px 5px white);
+            animation: clickEffect 1.5s infinite ease-in-out;
+        }
+    }
+    .arrow-down {
+        display: none;
+    }
+    .arrow-right {
+        display: block;
+    }
+    .img2 {
+        width: 50%;
+        box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.53);
+        position: relative;
+        margin-left: 0;
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+        > img {
+            width: 100%;
+        }
+    }
+
+
+    .right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .advertorial-box {
+        background: #f9f9f9;
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        padding: 0 20px 20px 20px;
+        max-width: auto;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    
+}

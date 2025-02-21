@@ -1,0 +1,20 @@
+<div class="main-container">
+
+    <!-- <div class="btn-area">
+        <div class="button" routerLink="/online/content/advertorial" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">1</div>
+        <div class="button" routerLink="./standalone" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">2</div>
+        <div class="button" routerLink="./box" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">3</div>
+        <div class="button" routerLink="./focus" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">4</div>
+    </div> -->
+
+    <div class="btn-area">
+        <button mat-flat-button routerLink="advertorial" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Advertorial</button>
+        <button mat-flat-button routerLink="standalone" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Standalone-Newsletter</button>
+        <button mat-flat-button routerLink="box" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Content Box</button>
+        <button mat-flat-button routerLink="focus" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ getTranslation('ONLINE.CONTENT.MENU_UIF') }}</button>
+    </div>
+
+    <div class="router-container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

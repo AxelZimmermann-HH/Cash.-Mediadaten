@@ -1,18 +1,18 @@
 import { Component, inject } from '@angular/core';
-import { TranslationService } from '../../services/translation.service';
+import { TranslationService } from '../../../services/translation.service';
 
 @Component({
-  selector: 'app-layer-ads',
+  selector: 'app-standalone',
   standalone: true,
   imports: [],
-  templateUrl: './layer-ads.component.html',
-  styleUrl: './layer-ads.component.scss'
+  templateUrl: './standalone.component.html',
+  styleUrl: './standalone.component.scss'
 })
-export class LayerAdsComponent {
+export class StandaloneComponent {
 
 
   translationData = inject(TranslationService);
-  activeLang: 'en' | 'de' = this.translationData.getCurrentLanguage();
+  activeLang: 'en' | 'de' = 'en';
 
   setActiveLang(lang: 'en' | 'de') {
     this.activeLang = lang;
@@ -21,6 +21,6 @@ export class LayerAdsComponent {
 
   getTranslation(key: string): string {
     return this.translationData.getTranslation(key);  
-    }
+  }
 
 }

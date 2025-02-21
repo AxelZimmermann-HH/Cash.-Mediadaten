@@ -1,0 +1,184 @@
+@import '../../../styles.scss';
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
+    gap: 20px;  
+}
+
+.format-container {
+    width: 100%;
+    box-sizing: border-box;
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
+    gap: 20px;  
+}
+
+.format {
+    width: 25%;
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
+    gap: 10px;
+    position: relative;
+}
+
+.illustration {
+    width: 100%;
+    position: relative;
+}
+
+.image {
+    background-image: url('../../../assets/img/hp_dummy.png');
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    background-size: cover;
+
+    position: relative;
+    animation: floating 1.5s ease-in-out infinite alternate;
+}
+
+.image-parallax {
+    // background-image: url('../../../assets/img/hp_dummy3.png');
+    width: 100%;
+    aspect-ratio: 1 / 1.5;
+    // background-color: aqua;
+    // background-size: cover;
+
+    position: relative;
+    animation: floating 1.5s ease-in-out infinite alternate;
+
+    @include dFlex($fd: column, $jc: space-between, $ai: flex-start);
+    > img {
+        width: 100%;
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(50px); // Bewegt sich 15px nach unten
+    }
+}
+
+.interstitial-ad {
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(205,104,106,1);
+}
+
+.parallax-ad {
+    width: 35%;
+    height:25%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(205,104,106,1);
+}
+
+.border-bottom {
+    width: 100%;
+    height: 40%;
+    
+    position: absolute;
+    bottom: -50px;
+    z-index: 10;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+}
+
+.footer-transparent {
+    width: 80%;
+    height: 25%;
+}
+
+.red {
+    background-color: rgba(205,104,106,1);
+}
+
+.red-text {
+    color: rgba(205,104,106,1);
+}
+
+.grey {
+    background-color: rgb(250,250,250);
+    border-top: 1px solid black;
+    width: 102%;
+    height: 75%;
+}
+
+.front {
+    z-index: 5;
+}
+
+.infos {
+    margin-top: -20%;
+    z-index: 15;
+    width: 100%;
+    text-align: center;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    > h1 {
+        font-weight: 700;
+        color: rgba(205,104,106,1);
+    }
+}
+
+.main-infos {
+    padding-top: 15px;
+    min-height: 140px;
+}
+
+@media (min-width: 1000px) {
+    .infos {
+        margin-top: -15%;
+    }
+}
+
+@media (max-width: 810px) {
+    .format-container {
+        @include dFlex($fd: column, $jc: space-between, $ai: center);
+        padding-bottom: 20px;
+    }
+    .format {
+        width: 60%;
+    }
+    .infos {
+        margin-top: -28%;
+    }
+    .main-infos {
+        padding-bottom: 15px;
+        min-height: auto;
+    }
+    .h-bottom {
+        width: 130%;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(0,0,0,0.6)
+    }
+}
+
+@media (max-width: 550px) {
+    .format-container {
+        @include dFlex($fd: column, $jc: space-between, $ai: center);
+        padding-bottom: 20px;
+    }
+    .format {
+        width: 60%;
+    }
+    .infos {
+        margin-top: -20%;
+    }
+    .main-infos {
+        padding-bottom: 15px;
+        min-height: auto;
+    }
+    .h-bottom {
+        width: 130%;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(0,0,0,0.6)
+    }
+}
