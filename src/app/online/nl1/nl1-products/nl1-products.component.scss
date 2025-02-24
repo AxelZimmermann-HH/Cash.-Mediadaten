@@ -1,0 +1,120 @@
+@import '../../../../styles.scss';
+
+.logo {
+    width: 100%;
+    @include dFlex($fd: row, $jc: center, $ai: flex-start);
+    > img {
+        width: 200px;
+    }
+}
+
+.table-container {
+    // max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    overflow-x: auto; // Falls die Tabelle zu breit wird
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    thead {
+        background-color: #b70d20;
+        color: white;
+        font-weight: bold;
+    }
+
+    th, td {
+        padding: 12px 16px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:hover {
+        background-color: transparent;
+    }
+
+    .icon {
+        width: 12px; // Größe des Icons anpassen
+        height: auto;
+        margin-left: 8px; // Kleiner Abstand zur Headline
+        vertical-align: middle;
+        animation: clickEffect 1.5s infinite ease-in-out;
+    }
+
+    @keyframes clickEffect {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(0.9);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .hover-effect:hover {
+        background-color: rgba(183, 13, 32, 0.1) !important;
+        cursor: pointer;
+    }
+
+    // 🌍 Responsive Design für kleinere Bildschirme
+    @media (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+        table {
+            background-color: rgba(250,250,250,1);
+        }
+
+        thead tr {
+            display: none;
+        }
+
+        tbody tr {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        td {
+            text-align: left;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+        }
+
+        // ❌ Entferne nur in der mobilen Ansicht die Trennlinie unter "Uhrzeit"
+        tr td:last-child {
+            border-bottom: none;
+        }
+
+        td::before {
+            content: attr(data-label);
+            font-weight: bold;
+            color: #b70d20;
+        }
+
+        // 🔴 Name des Newsletters rot hinterlegen
+        td:first-child {
+            background-color: #b70d20;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+            padding: 12px;
+        }
+    }
+}

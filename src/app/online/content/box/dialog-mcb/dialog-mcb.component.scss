@@ -37,27 +37,6 @@ h1 {
 
 p {
     color: white;
-    margin-top: -10px;
-    margin-bottom: 5px;
-    
-}
-
-.custom-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
-    color: white; // Schriftfarbe weiß
-    padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.5); // Leichte weiße Umrandung
-    text-align: left;
-}
-
-th {
-    background-color: rgba(255, 255, 255, 0.2); // Transparenter weißer Hintergrund
-}
-
-td {
-    background-color: rgba(255, 255, 255, 0.1); // Etwas dunkler für Kontrast
+    margin-top: 0px;
+    margin-bottom: 5px;  
 }

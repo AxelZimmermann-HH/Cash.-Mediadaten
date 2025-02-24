@@ -1,0 +1,108 @@
+@import '../../../../styles.scss';
+
+.main-container {
+    width: 100%;
+    background-color: rgba(186,186,186,1);
+    padding: 20px;
+    box-sizing: border-box;
+    @include dFlex($fd: row, $jc: center, $ai: flex-start);
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.53);
+    border-radius: 15px;
+}
+
+.nl-container {
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    width: 60%;
+    height: auto;
+    > img {
+        width: 100%;
+    }
+}
+
+.superbanner {
+    width: 100%;
+    aspect-ratio: 1 / 0.4;
+    background-color: rgba(205,104,106,1);
+}
+
+.promolink {
+    width: 100%;
+    padding: 4%;
+    // @include dFlex($fd: row, $jc: space-between, $ai: center);
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    
+    background-color: rgba(205,104,106,1);
+    box-sizing: border-box;
+    aspect-ratio: 1 / 0.27;
+    > .pl-img {
+        height: 100%;
+        width: 37%;
+        border: 2px solid rgba(250,250,250,1);
+    }
+    > .pl-lines {
+        height: 100%;
+        width: 57%;
+        @include dFlex($fd: column, $jc: space-between, $ai: center);
+        > .line {
+            width: 100%;
+            height: 2px;
+            background-color: rgba(250,250,250,1);
+        }
+    }
+}
+
+.mr-container {
+    width: 100%;
+    aspect-ratio: 1 / 0.27;
+    background-color: rgba(250,250,250,1);
+    @include dFlex($fd: row, $jc: center, $ai: center);
+    > .mr {
+        width: 34%;
+        aspect-ratio: 1 / 0.7;
+        background-color: rgba(205,104,106,1);
+    }
+    > .banner {
+        width: 91%;
+        aspect-ratio: 1 / 0.25;
+        background-color: rgba(205,104,106,1);
+        margin-top: -3%;
+    }
+}
+
+.solo-ad {
+    @include dFlex($fd: row, $jc: center, $ai: center);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    &:hover {
+        animation: glitch 0.5s steps(2) infinite;
+    }
+    > img {
+        width: 15px;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        transform: translateX(2px);
+        // filter: hue-rotate(10deg);
+        filter:brightness(1.2)
+    }
+    50% {
+        transform: translateX(-2px);
+        // filter: hue-rotate(-10deg);
+        filter:brightness(1.1)
+    }
+    100% {
+        transform: translateX(0);
+        // filter: hue-rotate(0deg);
+        filter:brightness(1)
+    }
+}
+
+@media (max-width: 768px) {
+    .nl-container {
+        width: 90%;
+    }
+}

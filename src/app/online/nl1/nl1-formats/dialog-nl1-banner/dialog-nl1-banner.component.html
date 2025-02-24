@@ -1,0 +1,33 @@
+<div class="dialog-container">
+    <button (click)="closeDialog()" class="button-left-bottom-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <div class="ad-element">
+        <h1>{{ data.title }}</h1>
+        <p>{{ getTranslation(data.subtitle) }}</p>
+        <p>{{ data.size }}</p>
+         <h1>{{ getTranslation('ONLINE.NL1.AD_PRICES') }}</h1>
+        <table class="custom-table">
+            <tbody>
+                <tr>
+                    <td>{{ getTranslation('ONLINE.NL1.AD_PRODUCT1') }}</td>
+                    <td>{{ getTranslation(data.price1) }}</td>
+                </tr>
+                <tr>
+                    <td>{{ getTranslation('ONLINE.NL1.AD_PRODUCT2') }}</td>
+                    <td>{{ getTranslation(data.price2) }}</td>
+                </tr>
+                <tr>
+                    <td>{{ getTranslation('ONLINE.NL1.AD_PRODUCT3') }}</td>
+                    <td>{{ getTranslation(data.price2) }}</td>
+                </tr>
+                <tr>
+                    <td>{{ getTranslation('ONLINE.NL1.AD_PRODUCT4') }}</td>
+                    <td>{{ getTranslation(data.price3) }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

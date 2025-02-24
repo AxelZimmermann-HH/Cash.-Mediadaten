@@ -1,4 +1,4 @@
-import { Component, Inject, inject } from '@angular/core';
+import { Component, inject, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatButtonModule} from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -6,19 +6,20 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-mcb',
+  selector: 'app-dialog-nl1-banner',
   standalone: true,
   imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-mcb.component.html',
-  styleUrl: './dialog-mcb.component.scss'
+  templateUrl: './dialog-nl1-banner.component.html',
+  styleUrl: './dialog-nl1-banner.component.scss'
 })
-export class DialogMcbComponent {
+export class DialogNl1BannerComponent {
 
-  constructor(public dialogRef: MatDialogRef<DialogMcbComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
+  constructor(public dialogRef: MatDialogRef<DialogNl1BannerComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
 
   closeDialog(): void {
     this.dialogRef.close();
   }
+
 
 
   translationData = inject(TranslationService);

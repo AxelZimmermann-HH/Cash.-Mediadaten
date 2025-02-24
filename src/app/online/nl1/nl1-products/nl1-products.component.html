@@ -1,0 +1,39 @@
+<div class="logo">
+    <img src="assets/img/5vor5_aktuell.png" alt="">
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Newsletter</th>
+                <th>{{ getTranslation('ONLINE.NL1.PRODUCT_H1')}}</th>
+                <th>{{ getTranslation('ONLINE.NL1.PRODUCT_H2')}}</th>
+                <th>{{ getTranslation('ONLINE.NL1.PRODUCT_H3')}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let newsletter of newsletters; let last = last"
+                [ngClass]="{ 'hover-effect': last }"
+                (click)="last ? openDialogTopics() : null">
+                <!-- <td>
+                    {{ getTranslation(newsletter.name) }}
+                    <img *ngIf="newsletter.name === 'Cash.5vor5 – Themen-Newsletter'" 
+                        src="assets/img/icons/cursor_blue.svg" 
+                        alt="Icon" 
+                        class="icon">
+                </td> -->
+                <td>
+                    {{ getTranslation(newsletter.name) }}
+                    <img *ngIf="isThemenNewsletter(newsletter.name)" 
+                        src="assets/img/icons/cursor_blue.svg" 
+                        alt="Icon" 
+                        class="icon">
+                </td>
+                <td>{{ newsletter.recipients }}</td>
+                <td>{{ getTranslation(newsletter.frequency) }}</td>
+                <td>{{ getTranslation(newsletter.time) }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

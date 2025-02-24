@@ -1,1 +1,87 @@
-<p>focus works!</p>
+<div class="main-container">
+
+    <div class="left">
+        <div class="img1">
+            <img src="assets/img/uif_dummy.png" alt="">
+            <div class="site-bu">
+                <p>{{ getTranslation('ONLINE.CONTENT.UIF_SUB1') }}</p>
+            </div>
+            <img class="cursor" src="assets/img/icons/cursor_blue.svg" alt="" >
+        </div>     
+    </div>
+
+    <img class="arrow-right" src="assets/img/icons/arrow-right-blue.svg" alt="">
+
+    <div class="right">
+        <div class="img2c">
+
+            <img src="assets/img/website-header2.png" alt="" class="img2">
+
+            <div class="ad-area">
+                <div class="ad1 solo-ad" (click)="openDialog(elements.header)">
+                    <img src="assets/img/icons/cursor-white.svg" alt="">
+                </div>
+
+                <div class="ad-second-row">
+                    <div class="big-ads" (click)="openDialog(elements.mainPoints)">
+                        <div class="ad-column">
+                            <div class="ad2 solo-ad2" *ngFor="let _ of columnAds">
+                                <div class="mcb-text">
+                                    <div class="mcb-pic"></div>
+                                    <div class="mcb-lines">
+                                        <div class="mcb-line" *ngFor="let _ of lines"></div>
+                                    </div>
+                                </div>
+                                <img src="assets/img/icons/cursor-white.svg" alt="">
+                            </div>
+                        </div>
+                    
+                        <div class="ad-column">
+                            <div class="ad2 solo-ad2" *ngFor="let _ of columnAds">
+                                <div class="mcb-text">
+                                    <div class="mcb-pic"></div>
+                                    <div class="mcb-lines">
+                                        <div class="mcb-line" *ngFor="let _ of lines"></div>
+                                    </div>
+                                </div>
+                                <img src="assets/img/icons/cursor-white.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ad3 solo-ad" (click)="openDialog(elements.news)">
+                        <div class="mcb-lines2" *ngFor="let _ of lines">
+                            <div class="mcb-line" *ngFor="let _ of lines"></div>
+                        </div>
+                        
+                        <img src="assets/img/icons/cursor-white.svg" alt="">
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="site-bu">
+            <p>{{ getTranslation('ONLINE.CONTENT.MCB_SUB2') }}</p>
+        </div>
+        
+    </div>  
+</div>
+
+<div class="advertorial-box">
+    <h2>{{ getTranslation('ONLINE.CONTENT.MENU_UIF') }}</h2>
+    <ul class="advertorial-list">
+        <li>{{ getTranslation('ONLINE.CONTENT.UIF1') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.UIF2') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.UIF3') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.UIF4') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.UIF5') }}</li>
+    </ul>
+</div>
+
+<div class="advertorial-box">
+    <h2>{{ getTranslation('ONLINE.CONTENT.UIF6') }}</h2>
+    
+    <div class="advertorial-price">
+        <p>{{ getTranslation('ONLINE.CONTENT.MCB10') }}</p>
+    </div>
+</div>

@@ -1,6 +1,7 @@
 <div class="dialog-container">
-    <!-- <button (click)="closeDialog()" class="button-left-bottom-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+    <button (click)="closeDialog()" class="button-left-bottom-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
         <mat-icon>close</mat-icon>
-    </button> -->
-    <h1>HALLO</h1>
+    </button>
+    <h1>{{ getTranslation(data.headline) }}</h1>
+    <p>{{ getTranslation(data.text) }}</p>
 </div>

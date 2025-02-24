@@ -9,6 +9,10 @@ import { AdvertorialComponent } from './online/content/advertorial/advertorial.c
 import { StandaloneComponent } from './online/content/standalone/standalone.component';
 import { BoxComponent } from './online/content/box/box.component';
 import { FocusComponent } from './online/content/focus/focus.component';
+import { Nl1Component } from './online/nl1/nl1.component';
+import { Nl1InfosComponent } from './online/nl1/nl1-infos/nl1-infos.component';
+import { Nl1ProductsComponent } from './online/nl1/nl1-products/nl1-products.component';
+import { Nl1FormatsComponent } from './online/nl1/nl1-formats/nl1-formats.component';
 
 export const routes: Routes = [
     { 
@@ -26,6 +30,15 @@ export const routes: Routes = [
                     { path: 'standalone', component: StandaloneComponent },
                     { path: 'box', component: BoxComponent },
                     { path: 'focus', component: FocusComponent },
+                ]
+             },
+             { path: '5vor5', 
+                component: Nl1Component,
+                children: [
+                    { path: '', redirectTo: 'coverage', pathMatch: 'full' },
+                    { path: 'coverage', component: Nl1InfosComponent },
+                    { path: 'products', component: Nl1ProductsComponent },
+                    { path: 'formats', component: Nl1FormatsComponent },
                 ]
              },
         ]

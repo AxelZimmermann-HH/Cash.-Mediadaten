@@ -4,7 +4,7 @@
         <div class="img1">
             <img src="assets/img/mcb1_dummy.png" alt="">
             <div class="site-bu">
-                <p>Platzhalter auf der Startseite</p>
+                <p>{{ getTranslation('ONLINE.CONTENT.MCB_SUB1') }}</p>
             </div>
             <img class="cursor" src="assets/img/icons/cursor_blue.svg" alt="" >
         </div>     
@@ -18,12 +18,12 @@
             <img src="assets/img/website-header2.png" alt="" class="img2">
 
             <div class="ad-area">
-                <div class="ad1 solo-ad">
+                <div class="ad1 solo-ad" (click)="openDialog(elements.ad)">
                     <img src="assets/img/icons/cursor-white.svg" alt="">
                 </div>
 
                 <div class="ad-second-row">
-                    <div class="ad2 solo-ad">
+                    <div class="ad2 solo-ad" (click)="openDialog(elements.editorial)">
                         <div class="mcb-text" *ngFor="let _ of mcbText1">
                             <div class="mcb-pic"></div>
                             <div class="mcb-lines">
@@ -33,7 +33,7 @@
                         <img src="assets/img/icons/cursor-white.svg" alt="">
                     </div>
 
-                    <div class="ad3 solo-ad">
+                    <div class="ad3 solo-ad" (click)="openDialog(elements.extern)">
                         <div class="mcb-text" *ngFor="let _ of mcbText1">
                             <div class="mcb-pic"></div>
                             <div class="mcb-lines">
@@ -47,9 +47,35 @@
         </div>
 
         <div class="site-bu">
-            <p>Aufbau der Content-Seite</p>
+            <p>{{ getTranslation('ONLINE.CONTENT.MCB_SUB2') }}</p>
         </div>
         
-    </div>
+    </div>  
+</div>
+
+<div class="advertorial-box">
+    <h2>Content Box</h2>
+    <ul class="advertorial-list">
+        <li>{{ getTranslation('ONLINE.CONTENT.MCB1') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.MCB2') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.MCB3') }}</li>
+    </ul>
+</div>
+
+<div class="advertorial-box">
+    <h2>{{ getTranslation('ONLINE.CONTENT.MCB4') }}</h2>
+    <ul class="advertorial-list">
+        <li>{{ getTranslation('ONLINE.CONTENT.MCB5') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.MCB6') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.MCB7') }}</li>
+        <li>{{ getTranslation('ONLINE.CONTENT.MCB8') }}</li>
+    </ul>
+</div>
+
+<div class="advertorial-box">
+    <h2>{{ getTranslation('ONLINE.CONTENT.MCB9') }}</h2>
     
+    <div class="advertorial-price">
+        <p>{{ getTranslation('ONLINE.CONTENT.MCB10') }}</p>
+    </div>
 </div>

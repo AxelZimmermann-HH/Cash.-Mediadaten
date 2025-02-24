@@ -1,0 +1,169 @@
+@import '../../../../styles.scss';
+
+.circle-chart-container {
+    width: 100%;
+    @include dFlex($fd: row, $jc: center, $ai: center);
+    position: relative;
+    gap: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: -1;
+    width: 150px;
+}
+
+.circle-chart {
+    width: 250px;
+    height: 250px;
+    transform: rotate(-90deg); // Start bei 12 Uhr
+}
+
+.background {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 8;
+}
+
+.progress {
+    fill: none;
+    stroke-width: 8;
+    stroke-dasharray: 0, 283; // Startwert (0%)
+    transition: stroke-dasharray 0.8s ease-in-out, stroke 0.5s;
+}
+
+.percentage {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #b70d20;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    transform: rotate(90deg); // Fix für falsche Textausrichtung
+    transform-origin: center;
+}
+
+.static-text {
+    font-size: 8px;
+    fill: #666;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    transform: rotate(90deg); // Fix für falsche Textausrichtung
+    transform-origin: center;
+}
+
+.pt-5 {
+    margin-top: 5px;
+}
+
+.legend {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.legend li {
+    // background-color: blue;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.legend li::before {
+    content: "✔"; /* Alternativ ein Icon */
+    color: #b70d20;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.legend li:hover {
+    transform: scale(1.05);
+}
+
+.legend li.active {
+    font-weight: bold;
+    color: white; // Beispiel-Farbe für aktive Auswahl
+    background-color: #b70d20;
+}
+
+.legend span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.topics-main {
+    background: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    > h1 {
+        color: rgba(205,104,106,1);
+    }
+}
+
+.topics-container {
+    width: 100%;
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    > .topic {
+        padding-top: 20px;
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+        width: 25%;
+        box-sizing: border-box;
+        word-wrap: break-word; /* Standard-Lösung für Umbrüche */
+        overflow-wrap: break-word; /* Alternative für bessere Browser-Unterstützung */
+        text-align: center;
+        > img {
+            height: 45px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .circle-chart-container {
+       padding-top: 100px;
+    }
+    .logo {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: -1;
+        width: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    .topics-container {
+        @include dFlex($fd: row, $jc: center, $ai: flex-start);
+        > .topic {
+            width: 130px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .circle-chart-container {
+        width: 100%;
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+        position: relative;
+        gap: 20px;
+    }
+}
