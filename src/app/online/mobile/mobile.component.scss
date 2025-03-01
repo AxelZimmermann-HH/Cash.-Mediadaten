@@ -1,0 +1,144 @@
+@import '../../../styles.scss';
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
+    gap: 20px;  
+}
+
+.mobile-element {
+    width: 30%;
+    position: relative;
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
+    gap: 10px;
+    > img {
+        width: 100%;
+    }
+}
+
+.illustration {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    transform: translate(-50%, -50%) translateY(0);
+    overflow-y: hidden;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    > img {
+        width: 100%;
+    }
+}
+
+.mobile-content-p {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    width: 70%;
+    height: 55%;
+    transform: translate(-50%, -50%) translateY(0);
+    overflow-y: hidden;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    > img {
+        width: 100%;
+    }
+}
+
+.parallax {
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    animation: floating 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(-50%, -50%) translateY(0);    }
+
+    100% {
+        transform: translate(-50%, -50%) translateY(8%);    }
+}
+
+.parallax-ad {
+    background-color: rgba(205,104,106,1);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 20%;
+    z-index: -5;
+
+}
+
+.infos {
+    z-index: 15;
+    width: 100%;
+    text-align: center;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    > h1 {
+        margin-top: 10px;
+        font-weight: 700;
+        color: rgba(205,104,106,1);
+    }
+}
+
+.red-text {
+    color: rgba(205,104,106,1);
+}
+
+.main-infos {
+    padding-top: 15px;
+    min-height: 140px;
+}
+
+@media (min-width: 1000px) {
+    // .infos {
+    //     margin-top: -15%;
+    // }
+}
+
+@media (max-width: 810px) {
+    .main-container {
+        @include dFlex($fd: column, $jc: space-between, $ai: center);
+        padding-bottom: 20px;
+    }
+    .mobile-element {
+        width: 60%;
+    }
+    .infos {
+        margin-top: 0;
+    }
+    .h-bottom {
+        width: 130%;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(0,0,0,0.6)
+    }
+}
+
+@media (max-width: 550px) {
+    .main-container {
+        @include dFlex($fd: column, $jc: space-between, $ai: center);
+        padding-bottom: 20px;
+    }
+    .monile-element {
+        width: 60%;
+    }
+    .infos {
+        margin-top: 0;
+    }
+    .h-bottom {
+        width: 130%;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(0,0,0,0.6)
+    }
+}

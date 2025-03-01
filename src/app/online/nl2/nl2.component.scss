@@ -1,0 +1,59 @@
+@import '../../../styles.scss';
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
+    gap: 30px;  
+}
+
+.router-container {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+}
+
+.btn-area {
+    width: 100%;
+    box-sizing: border-box;
+    @include dFlex($fd: row, $jc: space-around, $ai: flex-start);
+    // border: 1px solid rgba(205,104,106,1);
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.53);
+    // background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+button {
+    background-color: rgba(205,104,106,1) !important;
+    color: white !important;
+    font-weight: 400 !important;
+    border-radius: 10px !important;
+    width: 210px;
+}
+
+button.active {
+    background-color: #b70d20 !important; // Rote Hintergrundfarbe als Beispiel 
+    font-weight: bold !important;
+}
+
+@media (max-width: 768px) {
+    .btn-area {
+        flex-wrap: wrap;
+        @include dFlex($fd: row, $jc: center, $ai: flex-start);
+        gap: 10px;
+        // width: auto !important;
+    }
+}
+
+@media (max-width: 620px) {
+    .main-container {
+        padding: 10px;
+    }
+    button {
+        font-size: 12px !important;
+        padding: 3px !important;
+        width: 160px !important;
+    }
+}

@@ -32,3 +32,23 @@ body {
     max-height: 60vh; // Maximale Höhe für den Dialog
     overflow-y: auto; // Scrollbar für vertikale Überläufe
 }
+
+::ng-deep .mat-flat-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+}
+
+::ng-deep .mat-flat-button .mat-button-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.custom-mat-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: visible !important;
+}

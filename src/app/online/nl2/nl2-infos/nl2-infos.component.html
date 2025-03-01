@@ -1,0 +1,46 @@
+<div class="circle-chart-container">
+    <img src="assets/img/ov_logo.png" alt="" class="logo">
+    <svg viewBox="0 0 100 100" class="circle-chart">
+        <circle class="background" cx="50" cy="50" r="45"></circle>
+        <circle class="progress" 
+            cx="50" cy="50" r="45" 
+            [ngStyle]="{ 'stroke-dasharray': getStrokeDashArray(progress) }"
+            [attr.stroke]="selectedColor"
+            stroke-linecap="round">
+        </circle>
+        <!-- Prozentzahl -->
+    <text x="50" y="45" class="percentage" text-anchor="middle" dominant-baseline="middle">
+        {{ progress }}%
+    </text>
+    
+    <!-- "10.300" auf separater Zeile (mit 5px Abstand zur Prozentzahl) -->
+    <text x="50" y="60" class="static-text" text-anchor="middle" dominant-baseline="middle">
+        {{ getTranslation('ONLINE.NL2.ZG1') }}
+    </text>
+
+    <!-- "Empfängern" auf separater Zeile -->
+    <text x="50" y="70" class="static-text" text-anchor="middle" dominant-baseline="middle">
+        {{ getTranslation('ONLINE.NL1.ZG7') }}
+    </text>
+        
+    </svg>
+
+    <ul class="legend">
+        <li *ngFor="let item of data" 
+            (click)="updateProgress(item.value, item.color)" 
+            [ngClass]="{ 'active': item.value === progress }">
+            {{ getTranslation(item.label) }}
+        </li>
+    </ul>
+</div>
+<div class="topics-main">
+    <h2>{{ getTranslation('ONLINE.NL2.ZG2') }}</h2>
+    <div class="line"></div>
+    <h1>{{ getTranslation('ONLINE.NL1.ZG5') }}</h1>
+    <div class="topics-container">
+        <div class="topic" *ngFor="let topic of topics1">
+            <h3>{{ getTranslation(topic.name) }}</h3>  <!-- Name wird dynamisch eingefügt -->
+            <img [src]="topic.img" [alt]="topic.name"> <!-- Bild wird dynamisch geladen -->
+        </div>
+    </div>
+</div>

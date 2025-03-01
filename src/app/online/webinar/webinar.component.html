@@ -1,0 +1,52 @@
+<div class="headline">
+    <h1>{{ getTranslation('ONLINE.WEBINAR.W1') }}</h1>
+</div>
+<div class="main-container">
+    <div class="left">
+        <div class="advertorial-box">
+            <ul class="advertorial-list">
+                <li>{{ getTranslation('ONLINE.WEBINAR.W2') }}</li>
+                <li>{{ getTranslation('ONLINE.WEBINAR.W3') }}</li>
+                <li>{{ getTranslation('ONLINE.WEBINAR.W4') }}</li>
+                <li>{{ getTranslation('ONLINE.WEBINAR.W5') }}</li>
+                <li>{{ getTranslation('ONLINE.WEBINAR.W6') }}</li>
+                <li>{{ getTranslation('ONLINE.WEBINAR.W7A') }}</li>
+            </ul>
+            <div class="btn-area">
+                <a mat-flat-button (click)="openDialogAd()"><mat-icon>chevron_right</mat-icon>{{ getTranslation('ONLINE.WEBINAR.W11') }}</a> 
+                <a mat-flat-button (click)="openDialogExtra()"><mat-icon>chevron_right</mat-icon>{{ getTranslation('ONLINE.WEBINAR.W14') }} <br> {{ getTranslation('ONLINE.WEBINAR.W14A') }}</a>            
+            </div>
+            <div class="advertorial-price">
+                <p>{{ getTranslation('ONLINE.WEBINAR.W12') }}</p>
+                <p class="sub">{{ getTranslation('ONLINE.WEBINAR.W13') }}</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="right">
+        <div class="main-img">
+            <img src="assets/img/webinar.png" alt="">
+        </div>
+        <div class="youtube-container">
+            <h2>{{ getTranslation('ONLINE.WEBINAR.W15') }}</h2>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/JVkXHSfuveQ" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/LNvaOkmbhf0" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>

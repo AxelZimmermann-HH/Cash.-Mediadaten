@@ -4,7 +4,7 @@
     <mat-drawer #drawer class="sidenav" [mode]="drawerMode" [opened]="drawerOpened">
       <div class="sidenav-top">
         <div (click)="toggleDrawer()" routerLink="/" routerLinkActive="active" class="logo">
-          <img src="assets/img/cash-logo-red.png" alt="Logo">
+          <img src="assets/img/cash-logo-white.png" alt="Logo">
           <h2>ONLINE {{ getTranslation('ONLINE.HEADLINE') }} 2025</h2>
         </div>
         <ul>
@@ -21,7 +21,25 @@
             <mat-icon>article</mat-icon>{{ getTranslation('ONLINE.MENU4') }}
           </li>
           <li (click)="toggleDrawer()" routerLink="/online/5vor5" routerLinkActive="active">
-            <mat-icon>article</mat-icon>{{ getTranslation('ONLINE.MENU5') }}
+            <mat-icon>mail</mat-icon>{{ getTranslation('ONLINE.MENU5') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/onvista" routerLinkActive="active">
+            <mat-icon>mail</mat-icon>Newsletter Cash. OnVista
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/mobile" routerLinkActive="active">
+            <mat-icon>screenshot</mat-icon>Mobile
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/social" routerLinkActive="active">
+            <mat-icon>chat</mat-icon>Social Media
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/podcast" routerLinkActive="active">
+            <mat-icon>podcasts</mat-icon>Podcast
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/video" routerLinkActive="active">
+            <mat-icon>smart_display</mat-icon>Cash. im Talk
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/webinar" routerLinkActive="active">
+            <mat-icon>co_present</mat-icon>Webinar
           </li>
         </ul>
       </div>

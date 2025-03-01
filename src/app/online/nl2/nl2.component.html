@@ -1,0 +1,12 @@
+<div class="main-container">
+
+    <div class="btn-area">
+        <button mat-flat-button routerLink="coverage" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ getTranslation('ONLINE.NL1.MENU1') }}</button>
+        <button mat-flat-button routerLink="formats" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ getTranslation('ONLINE.NL1.MENU3') }}</button>
+        <!-- <button mat-flat-button routerLink="focus" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ getTranslation('ONLINE.CONTENT.MENU_UIF') }}</button> -->
+    </div>
+
+    <div class="router-container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

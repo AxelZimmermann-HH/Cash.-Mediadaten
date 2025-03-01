@@ -1,0 +1,60 @@
+<div class="headline">
+    <h1>{{ getTranslation('ONLINE.VIDEO.V1') }}</h1>
+</div>
+<div class="main-container">
+    <div class="left">
+        <div class="advertorial-box">
+            <ul class="advertorial-list">
+                <li>{{ getTranslation('ONLINE.VIDEO.V2') }}</li>
+                <li>{{ getTranslation('ONLINE.VIDEO.V3') }}</li>
+                <li>{{ getTranslation('ONLINE.VIDEO.V4') }}</li>
+                <li>{{ getTranslation('ONLINE.VIDEO.V5') }}</li>
+                <li>{{ getTranslation('ONLINE.VIDEO.V6') }}</li>
+                <li>{{ getTranslation('ONLINE.VIDEO.V7') }}</li>
+            </ul>
+            <div class="btn-area">
+                <a mat-flat-button (click)="openDialog()"><mat-icon>chevron_right</mat-icon>{{ getTranslation('ONLINE.VIDEO.V8') }}<br>{{ getTranslation('ONLINE.VIDEO.V9') }}</a>            
+            </div>
+            <div class="advertorial-price">
+                <p>{{ getTranslation('ONLINE.VIDEO.V10') }}</p>
+                <p class="sub">{{ getTranslation('ONLINE.CONTENT.MCB10') }}</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="right">
+        <div class="youtube-container">
+            <h2>{{ getTranslation('ONLINE.VIDEO.V11') }}</h2>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/SNkNHJFU6Rk" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="youtube-container">
+            <h2>{{ getTranslation('ONLINE.VIDEO.V12') }}</h2>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/TWvKQThIslY" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/XQUpzRLSPkY" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="main-container">
+    <div class="nl-container">
+        <div class="superbanner solo-ad" (click)="openDialog(ads.header)">
+            <img src="assets/img/icons/cursor-white.svg" alt="">
+        </div>
+
+        <img src="assets/img/nl2.png" alt="">
+
+        <div class="promolink solo-ad" (click)="openDialog(ads.promolink)">
+            <div class="pl-img"></div>
+            <div class="pl-lines">
+                <div class="line" *ngFor="let _ of lines"></div>
+            </div>
+        </div>
+
+        <img src="assets/img/nl-pl.png" alt="">
+
+        <div class="mr-container">
+            <div class="mr solo-ad" (click)="openDialog(ads.mr)">
+                <img src="assets/img/icons/cursor-white.svg" alt="">
+            </div>
+        </div>
+
+        <img src="assets/img/nl-pl.png" alt="">
+
+        <div class="mr-container">
+            <div class="banner solo-ad" (click)="openDialog(ads.banner)">
+                <img src="assets/img/icons/cursor-white.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+

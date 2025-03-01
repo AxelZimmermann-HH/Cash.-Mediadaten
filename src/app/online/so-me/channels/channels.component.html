@@ -1,0 +1,25 @@
+<div class="main-container">
+
+    <div class="btn-area">
+        <button class="custom-mat-button" mat-flat-button routerLink="linkedin" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <img src="assets/img/icons/some-white/linkedin.svg" alt="LinkedIn"> &nbsp;
+        </button>
+        <button class="custom-mat-button" mat-flat-button routerLink="facebook" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <img src="assets/img/icons/some-white/fb.svg" alt="Facebook"> &nbsp;
+        </button>
+        <button class="custom-mat-button" mat-flat-button routerLink="instagram" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <img src="assets/img/icons/some-white/insta.svg" alt="Instagram"> &nbsp;
+        </button>
+        <button class="custom-mat-button" mat-flat-button routerLink="xing" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <img src="assets/img/icons/some-white/xing.svg" alt="Xing"> &nbsp;
+        </button>
+        <button class="custom-mat-button" mat-flat-button routerLink="tiktok" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <img src="assets/img/icons/some-white/tiktok.svg" alt="Tiktok"> &nbsp;
+        </button>
+
+    </div>
+
+    <div class="router-container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

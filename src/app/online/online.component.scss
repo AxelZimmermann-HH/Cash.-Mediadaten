@@ -9,6 +9,7 @@ button {
 
 .mat-drawer-container {
   height: 100vh;
+  background-color: white !important;
 }
 
 ::ng-deep .mat-drawer-inner-container {
@@ -53,6 +54,13 @@ button {
   justify-content: center;
   gap: 5px;
   cursor: pointer;
+  background: linear-gradient(
+        to bottom right, 
+        rgba(183, 13, 32, 1), 
+        rgba(183, 13, 32, 0.6)
+        
+  );
+  color: white;
 }
 
 .mat-drawer img {
@@ -70,13 +78,13 @@ ul {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
-  padding-top: 20px;
+  // padding-top: 20px;
   > li {
       display: flex;
       align-items: center;
       gap: 12px;
-      font-size: 18px;
-      padding: 20px;
+      font-size: 16px;
+      padding: 10px 20px;
       cursor: pointer;
       &:hover {
           background-color: rgba(246, 246, 246, 1);
@@ -204,7 +212,7 @@ mat-button-toggle {
   }
   ul {
     > li {
-      justify-content: center;
+      padding-left: 15%;
     }
   }
   .sidenav-bottom a {
@@ -214,6 +222,6 @@ mat-button-toggle {
 
 @media (max-width: 620px) {
   .router-container {
-    padding: 16px 0 0 0;
+    padding: 16px 10px 10px 10px;
   }
 }

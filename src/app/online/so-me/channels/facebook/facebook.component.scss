@@ -1,0 +1,194 @@
+@import '../../../../../styles.scss';
+
+.main-container {
+    width: 100%;
+    box-sizing: border-box;
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
+    gap: 20px;  
+}
+
+.mobile-element {
+    width: 50%;
+    position: relative;
+    @include dFlex($fd: column, $jc: flex-start, $ai: flex-start);
+    gap: 10px;
+    > img {
+        width: 100%;
+    }
+}
+
+.illustration {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.play {
+    position: absolute;
+    top: 68%;
+    right: 18%;
+    // transform: translate(-50%, -50%);
+    width: 20%;
+    z-index: 1000;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    animation: bubbleEffect 1.5s infinite ease-in-out;
+}
+
+@keyframes bubbleEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.play.playing {
+    filter: brightness(1.2); // Beispiel: Leicht aufhellen
+}
+
+.mobile-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    transform: translate(-50%, -50%) translateY(0);
+    overflow-y: hidden;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    > img {
+        width: 100%;
+    }
+    > video {
+        width: 100%;
+        object-fit: contain; 
+
+    }
+}
+
+.mobile-content-p {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    width: 70%;
+    height: 55%;
+    transform: translate(-50%, -50%) translateY(0);
+    overflow-y: hidden;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    > img {
+        width: 100%;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: rgba(205,104,106,1);
+    font-size: 2em;
+}
+
+.btn-area {
+    width: 100%;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    gap: 20px;
+    padding-top: 20px;
+}
+
+a {
+    background-color: rgba(205,104,106,1) !important;
+    color: white !important;
+    font-weight: 400 !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    width: 240px;
+    height: 80px;
+    line-height: 1.3;
+    text-align: center;
+    position: relative;
+    > mat-icon {
+        position: absolute;
+        right: 0;
+        animation: moveLeftRight 1s ease-in-out infinite alternate;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px); // Bewegt sich 10px nach links
+    }
+}
+
+.infos {
+    z-index: 15;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+}
+
+.red-text {
+    color: rgba(205,104,106,1);
+}
+
+.main-infos {
+    padding-top: 15px;
+    min-height: 140px;
+}
+
+@media (min-width: 1000px) {
+    // .infos {
+    //     margin-top: -15%;
+    // }
+}
+
+@media (max-width: 810px) {
+    .main-container {
+        @include dFlex($fd: column, $jc: space-between, $ai: center);
+        padding-bottom: 20px;
+    }
+    .mobile-element {
+        width: 80%;
+    }
+    .infos {
+        margin-top: -20px;
+        margin-bottom: 50px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .h-bottom {
+        width: 130%;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(0,0,0,0.6)
+    }
+}
+
+@media (max-width: 550px) {
+    .main-container {
+        @include dFlex($fd: column, $jc: space-between, $ai: center);
+        padding-bottom: 20px;
+    }
+    .monile-element {
+        width: 80%;
+    }
+    .infos {
+        margin-top: -20px;
+    }
+    .h-bottom {
+        width: 130%;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(0,0,0,0.6)
+    }
+}

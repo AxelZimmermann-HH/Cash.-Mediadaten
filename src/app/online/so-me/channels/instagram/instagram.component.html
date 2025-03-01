@@ -1,0 +1,66 @@
+<div class="main-container">
+
+    <div class="mobile-element">
+        <div class="illustration">
+            <img src="assets/img/icons/mobile-thin.svg" alt="">
+            <div class="mobile-content">
+                <img src="assets/img/insta_post.png" alt="">
+            </div>
+        </div>
+        <div class="infos">
+            <h1>INSTAGRAM AD</h1>
+            <div class="btn-area">
+                <a mat-flat-button (click)="openDialog(dialogInstaPost)"><mat-icon>chevron_right</mat-icon>{{ getTranslation('ONLINE.LINKEDIN.LI1') }}</a>
+                <a mat-flat-button href="https://www.instagram.com/cash.medien/" target="_blank">
+                    <mat-icon>chevron_right</mat-icon> {{ getTranslation('ONLINE.INSTAGRAM.IN1') }}
+                </a>            
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-element">
+        <div class="illustration">
+            <img src="assets/img/icons/mobile-thin.svg" alt="">
+            <div class="mobile-content">
+                <img src="assets/img/insta_story.png" alt="">
+            </div>
+        </div>
+        <div class="infos">
+            <h1>INSTAGRAM: <br>AD IN STORY</h1>
+            <div class="btn-area">
+                <a mat-flat-button (click)="openDialog(dialogInstaStory)"><mat-icon>chevron_right</mat-icon>{{ getTranslation('ONLINE.LINKEDIN.LI1') }}</a>
+                <a mat-flat-button href="https://www.instagram.com/cash.medien/" target="_blank">
+                    <mat-icon>chevron_right</mat-icon> {{ getTranslation('ONLINE.INSTAGRAM.IN1') }}
+                </a>            
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-element">
+        <div class="illustration">
+            <img class="play" 
+                [ngClass]="{ 'playing': isPlaying }" 
+                [src]="isPlaying ? 'assets/img/icons/pause-white.svg' : 'assets/img/icons/play-white.svg'" 
+                alt="Play/Pause" 
+                (click)="toggleVideo()">
+            <img src="assets/img/icons/mobile-thin.svg" alt="">
+            <div class="mobile-content">
+                <video #videoElement loop playsinline>
+                    <source src="assets/videos/test5.MOV" type="video/mp4">
+                    Dein Browser unterstützt kein HTML5-Video.
+                </video>
+            </div>
+        </div>
+
+
+        <div class="infos">
+            <h1>INSTAGRAM REEL</h1>
+            <div class="btn-area">
+                <a mat-flat-button (click)="openDialog(dialogInstaReel)"><mat-icon>chevron_right</mat-icon>{{ getTranslation('ONLINE.LINKEDIN.LI1') }}</a>
+                <a mat-flat-button href="https://www.instagram.com/cash.medien/" target="_blank">
+                    <mat-icon>chevron_right</mat-icon> {{ getTranslation('ONLINE.INSTAGRAM.IN1') }}
+                </a>            
+            </div>
+        </div>
+    </div>
+</div>
