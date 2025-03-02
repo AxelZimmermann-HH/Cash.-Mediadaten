@@ -1,0 +1,85 @@
+<div class="headline">
+    <img src="assets/img/digitalday_logo.png" alt="">
+</div>
+<div class="headline">
+    <div class="advertorial-box first-container">
+        <ul class="advertorial-list">
+            <li><b>{{ getTranslation('ONLINE.DD.D1B') }}</b></li>
+            <li>{{ getTranslation('ONLINE.DD.D2') }}</li>
+            <li>{{ getTranslation('ONLINE.DD.D3') }}</li>
+        </ul>
+    </div>
+</div>
+<div class="main-container">
+    <div class="left">
+
+        <div class="advertorial-box">
+            <h2>{{ getTranslation('ONLINE.DD.D4') }}</h2>
+            <ul class="advertorial-list">
+                <li>{{ getTranslation('ONLINE.DD.D5') }}</li>
+                <li>{{ getTranslation('ONLINE.DD.D5A') }}</li>
+                <li>{{ getTranslation('ONLINE.DD.D6') }}</li>
+            </ul>
+            <div class="btn-area">
+                <a mat-flat-button (click)="openDialogSponsorPrint()"><mat-icon>chevron_right</mat-icon>Print</a> 
+                <a mat-flat-button (click)="openDialogSponsorOnline()"><mat-icon>chevron_right</mat-icon>Online</a>            
+            </div>
+            <div class="advertorial-price">
+                <p>{{ getTranslation('ONLINE.DD.D7') }}</p>
+                <p class="sub">{{ getTranslation('ONLINE.DD.D8') }}</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="right">
+        
+        <div class="advertorial-box">
+            <h2>{{ getTranslation('ONLINE.DD.D9') }}</h2>
+            <ul class="advertorial-list">
+                <li>{{ getTranslation('ONLINE.DD.D10') }}</li>
+                <li>{{ getTranslation('ONLINE.DD.D5A') }}</li>
+                <li>{{ getTranslation('ONLINE.DD.D6') }}</li>
+            </ul>
+            <div class="btn-area">
+                <a mat-flat-button (click)="openDialogBreakoutPrint()"><mat-icon>chevron_right</mat-icon>Print</a> 
+                <a mat-flat-button (click)="openDialogBreakoutOnline()"><mat-icon>chevron_right</mat-icon>Online</a>            
+            </div>
+            <div class="advertorial-price">
+                <p>{{ getTranslation('ONLINE.DD.D11') }}</p>
+                <p class="sub">{{ getTranslation('ONLINE.DD.D8') }}</p>
+            </div>
+
+        </div>
+
+        
+    </div>
+</div>
+<div class="videos">
+    <div class="youtube-container">
+        <h2>{{ getTranslation('ONLINE.DD.D12') }}</h2>
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/PJrcK0EYYNE" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/ZuPrHnJakco" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+

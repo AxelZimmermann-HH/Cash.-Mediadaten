@@ -104,6 +104,28 @@ ul {
   }
 }
 
+.siegel-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 600px;
+  height: 100%;
+  gap: 10px;
+  padding-left: 228px;
+  > img {
+    height: 80%;
+    transition: transform 0.15s ease-in-out;
+    transform-origin: top right;
+    display: block !important;
+    visibility: visible !important;
+    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.2);
+    &:hover {
+      transform: scale(1.7);
+    }
+  }
+}
+
 .siegel {
   display: flex;
   flex-direction: column;

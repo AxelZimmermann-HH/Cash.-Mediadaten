@@ -11,6 +11,7 @@ export const translations = {
             MENU3: 'Layer formats',
             MENU4: 'Content formats',
             MENU5: 'Newsletter Cash. 5vor5',
+            MENU6: 'Contact',
             USER: {
                 HEADLINE1: 'TARGET GROUP',
                 SUBHEADLINE1: '64% of users are visiting www.cash-online.de daily to several times a week.',
@@ -302,6 +303,32 @@ export const translations = {
                 W22A: 'ADDITIONAL BOOKING OPTIONS',
                 W22: '• Provision of a professional speaker by Cash. with content-related conception by the client for 500 Euros',
                 W23: '• Provision of a professional speaker as well as conceptual design by Cash. for 1,500 Euros'
+            },
+            DD: {
+                D1A: 'Der Cash. Digital Day',
+                D1B: 'Wednesday, June 4, 2025',
+                D2: 'A day full of exciting online events, all about the digital sale of insurance, real estate, financial and tangible assets. With well-known speakers from the industry.',
+                D3: 'Attendees: Financial intermediaries (consultants, brokers), with the possibility of crediting IDD training times',
+                D4: 'Sponsoring package',
+                D5: 'Event services in the form of a client-specific online event',
+                D5A: 'Lead generation via the registration data of the participants',
+                D6: 'Crossmedia services:',
+                D7: 'Package price: 9,990 Euros',
+                D8: 'Not discount- and ae-eligible. Packages modified to the individual client.',
+                D9: 'Breakout-Session',
+                D10: '20-minute exclusive, sponsored advertising slot, e.g., for product presentations.',
+                D11: 'Package price: 4,980 Euros',
+                D12: 'Examples für Digital Day-events:',
+                D13: '• 1/1 ad or 1/1 advertorial to promote the customer-specific webinar in issue 6/25 (28th May)',
+                D14: '• Editorial integration of the sponsors and placement of the customer logo, photo of the speaker and naming of the relevant topic in the preliminary report in Cash. issue 6/25 and in the follow-up reporting in Cash. issue 8/25 (31st July)',
+                D15: 'Newsletter:',
+                D16: '• 2x standalone mailing in Cash. 5vor5. (10,300 subscribers) to advertise the customer-specific webinar',
+                D17: '• 4x promotion of the Digital Day mentioning all events as standalone mailings in Cash. 5vor5',
+                D18: '• 5x promolink to your event in Cash. 5vor5',
+                D18A: '• 4x promolink to your event in Cash.OnVista. (13,000 subscribers)',
+                D19: 'Website: 1 x Promolink leadingto the webinar with 40,000 ad impressions',
+                D20: 'Social Media: Sponsored post on the webinar on all channels',
+                D21: '• 1x standalone mailing in Cash. 5vor5. (10,300 subscribers) to advertise the customer-specific webinar',
             }
         }
     },
@@ -317,6 +344,7 @@ export const translations = {
             MENU3: 'Layer-Werbeformate',
             MENU4: 'Content-Werbeformate',
             MENU5: 'Newsletter Cash. 5vor5',
+            MENU6: 'Kontakt',
             USER: {
                 HEADLINE1: 'ZIELGRUPPE',
                 SUBHEADLINE1: '64% der User nutzen www.cash-online.de täglich bis mehrmals die Woche.',
@@ -610,6 +638,32 @@ export const translations = {
                 W22: '• Bereitstellung eines professionellen Referenten durch Cash. bei inhaltlicher Konzeption durch den Kunden für 500,- EUR',
                 W23: '• Bereitstellung eines professionellen Referenten sowie inhaltliche Konzeption durch Cash. für 1.500,- Euro'
             },
+            DD: {
+                D1A: 'Der Cash. Digital Day',
+                D1B: 'Mittwoch, 4. Juni 2025',
+                D2: 'Ein Tag voller spannender Online-Live-Events rund um den digitalen Vertrieb von Versicherungen, Investmentfonds, Immobilien und Sachwertanlagen mit namhaften Speakern aus der Branche.',
+                D3: 'Teilnehmer: Finanzvermittler (Berater, Makler), mit Möglichkeit der Gutschrift von IDD-Weiterbildungszeiten',
+                D4: 'Sponsoren-Paket',
+                D5: 'Eventleistungen in Form eines 45-minütigen, kundenspezifischen Webinars',
+                D5A: 'Leadgenerierung über die Anmeldedaten der Teilnehmer',
+                D6: 'Crossmediale Leistungen:',
+                D7: 'Paketpreis: 9.990,- Euro',
+                D8: 'Nicht rabatt- und AE-fähig. Sponsoring-Pakete kundenindivuduell zugeschnitten.',
+                D9: 'Breakout-Session',
+                D10: '20-minütige exklusive, gesponserte Werbeeinheit, bspw. zur Produktvorstellung',
+                D11: 'Paketpreis: 4.980,- Euro',
+                D12: 'Beispiele für Digital Day-Events:',
+                D13: '• 1/1 Seite Anzeige oder 1/1 Seite Advertorial zur Bewerbung des kundenspezifischen Webinars in Ausgabe 6/25 (EVT 28.05.) ',
+                D14: '• Redaktionelle Integration der Sponsoren und Platzierung des Kunden-Logos, Foto des Referenten sowie Benennung des entsprechenden Themas in der Vorberichterstattung in Cash. Ausgabe 6/25 (EVT 28.05.) und in der Nachberichterstattung in Cash. Ausgabe 8/25 (EVT 31.07.)',
+                D15: 'Newsletter:',
+                D16: '• 2 x Standalone-Mailing im Cash. 5vor5 (10.300 Empfänger) zur Bewerbung des kundenspezifischen Webinars',
+                D17: '• 4 x Bewerbung des Digital Day unter Nennung aller Events als Standalone-Mailing im Cash. 5vo5',
+                D18: '• 5 x Promolink zu Ihrem Event im Cash. 5vor5',
+                D18A: '• 4 x Promolink zu Ihrem Event im Cash.OnVista (13.000 Empfänger)',
+                D19: 'Website: 1 x Promolink zum Webinar mit 40.000 Ad Impressions',
+                D20: 'Social Media: Sponsored Post zum Webinar auf allen Kanälen',
+                D21: '• 1 x Standalone-Mailing im Cash. 5vor5 (10.300 Empfänger) zur Bewerbung des kundenspezifischen Webinars',
+            }
         }
 
     }

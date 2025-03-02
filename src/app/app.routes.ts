@@ -27,6 +27,8 @@ import { TiktokComponent } from './online/so-me/channels/tiktok/tiktok.component
 import { PodcastComponent } from './online/podcast/podcast.component';
 import { VideoComponent } from './online/video/video.component';
 import { WebinarComponent } from './online/webinar/webinar.component';
+import { DigitaldayComponent } from './online/digitalday/digitalday.component';
+import { ContactComponent } from './online/contact/contact.component';
 
 
 export const routes: Routes = [
@@ -79,6 +81,8 @@ export const routes: Routes = [
             { path: 'podcast', component: PodcastComponent },
             { path: 'video', component: VideoComponent },
             { path: 'webinar', component: WebinarComponent },
+            { path: 'digitalday', component: DigitaldayComponent },
+            { path: 'contact', component: ContactComponent },
         ]
     },
     { path: '', component: StartComponent }

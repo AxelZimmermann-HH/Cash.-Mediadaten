@@ -29,11 +29,11 @@
 }
 
 .zg-row {
-    @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
+    @include dFlex($fd: row, $jc: center, $ai: flex-start);
     width: 100%;
     padding-bottom: 30px;
     flex-wrap: wrap;
-    gap: 50px 10px;
+    gap: 50px 70px;
 
     @media (max-width: 900px) { 
         justify-content: center; // Ein Element pro Zeile, mittig ausgerichtet
@@ -41,16 +41,15 @@
 }
 
 .products {
-    padding-top: 40px;
-    
+    padding-top: 40px; 
 }
 
 .zg-element {
     position: relative;
-    width: 150px; // Immer feste Breite
-    height: 150px; // Immer feste Höhe
+    width: 100px; // Immer feste Breite
+    height: 100px; // Immer feste Höhe
     cursor: pointer;
-    flex: 0 0 150px; // Kein Wachstum oder Schrumpfen
+    // flex: 0 0 150px; // Kein Wachstum oder Schrumpfen
 
     > img {
         width: 100%;
@@ -59,7 +58,7 @@
 
 .product-element {
     position: relative;
-    width: 150px;
+    width: 100px;
     height: 100px;
     cursor: pointer;
     > img {
@@ -69,8 +68,8 @@
 
 .kpi-element {
     position: relative;
-    width: 150px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
     > img {
         height: 100%;
@@ -80,12 +79,11 @@
 .info-overlay {
     display: none;
     position: absolute;
-    top: 0;
-    left: 50%; // Setzt den linken Rand in die Mitte des Parents
-    transform: translateX(-50%);
-    width: 150%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 230%;
     min-height: 115px;
-    // height: 100%;
     background-color: white;
     z-index: 10;
     border: 2px solid rgba(183,13,32,0.7);

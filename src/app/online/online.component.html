@@ -41,14 +41,20 @@
           <li (click)="toggleDrawer()" routerLink="/online/webinar" routerLinkActive="active">
             <mat-icon>co_present</mat-icon>Webinar
           </li>
+          <li (click)="toggleDrawer()" routerLink="/online/digitalday" routerLinkActive="active">
+            <mat-icon>videocam</mat-icon>Digital Day 2025
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/online/contact" routerLinkActive="active">
+            <mat-icon>contacts_product</mat-icon>{{ getTranslation('ONLINE.MENU6') }}
+          </li>
         </ul>
       </div>
   
-    <div class="siegel">
+    <!-- <div class="siegel">
       <img src="assets/img/siegel1.jpg" alt="">
       <img src="assets/img/siegel2.jpg" alt="">
       <img src="assets/img/siegel3.jpg" alt="">
-    </div>
+    </div> -->
     </mat-drawer>
   
     <!-- TOP BAR -->
@@ -63,7 +69,13 @@
         <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [(value)]="activeLang">
           <mat-button-toggle (click)="setActiveLang('de')" value="de">DE</mat-button-toggle>
           <mat-button-toggle (click)="setActiveLang('en')" value="en">EN</mat-button-toggle>
-      </mat-button-toggle-group>
+        </mat-button-toggle-group>
+
+        <div class="siegel-top">
+            <img src="assets/img/siegel2.jpg" alt="">
+          <img src="assets/img/siegel3.jpg" alt="">  <img src="assets/img/siegel1.jpg" alt="">
+      
+        </div>
       </mat-toolbar>
       
   

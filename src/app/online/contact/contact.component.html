@@ -1,0 +1,61 @@
+<!-- <div class="h-container">
+    <h1>SALES</h1> 
+</div> -->
+<div class="btn-area">
+    <button mat-flat-button [class.active]="activeCategory === 'sales'" (click)="setCategory('sales')">Sales</button>
+    <button mat-flat-button [class.active]="activeCategory === 'media'" (click)="setCategory('media')">Media Management</button>
+    <button mat-flat-button [class.active]="activeCategory === 'dispo'" (click)="setCategory('dispo')">GF & Dispo</button>
+    <button mat-flat-button [class.active]="activeCategory === 'info'" (click)="setCategory('info')">Informationen</button>
+</div>
+
+<div class="contact-row">
+    @for (contact of contacts; track contact.name) {
+        <div class="contact-element">
+            <img [src]="contact.img" alt="{{ contact.name }}">
+            <div class="contact-infos">
+                <div class="infos-top">
+                    <h1>{{contact.name}}</h1>
+                    <h2>{{contact.position1}} <br> {{contact.position2}}</h2>
+                    
+                </div>
+                <div class="line"></div>
+                <table class="contact-table">
+                    <tr>
+                        <td>Tel.:</td>
+                        <td><a [href]="'tel:' + contact.phone">{{ contact.phone }}</a></td>
+                    </tr>
+                    <tr>
+                        <td>Fax:</td>
+                        <td><a [href]="'fax:' + contact.fax">{{ contact.fax }}</a></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><a [href]="'mailto:' + contact.email">{{ contact.email }}</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="information" *ngIf="showInfo">
+    <div class="company">
+        <h2>MEDIENHAUS</h2>
+        <p>Cash. Media Group GmbH</p>
+        <p>Kleine Seilerstraße 1</p>
+        <p>20359 Hamburg</p>
+        <p>Tel.: 040/51444-0</p>
+        <p>Fax: 040/51444-120</p>
+        <p>E-Mail: info&#64;cash-online.de</p>
+        <p>Internet: www.cash-online.de</p>
+    </div>
+    <div class="company">
+        <h2>BANKVERBINDUNG</h2>
+        <p>HypoVereinsbank AG</p>
+        <p>Kto.-Nr. 6 305 460</p>
+        <p>BLZ 200 300 00</p>
+        <p>IBAN: DE89200300000006305460</p>
+        <p>BIC: HYVEDEMM300</p>
+        <p>USt-ID-Nummer: DE 202667963</p>
+    </div>
+</div>
