@@ -4,8 +4,8 @@
 <div class="btn-area">
     <button mat-flat-button [class.active]="activeCategory === 'sales'" (click)="setCategory('sales')">Sales</button>
     <button mat-flat-button [class.active]="activeCategory === 'media'" (click)="setCategory('media')">Media Management</button>
-    <button mat-flat-button [class.active]="activeCategory === 'dispo'" (click)="setCategory('dispo')">GF & Dispo</button>
-    <button mat-flat-button [class.active]="activeCategory === 'info'" (click)="setCategory('info')">Informationen</button>
+    <button mat-flat-button [class.active]="activeCategory === 'dispo'" (click)="setCategory('dispo')">CEO & Disposition</button>
+    <button mat-flat-button [class.active]="activeCategory === 'info'" (click)="setCategory('info')">{{getTranslation('ONLINE.LINKEDIN.LI1')}}</button>
 </div>
 
 <div class="contact-row">
@@ -40,7 +40,7 @@
 
 <div class="information" *ngIf="showInfo">
     <div class="company">
-        <h2>MEDIENHAUS</h2>
+        <h2>{{getTranslation('ONLINE.CONTACT.C1')}}</h2>
         <p>Cash. Media Group GmbH</p>
         <p>Kleine Seilerstraße 1</p>
         <p>20359 Hamburg</p>
@@ -50,7 +50,7 @@
         <p>Internet: www.cash-online.de</p>
     </div>
     <div class="company">
-        <h2>BANKVERBINDUNG</h2>
+        <h2>{{getTranslation('ONLINE.CONTACT.C2')}}</h2>
         <p>HypoVereinsbank AG</p>
         <p>Kto.-Nr. 6 305 460</p>
         <p>BLZ 200 300 00</p>

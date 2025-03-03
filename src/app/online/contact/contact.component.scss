@@ -152,6 +152,19 @@ button.active {
         gap: 10px;
         width: auto !important;
     }
+    .contact-row {
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    }
+    
+    .contact-element {
+        @include dFlex($fd: row, $jc: flex-start, $ai: center);
+        width: 435px;
+        min-height: 205px;
+    }
+    .information {
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+        gap: 20px;
+    }
 }
 
 @media (max-width: 620px) {
@@ -162,5 +175,44 @@ button.active {
         font-size: 12px !important;
         padding: 3px !important;
         width: 160px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-element {
+        width: 100%;
+    }
+    .contact-infos {
+        width: 60%;
+        .infos-top {
+            > h2 {
+                font-size: 14px;
+            } 
+        }
+    }
+    .company {
+        width: 80%;
+    }
+}
+
+@media (max-width: 410px) {
+    .contact-infos {
+        width: 55%;
+        .infos-top {
+            > h1 {
+                font-size: 20px;
+            }
+            > h2 {
+                font-size: 12px;
+            } 
+        }
+    }
+    .contact-table {
+        width: 100%;
+        border-collapse: collapse;
+        
+        td {
+            font-size: 12px;
+        }
     }
 }

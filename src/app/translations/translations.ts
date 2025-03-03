@@ -329,6 +329,10 @@ export const translations = {
                 D19: 'Website: 1 x Promolink leadingto the webinar with 40,000 ad impressions',
                 D20: 'Social Media: Sponsored post on the webinar on all channels',
                 D21: '• 1x standalone mailing in Cash. 5vor5. (10,300 subscribers) to advertise the customer-specific webinar',
+            },
+            CONTACT: {
+                C1: 'PUBLISHER',
+                C2: 'BANK ACCOUNT',
             }
         }
     },
@@ -663,6 +667,10 @@ export const translations = {
                 D19: 'Website: 1 x Promolink zum Webinar mit 40.000 Ad Impressions',
                 D20: 'Social Media: Sponsored Post zum Webinar auf allen Kanälen',
                 D21: '• 1 x Standalone-Mailing im Cash. 5vor5 (10.300 Empfänger) zur Bewerbung des kundenspezifischen Webinars',
+            },
+            CONTACT: {
+                C1: 'MEDIENHAUS',
+                C2: 'BANKVERBINDUNG',
             }
         }
 
