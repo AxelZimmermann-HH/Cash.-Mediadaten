@@ -41,20 +41,18 @@
           <li (click)="toggleDrawer()" routerLink="/online/webinar" routerLinkActive="active">
             <mat-icon>co_present</mat-icon>Webinar
           </li>
-          <li (click)="toggleDrawer()" routerLink="/online/digitalday" routerLinkActive="active">
+          <li class="border-bottom" (click)="toggleDrawer()" routerLink="/online/digitalday" routerLinkActive="active">
             <mat-icon>videocam</mat-icon>Digital Day 2025
           </li>
-          <li (click)="toggleDrawer()" routerLink="/online/contact" routerLinkActive="active">
+          <li class="grey" (click)="toggleDrawer()" routerLink="/online/contact" routerLinkActive="active">
             <mat-icon>contacts_product</mat-icon>{{ getTranslation('ONLINE.MENU6') }}
+          </li>
+          <li class="grey" (click)="toggleDrawer()" routerLink="/online/adspecs" routerLinkActive="active">
+            <mat-icon>info</mat-icon>{{ getTranslation('ONLINE.MENU7') }}
           </li>
         </ul>
       </div>
   
-    <div class="siegel">
-      <img src="assets/img/siegel1.jpg" alt="">
-      <img src="assets/img/siegel2.jpg" alt="">
-      <img src="assets/img/siegel3.jpg" alt="">
-    </div>
     </mat-drawer>
   
     <!-- TOP BAR -->
@@ -70,12 +68,6 @@
           <mat-button-toggle (click)="setActiveLang('de')" value="de">DE</mat-button-toggle>
           <mat-button-toggle (click)="setActiveLang('en')" value="en">EN</mat-button-toggle>
         </mat-button-toggle-group>
-
-        <!-- <div class="siegel-top">cvgx m,–mnbv cbnmö#  bnm,. bbbbb-. 
-            <img src="assets/img/siegel2.jpg" alt="">
-          <img src="assets/img/siegel3.jpg" alt="">  <img src="assets/img/siegel1.jpg" alt="">
-      
-        </div> -->
       </mat-toolbar>
       
   

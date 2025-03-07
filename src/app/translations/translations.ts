@@ -4,6 +4,24 @@ export const translations = {
             HEADLINE: 'MEDIA KIT',
             BUTTON1: 'ABOUT'
         },
+        TITLE: {
+            TH: 'ABOUT US',
+            T1: 'is one of the',
+            T2: 'best-known trade magazines',
+            T3: ' for independent financial advisors in insurance, investment funds, real estate, tangible assets, financial sales, broker pools, law and taxes. Cash. offers the latest financial news and reports on trends such as digitization and sustainability/ESG and their effects on the financial services industry.',
+            T4: 'The core target group are financial intermediaries:',
+            T5: 'insurance brokers, real estate agents, financial investment brokers, financial advisors, insurance agents and asset managers.',
+            T6: 'The customer structure is balanced. That makes Cash. a cross-industry medium with a general interest character.',
+            T7: 'Cash. is a',
+            T8: 'cross-media',
+            T9: 'magazine with various formats such as website in responsive webdesign, newsletters, monthly print edition & ePaper, videos – produced in our new, professional greenscreen studio, podcast, webinars and live events.',
+            T10: 'New content advertising formats',
+            T11: 'such as the video format „Cash. im Talk“ or the one-month „Content Box“ as well as the „Unternehmen im Fokus“ („Company in Focus“), which runs for more than a year, expand our offering, as do the LinkedIn, XING and TikTok channels newly offered by Cash. With the extremely attention-grabbing new formats „Interstitial“, „Sticky Footer“ and „Parallax“, you can hardly escape the attention of your target group.',
+            T12: 'The newsletters „Cash. 5vor5“ and „Cash. OnVista“ are in first place among independant financial advisors, brokers and distributors (with 73% and 70%, respectively, according to MRTK Media Analysis August 2021).',
+            T13: 'Once a year, Cash. presents the',
+            T14: 'Cash. Financial Advisors Awards',
+            T15: 'at the Cash. Gala in Hamburg.',
+        },
         ONLINE: {
             HEADLINE: 'MEDIA KIT',
             MENU1: 'Readership + Circulation',
@@ -12,6 +30,7 @@ export const translations = {
             MENU4: 'Content formats',
             MENU5: 'Newsletter Cash. 5vor5',
             MENU6: 'Contact',
+            MENU7: 'References + AdSpecs',
             USER: {
                 HEADLINE1: 'TARGET GROUP',
                 SUBHEADLINE1: '64% of users are visiting www.cash-online.de daily to several times a week.',
@@ -333,6 +352,25 @@ export const translations = {
             CONTACT: {
                 C1: 'PUBLISHER',
                 C2: 'BANK ACCOUNT',
+            },
+            ADSPECS: {
+                A1: 'Run time',
+                A2: 'The booking on the homepage refers either to calendar weeks (activation of the advertising material from Monday 0.00 a.m.) or to booked CPM (individual activation). A newsletter booking, on the other hand, refers to on one or more publication/sending days.',
+                A3: 'Reservation',
+                A4: 'Reservations are not binding. They are valid for a maximum period of five working days and expire at the latest 10 working days before the start of publication.',
+                A5: 'Cancellation',
+                A6: 'Bookings that have already been made can be cancelled up to 2 weeks before the start of the placement.',
+                A7: 'Provision of advertising material',
+                A8: 'By e-mail to digital@cash-online.de at least 10 working days before the start of the service. Please also provide the link separately!',
+                A9: 'General Terms and Conditions of Business',
+                A10: 'The publisher‘s terms and conditions apply to the processing of orders. These can be found',
+                A10B: 'here.', 
+                A11: 'File formats for all banners on the website',
+                A12: 'jpg, gif, html or swf (only in combination with gif!)',
+                A13: 'A delivery of HTML advertising material and redirects is also possible. Advertising media must be compatible with the AdServer Revive (formerly Open-X).',
+                A14: 'Maximum file size: 300 kB',
+                A15: 'File formats for banners in the newsletters',
+                A16: 'jpg, png, gif. Only physical ads are possible.',
             }
         }
     },
@@ -340,6 +378,24 @@ export const translations = {
         START: {
             HEADLINE: 'MEDIADATEN',
             BUTTON1: 'TITEL'
+        },
+        TITLE: {
+            TH: 'TITELPORTRAIT',
+            T1: 'ist eines der',
+            T2: 'bekanntesten Fachmagazine',
+            T3: 'für unabhängige Finanzvermittler rund um Themen wie Versicherungen, Investmentfonds, Immobilien, Sachwertanlagen, Finanzvertriebe, Maklerpools, Recht und Steuern. Cash. bietet aktuelle Finanznachrichten und berichtet über Trends wie Digitalisierung und Nachhaltigkeit und deren Auswirkungen auf die Finanzdienstleistungsbranche.',
+            T4: 'Kernzielgruppe sind Finanzvermittler:',
+            T5: 'Versicherungsmakler, Immobilienmakler, Finanzanlagenvermittler, Finanzberater, Versicherungsvertreter und Vermögensverwalter.',
+            T6: 'Die Kundenstruktur ist ausgewogen. Damit ist Cash. ein branchenübergreifendes Medium mit General-Interest-Charakter.',
+            T7: 'Cash. ist ein',
+            T8: 'crossmediales',
+            T9: 'Magazin mit unterschiedlichsten Formaten wie Website in responsive Webdesign, Newsletter, monatlicher Print-Ausgabe & ePaper, Podcasts, Videos – produziert in unserem neuen, professionellen Greenscreen-Studio, Webinaren, Digital Week sowie Live-Events.',
+            T10: 'Content-Werbeformate',
+            T11: 'wie z.B. das Video-Format „Cash. im Talk“ oder die einmonatige „Content-Box“ als auch das über ein Jahr laufende „Unternehmen im Fokus“ erweitern ebenso unser Angebot, wie die von Cash. neu angebotenen Kanäle LinkedIn, XING und TikTok. Mit den ausgesprochen aufmerksamkeitsstarken Formaten „Interstitial“, „Sticky Footer“ und „Parallax“ können Sie der Wahrnehmung Ihrer Zielgruppe kaum mehr entgehen.',
+            T12: 'Die Newsletter Cash. 5vor5 und Cash. OnVista liegen auf Platz 1 in puncto Berichterstattung über fondsgebundene Produkte (mit 73% bzw. 70% laut MRTK Media Analyse August 2022).',
+            T13: 'Einmal im Jahr werden die',
+            T14: 'Cash. Financial Advisors Awards',
+            T15: 'verliehen und die Preisverleihung findet auf der Cash. Gala in Hamburg statt.',
         },
         ONLINE: {
             HEADLINE: 'MEDIADATEN',
@@ -349,6 +405,7 @@ export const translations = {
             MENU4: 'Content-Werbeformate',
             MENU5: 'Newsletter Cash. 5vor5',
             MENU6: 'Kontakt',
+            MENU7: 'Hinweise und AdSpecs',
             USER: {
                 HEADLINE1: 'ZIELGRUPPE',
                 SUBHEADLINE1: '64% der User nutzen www.cash-online.de täglich bis mehrmals die Woche.',
@@ -671,6 +728,25 @@ export const translations = {
             CONTACT: {
                 C1: 'MEDIENHAUS',
                 C2: 'BANKVERBINDUNG',
+            },
+            ADSPECS: {
+                A1: 'Buchungszeitraum',
+                A2: 'Die Buchung auf der Homepage bezieht sich entweder auf Kalenderwochen (Einschaltung des Werbemittels ab Montag 0.00 Uhr) oder auf gebuchte Tausender-Kontakte (Einschaltung individuell). Eine Newsletter-Buchung dagegen bezieht sich auf einen bzw. mehrere Erscheinungs-/Versandtage. ',
+                A3: 'Reservierung',
+                A4: 'Reservierungen sind unverbindlich. Sie gelten für einen Zeitraum von maximal fünf Werktagen und verfallen spätestens 10 Werktage vor Schaltungsbeginn.',
+                A5: 'Stornierung',
+                A6: 'Bereits getätigte Buchungen können bis 2 Wochen vor Beginn der Schaltung storniert werden.',
+                A7: 'Werbemittelanlieferung',
+                A8: 'Per E-Mail bis spätestens 10 Werktage vor Einschaltung an digital@cash-online.de liefern. Bitte auch noch einmal seperat die Verlinkung mitliefern!',
+                A9: 'Allgemeine Geschäftsbedingungen',
+                A10: 'Für die Abwicklung von Aufträgen gelten die Geschäftsbedingungen des Verlags. Diese finden Sie',
+                A10B: 'hier.', 
+                A11: 'Dateiformate für alle Banner auf der Website',
+                A12: 'jpg, gif, html oder swf (nur in Kombi mit gif!)',
+                A13: 'Auch eine Anlieferung von HTML-Werbemitteln und Redirects ist möglich. Werbemittel müssen mit dem AdServer Revive (ehemals Open-X) kompatibel sein.',
+                A14: 'Maximale Dateigröße: 300 kB',
+                A15: 'Dateiformate für Banner im Newsletter',
+                A16: 'jpg, png, gif. Hier sind nur physische Werbemittel möglich.',
             }
         }
 

@@ -1,8 +1,15 @@
 <div class="header">
     <div class="header-content">
-        <div class="header-left">
-            <img class="header-logo" src="assets/img/cash-logo-white.png" alt="">
-            <h1>{{ getTranslation('START.HEADLINE') }} 2025</h1>
+        <div class="header-left-container">
+            <div class="siegel">
+                <img src="assets/img/siegel1.jpg" alt="">
+                <img src="assets/img/siegel2.jpg" alt="">
+                <img src="assets/img/siegel3.jpg" alt="">
+            </div>
+            <div class="header-left">
+                <img class="header-logo" src="assets/img/cash-logo-white.png" alt="">
+                <h1>{{ getTranslation('START.HEADLINE') }} 2025</h1>
+            </div>
         </div>
         <div class="header-right">
             <!-- <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
@@ -17,7 +24,7 @@
     </div>
 </div>
 <div class="start-container">
-    <button>
+    <button routerLink="/title" routerLinkActive="active">
         {{ getTranslation('START.BUTTON1') }} 
         <mat-icon>double_arrow</mat-icon>
     </button>

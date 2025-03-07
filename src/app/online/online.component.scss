@@ -104,6 +104,14 @@ ul {
   }
 }
 
+.border-bottom {
+  border-bottom: 1px solid rgba(224,224,224,1);
+}
+
+.grey {
+  color: rgba(120, 120, 120, 1)
+}
+
 .siegel-top {
   display: flex;
   flex-direction: row;

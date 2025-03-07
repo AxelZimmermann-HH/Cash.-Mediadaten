@@ -29,6 +29,8 @@ import { VideoComponent } from './online/video/video.component';
 import { WebinarComponent } from './online/webinar/webinar.component';
 import { DigitaldayComponent } from './online/digitalday/digitalday.component';
 import { ContactComponent } from './online/contact/contact.component';
+import { AdspecsComponent } from './online/adspecs/adspecs.component';
+import { TitleComponent } from './title/title.component';
 
 
 export const routes: Routes = [
@@ -83,8 +85,9 @@ export const routes: Routes = [
             { path: 'webinar', component: WebinarComponent },
             { path: 'digitalday', component: DigitaldayComponent },
             { path: 'contact', component: ContactComponent },
+            { path: 'adspecs', component: AdspecsComponent },
         ]
     },
-    { path: '', component: StartComponent }
-    
+    { path: '', component: StartComponent },
+    { path: 'title', component: TitleComponent }
 ];

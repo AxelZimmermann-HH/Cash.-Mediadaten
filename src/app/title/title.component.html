@@ -1,0 +1,84 @@
+<div class="header">
+    <div class="header-content">
+        <div class="header-left-container">
+            <div class="siegel">
+                <img src="assets/img/siegel1.jpg" alt="">
+                <img src="assets/img/siegel2.jpg" alt="">
+                <img src="assets/img/siegel3.jpg" alt="">
+            </div>
+            <div class="header-left">
+                <img class="header-logo" src="assets/img/cash-logo-white.png" alt="">
+                <h1>{{getTranslation('TITLE.TH')}}</h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <!-- <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                <mat-button-toggle (click)="setActiveLang('de')" [checked]="true" >DE</mat-button-toggle>
+                <mat-button-toggle (click)="setActiveLang('en')" >EN</mat-button-toggle>
+            </mat-button-toggle-group> -->
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [(value)]="activeLang">
+                <mat-button-toggle (click)="setActiveLang('de')" value="de">DE</mat-button-toggle>
+                <mat-button-toggle (click)="setActiveLang('en')" value="en">EN</mat-button-toggle>
+            </mat-button-toggle-group>
+            <button mat-fab aria-label="Example icon button with a delete icon" routerLink="/" routerLinkActive="active">
+                <mat-icon>arrow_back</mat-icon>
+              </button>
+        </div>
+    </div>
+</div>
+<div class="start-container">
+    <div class="title-content">
+        <div class="split-row">
+            <div class="row-img">
+                <img src="assets/img/title_current.jpg" alt="">
+            </div>
+            <div class="text-right">
+                <!-- <h1>DAS IST EIN TEST</h1> -->
+                <p><b>Cash.</b> {{getTranslation('TITLE.T1')}} <b>{{getTranslation('TITLE.T2')}}</b> {{getTranslation('TITLE.T3')}}</p>
+                <br>
+                <p>{{getTranslation('TITLE.T4')}} <b>{{getTranslation('TITLE.T5')}}</b> {{getTranslation('TITLE.T6')}}</p>
+            </div>
+        </div>
+
+        <div class="split-row column-reverse">
+            
+            <div class="text-right mt-30">
+                <!-- <h1>DAS IST EIN TEST</h1> -->
+                <p>{{getTranslation('TITLE.T7')}} <b>{{getTranslation('TITLE.T8')}}</b> {{getTranslation('TITLE.T9')}}</p>
+                <br>
+                <p><b>{{getTranslation('TITLE.T10')}}</b> {{getTranslation('TITLE.T11')}}</p>
+
+            </div>
+
+            <div class="online-img">
+                <a href="https://www.cash-online.de" target="_blank"><img class src="assets/img/title_online.png" alt=""></a>
+                <div class="so-me-container">
+                    <a href="https://www.linkedin.com/company/3958613/admin/dashboard/" target="_blank"><img src="assets/img/icons/some-color/linkedin-color.png" alt=""></a>
+                    <a href="https://www.facebook.com/cash.online.de" target="_blank"><img src="assets/img/icons/some-color/facebook.png" alt=""></a>
+                    <a href="https://www.instagram.com/cash.medien/" target="_blank"><img src="assets/img/icons/some-color/insta.png" alt=""></a>
+                    <a href="https://www.tiktok.com/@cash.magazin?_t=ZG-8uGfSmjd7nF&_r=1" target="_blank"><img src="assets/img/icons/some-color/tiktok.png" alt=""></a>
+                    <a href="https://www.xing.com/pages/cash-media-group-860" target="_blank"><img src="assets/img/icons/some-color/xing2.png" alt=""></a>
+                    <a href="https://open.spotify.com/show/2ZBYABKsuUY50c0De2l6WY?si=ae9eb25472e346c5" target="_blank"><img src="assets/img/icons/some-color/spotify3.png" alt=""></a>
+                    <a href="https://podcasts.apple.com/de/podcast/cash-podcast-die-zwei-dein-geld/id1542225387" target="_blank"><img src="assets/img/icons/some-color/apple-podcasts.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-right text-100">
+            <p>{{getTranslation('TITLE.T12')}}</p>
+            <br>
+            <p>{{getTranslation('TITLE.T13')}} <b>{{getTranslation('TITLE.T14')}}</b> {{getTranslation('TITLE.T15')}}</p>
+        </div>
+    </div>
+    <!-- <button routerLink="/title" routerLinkActive="active">
+        {{ getTranslation('START.BUTTON1') }} 
+        <mat-icon>double_arrow</mat-icon>
+    </button>
+    <button>
+        PRINT
+        <mat-icon>double_arrow</mat-icon>
+    </button>
+    <button routerLink="/online">
+        ONLINE
+        <mat-icon>double_arrow</mat-icon>
+    </button> -->
+</div>

@@ -22,6 +22,26 @@
     padding-left: 35px;
 }
 
+.header-left-container {
+    @include dFlex($fd: column, $jc: space-between, $ai: flex-start);
+    height: 210px;
+}
+
+.siegel {
+    @include dFlex($fd: row, $jc: flex-start, $ai: flex-start);
+    height: 50px;
+    gap: 20px;
+    > img {
+        height: 100%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+            transition: transform 0.1s ease-in-out;
+        }
+    }
+}
+
 .header-left {
     @include dFlex($fd: row, $jc: flex-start, $ai: flex-end);
     gap: 20px;
@@ -125,12 +145,31 @@ mat-button-toggle {
         height: 190px;
     }
     .header-content {
-        gap: 20px;
+        gap: 0px;
         @include dFlex($fd: column, $jc: center, $ai: center);
     }
     .header-right {
         @include dFlex($fd: row, $jc: flex-start, $ai: flex-start);
         height: auto;
+    }
+    .header-left-container {
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+        height: auto;
+        gap: 10px;
+    }
+    .siegel {
+        @include dFlex($fd: row, $jc: flex-start, $ai: flex-start);
+        height: 30px;
+        gap: 20px;
+        > img {
+            height: 100%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.5);
+                transition: transform 0.1s ease-in-out;
+            }
+        }
     }
     .header-left {
         gap: 10px;
@@ -140,6 +179,9 @@ mat-button-toggle {
             padding-bottom: 0;
         }
     }
+
+    
+    
     .header-logo {
         width: 100px;
         padding-bottom: 4.5px;

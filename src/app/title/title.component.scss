@@ -1,0 +1,332 @@
+@import '../../styles.scss';
+
+.header {
+    width: 100vw;
+    height: 250px;
+    background-color: rgba(183,13,32,1);
+    @include dFlex($fd: row, $jc: center, $ai: flex-end);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    max-width: 1150px;
+    gap: 20px;
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-end);
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.header-left-container {
+    @include dFlex($fd: column, $jc: space-between, $ai: flex-start);
+    height: 210px;
+}
+
+.siegel {
+    @include dFlex($fd: row, $jc: flex-start, $ai: flex-start);
+    height: 50px;
+    gap: 20px;
+    > img {
+        height: 100%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5);
+            transition: transform 0.1s ease-in-out;
+        }
+    }
+}
+
+.header-left {
+    @include dFlex($fd: row, $jc: flex-start, $ai: flex-end);
+    gap: 20px;
+    > h1 {
+        font-size: 60px;
+        font-weight: 200;
+        color: white;
+        padding-bottom: 6px;
+    }
+}
+
+.header-logo {
+    width: 200px;
+}
+
+.header-right {
+    @include dFlex($fd: column, $jc: space-between, $ai: flex-end);
+    height: 210px;
+    > button {
+        background-color: rgba(250,250,250,0.1);
+    }
+}
+
+mat-button-toggle-group {
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    > mat-button-toggle {
+        width: 50%;
+    }
+}
+
+mat-button-toggle {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.start-container {
+    width: 100vw;
+    @include dFlex($fd: row, $jc: center, $ai: flex-start);
+    min-height: calc(100vh - 250px);
+    gap: 20px;
+    overflow: scroll;
+
+    background-color: rgb(191, 191, 191);
+}
+
+.title-content {
+    position: relative;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    max-width: 1220px;
+    gap: 60px;
+    @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.split-row {
+    width: 100%;
+    padding: 10px;
+    gap: 48px;
+    box-sizing: border-box;
+    @include dFlex($fd: row, $jc: space-between, $ai: center);
+}
+
+.row-img {
+    width: 40%;
+    @include dFlex($fd: row, $jc: center, $ai: center);
+    > img {
+        width: 50%;
+        cursor: pointer;
+        transform: rotate(5deg); 
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); 
+        transition: transform 0.3s ease-in-out; 
+        
+        &:hover {
+            transform: rotate(8deg) scale(1.05); 
+        }
+    }
+}
+
+.online-img {
+    width: 50%;
+    position: relative;
+    @include dFlex($fd: row, $jc: center, $ai: center);
+    > a {
+        width: 100%;
+        > img {
+            width: 100%;
+            cursor: pointer;
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+            transition: transform 0.3s ease-in-out; 
+            
+            &:hover {
+                transform: rotate(3deg) scale(1.05);
+            }
+        }
+    }
+    
+    > .so-me-container {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @include dFlex($fd: row, $jc: flex-start, $ai: flex-start);
+        gap: 12px;
+        height: 60px;
+        > a {
+            height: 100%;
+            > img {
+            height: 100%;
+            border-radius: 12px;
+            box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.1s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    }
+}
+
+.text-right {
+    width: 60%;
+    > p {
+        line-height: 1.3;
+        font-size: 18px;
+    }
+}
+
+.text-100 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        @include dFlex($fd: row, $jc: center, $ai: flex-start);
+        padding: 20px;
+        height: 190px;
+    }
+    .header-content {
+        gap: 0px;
+        @include dFlex($fd: column, $jc: center, $ai: center);
+    }
+    .header-right {
+        @include dFlex($fd: row, $jc: flex-start, $ai: center);
+        gap: 20px;
+        height: auto;
+    }
+    .header-left-container {
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+        height: auto;
+        gap: 10px;
+    }
+    .siegel {
+        @include dFlex($fd: row, $jc: flex-start, $ai: flex-start);
+        height: 30px;
+        gap: 20px;
+        > img {
+            height: 100%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.5);
+                transition: transform 0.1s ease-in-out;
+            }
+        }
+    }
+    .header-left {
+        gap: 10px;
+        padding: 10px;
+        > h1 {
+            font-size: 30px;
+            padding-bottom: 0;
+        }
+    }
+    .header-logo {
+        width: 100px;
+        padding-bottom: 4.5px;
+    }
+    .start-container {
+        @include dFlex($fd: column, $jc: center, $ai: center);
+        background-color: white;
+    }
+    .title-content {
+        gap: 10px;
+    }
+    .split-row {
+        width: 100%;
+        padding: 10px;
+        gap: 48px;
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+    }
+    .text-100 {
+        width: 60%;
+        box-sizing: border-box;
+    }
+    .column-reverse {
+        @include dFlex($fd: column-reverse, $jc: flex-start, $ai: center);
+    }
+    .row-img {
+        width: 350px;
+    }
+    .online-img {
+        width: 520px;
+    }
+    .text-right {
+        width: 100%;
+    }
+    
+    .text-100 {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 670px) {
+    .header {
+        padding: 0;
+        height: 180px;
+    }
+    .header-left {
+        gap: 10px;
+        padding: 10px;
+        > h1 {
+            font-size: 24px;
+            padding-bottom: 0;
+        }
+    }
+    .header-logo {
+        width: 80px;
+        padding-bottom: 7px;
+    }
+    .header-content {
+        padding: 10px 0 0 0;
+        border-left: 0px;
+        border-right: 0px;
+    }
+    .start-container {
+        > button {
+            @include dFlex($fd: row, $jc: center, $ai: center);
+            width: 200px;
+            height: 100px;
+            font-size: 20px;
+            font-weight: 200;
+    
+            > mat-icon {
+                position: absolute;
+                right: 20px; // Abstand zum Rand, anpassen nach Bedarf
+                width: 30px;
+                height: 30px;
+                font-size: 30px;
+                padding-bottom: 2px;
+                opacity: 0;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                transform: translateX(-10px);
+            }
+        }
+    }
+    .online-img {
+        width: 100%;
+        > .so-me-container {
+            width: 100%;
+            flex-wrap: wrap;
+            @include dFlex($fd: row, $jc: center, $ai: flex-start);
+            height: 45px;
+        }
+    }
+    .mt-30 {
+        margin-top: 30px;
+    }
+    .title-content {
+        padding: 10px;
+    }
+}
