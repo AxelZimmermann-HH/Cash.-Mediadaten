@@ -1,0 +1,179 @@
+<div class="container">
+    <div class="row">
+
+        <div class="element">
+            <div class="illustration">
+                <div class="one focus"></div>
+                <div class="one grey u2"></div>
+            </div>
+            <div class="advertorial-box">
+                <h2>U2</h2>
+                <div class="line"></div>
+                <div class="infos">
+                    <p>210 x 280 mm</p>
+                    <p>+ 3 mm {{ getTranslation('PRINT.STANDARD.S1') }}</p>
+                </div>
+
+                <p class="price"><b>{{ getTranslation('PRINT.SPECIAL.S1') }}</b></p>
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="illustration-u4 center">
+                <div class="one grey">
+                    <div class="one focus u4"></div>
+                </div>
+                
+            </div>
+            <div class="advertorial-box">
+                <h2>U4</h2>
+                <div class="line"></div>
+                <div class="infos">
+                    <p>210 x 280 mm</p>
+                    <p>+ 3 mm {{ getTranslation('PRINT.STANDARD.S1')}}</p>
+                </div>
+
+                <p class="price"><b>{{ getTranslation('PRINT.SPECIAL.S1') }}</b></p>
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="illustration">
+                <div class="one grey"></div>
+                <div class="one row-small">
+                    <div class="two-third-high grey"></div>
+                    <div class="one-third-high focus"></div>
+                </div>
+            </div>
+            <div class="advertorial-box">
+                <h2>Editorial</h2>
+                <p class="sub w-700">{{ getTranslation('PRINT.SPECIAL.S2') }}</p>
+                <div class="line"></div>
+                <div class="infos">
+                    <p>73 x 280 mm</p>
+                    <p>+ 3 mm {{ getTranslation('PRINT.STANDARD.S1')}}</p>
+                </div>
+                <p class="price"><b>{{ getTranslation('PRINT.SPECIAL.S4') }}</b></p>
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="illustration">
+                <div class="one grey"></div>
+                <div class="one row-small">
+                    <div class="two-third-high grey"></div>
+                    <div class="one-third-high focus"></div>
+                </div>
+            </div>
+            <div class="advertorial-box">
+                <h2>{{ getTranslation('PRINT.SPECIAL.S3') }}</h2>
+                <p class="sub w-700">{{ getTranslation('PRINT.SPECIAL.S2') }}</p>
+                <div class="line"></div>
+                <div class="infos">
+                    <p>73 x 280 mm</p>
+                    <p>+ 3 mm {{ getTranslation('PRINT.STANDARD.S1')}}</p>
+                </div>
+
+                <p class="price"><b>{{ getTranslation('PRINT.SPECIAL.S4') }}</b></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- REIHE 2 -->
+
+
+
+    <div class="row ">
+
+        <div class="element">
+            <div class="illustration-u4 center">
+                <div class="one grey">
+                    <div class="one grey os"></div>
+                    <div class="osb focus"></div>
+                </div>
+                
+            </div>
+            <div class="advertorial-box">
+                <h2>{{ getTranslation('PRINT.SPECIAL.S5') }}</h2>
+                <div class="line"></div>
+                <div class="infos">
+                    <p>190 x 305 mm</p>
+                    <p>+ 3 mm {{ getTranslation('PRINT.STANDARD.S1')}}</p>
+                </div>
+
+                <p class="price">
+                    <b>{{ getTranslation('PRINT.SPECIAL.S6') }}</b>                    
+                </p>
+                <p class="sub">{{ getTranslation('PRINT.SPECIAL.S6A') }}</p>
+            </div>
+        </div>
+
+        <div class="element">
+            <div class="illustration">
+                <div class="arrow-right" *ngIf="screenWidth > 859">
+                    <img src="assets/img/icons/arrow-right-blue.svg" alt="">
+                </div>
+                <div class="one grey up"></div>
+                <div class="one grey">
+                    <div class="bklt focus"></div>
+                    <div class="bklt2 focus">BOOKLET</div>
+                </div>
+            </div>
+            <div class="advertorial-box">
+                <h2>{{ getTranslation('PRINT.SPECIAL.S7') }}</h2>
+                <div class="line"></div>
+                <div class="infos">
+                    <p>110 x 150 mm</p>
+                    <p>+ 3 mm {{ getTranslation('PRINT.STANDARD.S1')}}</p>
+                </div>
+
+                <p class="price">
+                    <b>{{ getTranslation('PRINT.SPECIAL.S8') }}</b>
+                </p>
+                <p class="sub">{{ getTranslation('PRINT.SPECIAL.S9') }}</p>
+                <div class="arrow-down" *ngIf="screenWidth <= 859">
+                    <img src="assets/img/icons/arrow-down-blue.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="booklet-element">
+            <div class="bklt-row gap-20">
+                <div class="bklt-t1 focus">
+                    <div class="bklt-t2 focus">BOOKLET</div>
+                </div>
+                <div class="bklt-row">
+                    <div class="bklt-t1 focus bklt-page">
+                        @for (line of lines; track line) {
+                            <div class="bklt-line"></div>
+                        }
+                    </div>
+                    <div class="bklt-t1 focus bklt-page">ADVER-<br>TORIAL</div>
+                </div>
+            </div>
+
+            <div class="bklt-row gap-20">
+                <div class="bklt-row">
+                    <div class="bklt-t1 focus bklt-page">
+                        @for (line of lines; track line) {
+                            <div class="bklt-line"></div>
+                        }
+                    </div>
+                    <div class="bklt-t1 focus bklt-page">
+                        @for (line of lines; track line) {
+                            <div class="bklt-line"></div>
+                        }
+                    </div>
+                </div>
+                <div class="bklt-t1 focus">
+                    <div class="bklt-t2 t3 focus">{{ getTranslation('PRINT.SPECIAL.S10') }}</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

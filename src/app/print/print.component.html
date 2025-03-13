@@ -1,0 +1,58 @@
+<mat-drawer-container class="mat-drawer-container">
+
+    <!-- SIDEBAR -->
+    <mat-drawer #drawer class="sidenav" [mode]="drawerMode" [opened]="drawerOpened">
+      <div class="sidenav-top">
+        <div (click)="toggleDrawer()" routerLink="/" routerLinkActive="active" class="logo">
+          <img src="assets/img/cash-logo-white.png" alt="Logo">
+          <h2>PRINT {{ getTranslation('ONLINE.HEADLINE') }} 2025</h2>
+        </div>
+        <ul>
+          <li (click)="toggleDrawer()" routerLink="/print" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"> 
+            <mat-icon>new_releases</mat-icon>{{ getTranslation('PRINT.MENU1') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/print/zielgruppe" routerLinkActive="active">
+            <mat-icon>group</mat-icon>{{ getTranslation('PRINT.MENU2') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/print/standard" routerLinkActive="active">
+            <mat-icon>file_open</mat-icon>{{ getTranslation('PRINT.MENU3') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/print/special" routerLinkActive="active">
+            <mat-icon>file_open</mat-icon>{{ getTranslation('PRINT.MENU4') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/print/exklusiv" routerLinkActive="active">
+            <mat-icon>star</mat-icon>{{ getTranslation('PRINT.MENU5') }}
+          </li>
+          <li (click)="toggleDrawer()" routerLink="/print/extra" routerLinkActive="active">
+            <mat-icon>star</mat-icon>{{ getTranslation('PRINT.MENU6') }}
+          </li>
+
+        </ul>
+      </div>
+  
+    </mat-drawer>
+  
+    <!-- TOP BAR -->
+    <div>
+      <mat-toolbar class="topbar">
+        <button mat-icon-button (click)="drawer.toggle()" class="icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+  
+        <img routerLink="/" routerLinkActive="active" src="assets/img/cash-logo-red.png" alt="">
+
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [(value)]="activeLang">
+          <mat-button-toggle (click)="setActiveLang('de')" value="de">DE</mat-button-toggle>
+          <mat-button-toggle (click)="setActiveLang('en')" value="en">EN</mat-button-toggle>
+        </mat-button-toggle-group>
+      </mat-toolbar>
+      
+  
+      <!-- ROUTER CONTENT -->
+      <div class="router-container">
+        <router-outlet></router-outlet>
+      </div>
+  
+    </div>
+  
+  </mat-drawer-container>

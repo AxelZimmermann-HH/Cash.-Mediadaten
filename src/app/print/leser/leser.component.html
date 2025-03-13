@@ -1,0 +1,106 @@
+<div class="container">
+    <div class="h-container">
+        <h1>{{ getTranslation('ONLINE.USER.HEADLINE1') }}</h1> 
+    </div>  
+    <p class="sub-headline">{{ getTranslation('PRINT.LESER.L1') }}</p>
+    <div class="zg-row">
+        <div class="zg-element"
+            *ngFor="let element of zgElements; let i = index"
+            (click)="toggleInfoOverlay(i, 'zgElements', $event)"
+            (mouseenter)="showOverlay(i, 'zgElements')"
+            (mouseleave)="hideOverlay(i, 'zgElements')">
+            
+            <img class="zg-icon" [src]="element.icon" alt="">
+
+            <div class="info-overlay" *ngIf="infoVisibleIndex['zgElements'] === i">
+                <div class="info-overlay-top">
+                    <h3 [innerHTML]="getTranslation(element.titleKey)"></h3>
+                    <p [innerHTML]="getTranslation(element.subtitleKey)"></p>
+                </div>
+                <div class="zg-anteile">
+                    <p class="number">{{ element.percent1 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="h-container">
+        <h1>{{ getTranslation('ONLINE.USER.HEADLINE2') }}</h1>
+    </div> 
+    <div class="zg-row products">
+        <div class="product-element"
+            *ngFor="let product of products; let i = index"
+            (click)="toggleInfoOverlay(i, 'products', $event)"
+            (mouseenter)="showOverlay(i, 'products')"
+            (mouseleave)="hideOverlay(i, 'products')">
+            
+            <img class="zg-icon" [src]="product.icon" alt="">
+
+            <div class="info-overlay" *ngIf="infoVisibleIndex['products'] === i">
+                <div class="info-overlay-top">
+                    <h3 [innerHTML]="getTranslation(product.titleKey)"></h3>
+                </div>
+                <div class="zg-anteile">
+                    <p class="number">{{ product.percent1 }}</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+<!-- REICHWEITE -->
+
+    <div class="h-container">
+        <h1>{{ getTranslation('ONLINE.USER.HEADLINE3') }}</h1> 
+    </div>  
+    <div class="zg-row products kpi-gap">
+        <div class="kpi-element"
+            *ngFor="let kpi of kpis1; let i = index"
+            (click)="toggleInfoOverlay(i, 'kpis1', $event)"
+            (mouseenter)="showOverlay(i, 'kpis1')"
+            (mouseleave)="hideOverlay(i, 'kpis1')">
+            
+            <img class="zg-icon"  [src]="kpi.icon" alt="">
+
+            <div class="info-overlay overlay-coverage" *ngIf="infoVisibleIndex['kpis1'] === i">
+                <div class="info-overlay-top">
+                    <h3 [innerHTML]="getTranslation(kpi.titleKey)"></h3>
+                    <p [innerHTML]="getTranslation(kpi.subtitleKey)"></p>
+                </div>
+                <div class="zg-anteile">
+                    <p class="studies">{{ getTranslation(kpi.studies) }}</p>
+                    <p>{{ getTranslation(kpi.infos) }}</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="zg-row kpi-gap">
+        <div class="kpi-element2"
+            *ngFor="let kpi of kpis2; let i = index"
+            (click)="toggleInfoOverlay(i, 'kpis2', $event)"
+            (mouseenter)="showOverlay(i, 'kpis2')"
+            (mouseleave)="hideOverlay(i, 'kpis2')">
+            
+            <img class="zg-icon"  [src]="kpi.icon" alt="">
+
+            <div class="info-overlay overlay-coverage" *ngIf="infoVisibleIndex['kpis2'] === i">
+                <div class="info-overlay-top">
+                    <img [src]="kpi.ivw" alt="">
+                    <h3 [innerHTML]="getTranslation(kpi.titleKey)"></h3>
+                    <p [innerHTML]="getTranslation(kpi.subtitleKey)"></p>
+                </div>
+                <div class="zg-anteile">
+                    <p class="studies">{{ getTranslation(kpi.studies) }}</p>
+                    <p>{{ getTranslation(kpi.infos) }}</p>
+                    <p>{{ getTranslation(kpi.infos2) }}</p>
+                    <p>{{ getTranslation(kpi.infos3) }}</p>
+                    <p>{{ getTranslation(kpi.infos4) }}</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+</div>
+

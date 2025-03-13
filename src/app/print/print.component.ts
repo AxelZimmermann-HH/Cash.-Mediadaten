@@ -13,18 +13,20 @@ import { Router } from '@angular/router';
 import { TranslationService } from '../services/translation.service';
 
 @Component({
-  selector: 'app-online',
+  selector: 'app-print',
   standalone: true,
   imports: [CommonModule, MatToolbarModule, MatIconModule, MatSidenavModule, RouterModule, RouterOutlet, MatButtonToggleModule],
-  templateUrl: './online.component.html',
-  styleUrl: './online.component.scss'
+  templateUrl: './print.component.html',
+  styleUrl: './print.component.scss'
 })
-export class OnlineComponent {
+export class PrintComponent {
+
   @ViewChild('drawer') drawer!: MatDrawer;
   drawerMode: 'side' | 'over' = 'side';
   drawerOpened = true;
 
   constructor(private router: Router, private breakpointObserver: BreakpointObserver) {
+
     this.breakpointObserver.observe(['(max-width: 1400px)'])
       .subscribe(result => {
         if (result.matches) {

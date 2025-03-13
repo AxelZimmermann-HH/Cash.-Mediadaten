@@ -1,0 +1,23 @@
+<div class="dialog-container">
+    <button (click)="closeDialog()" class="button-left-bottom-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <h1>{{data.content[0]?.headline}}</h1>
+
+    @for (item of data.content.slice(1); track item) {
+        @if (item.p1) { <p class="highlight-text">{{ item.p1 }}</p> }
+        @if (item.p2) { <p class="highlight-text">{{ item.p2 }}</p> }
+        @if (item.p3) { <p class="highlight-text">{{ item.p3 }}</p> }
+        @if (item.p4) { <p class="highlight-text">{{ item.p4 }}</p> }
+    }
+    
+    @if (getHeadline2()) {
+        <h1>{{ getHeadline2() }}</h1>
+    
+        @for (item of data.content.slice(getHeadline2Index() + 1); track item) {
+            <p class="highlight-text">{{ item.p5 || item.p6 || item.p7  }}</p>
+        }
+    }
+
+</div>

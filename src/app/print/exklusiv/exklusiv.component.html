@@ -1,0 +1,103 @@
+<div class="container">
+
+<!-- ILLUSTRATION -->
+
+    <div class="row">
+        <div class="single-page">
+            <div class="page">
+                <div class="title">EDITORIAL</div>
+                <div class="column-block">
+                    <div class="column">
+                        @for (line of linesMax; track line) {
+                            <div class="line"></div>
+                        }
+                    </div>
+                    <div class="column">
+                        <div class="img"></div>
+                        @for (line of linesLess; track line) {
+                            <div class="line"></div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="double-page">
+            <div class="page">
+                <div class="title">{{ getTranslation('PRINT.EXKLUSIV.E1') }}</div>
+                <div class="column-block">
+                    <div class="column">
+                        @for (line of linesLess; track line) {
+                            <div class="line"></div>
+                        }
+                        <div class="img"></div>
+                    </div>
+                    <div class="column">
+                        
+                        @for (line of linesMax; track line) {
+                            <div class="line"></div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="page center"><p class="ad">{{ getTranslation('PRINT.SPECIAL.S10') }}</p></div>
+        </div>
+        <div class="double-page">
+            <div class="title">INTERVIEW</div>
+            <div class="page column-flex-end">
+                <div class="column-block">
+                    <div class="column">
+                        @for (line of linesMax; track line) {
+                            <div class="line"></div>
+                        }
+                    </div>
+                    <div class="column">
+                        @for (line of linesLess; track line) {
+                            <div class="line"></div>
+                        }
+                        <div class="img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page column-flex-end">
+                <div class="column-block">
+                    <div class="column">
+                        @for (line of linesMax; track line) {
+                            <div class="line"></div>
+                        }
+                    </div>
+                    <div class="column">
+                        <div class="img"></div>
+                        @for (line of linesLess; track line) {
+                            <div class="line"></div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- INFOS -->
+
+    <div class="row">
+        <div class="advertorial-box">
+            <h2>Cash. EXKLUSIV {{ getTranslation('PRINT.EXKLUSIV.E2') }}</h2>
+            <p>{{ getTranslation('PRINT.EXKLUSIV.E3') }}</p>
+            <p class="price">{{ getTranslation('PRINT.EXKLUSIV.E4') }}</p>
+            <p class="sub">{{ getTranslation('PRINT.EXKLUSIV.E5') }}</p>
+        </div>
+        <div class="advertorial-box w-40">
+            <h2>{{ getTranslation('PRINT.EXKLUSIV.E6') }}</h2>
+            <div class="btn-area">
+                <button mat-flat-button (click)="openDialog('elements')"><mat-icon>chevron_right</mat-icon>{{ getTranslation('PRINT.EXKLUSIV.E7') }}</button>
+            </div>
+            <div class="line"></div>
+            <p class="price">{{ getTranslation('PRINT.EXKLUSIV.E8') }}</p>
+            <div class="btn-area">
+                
+                <button mat-flat-button (click)="openDialog('print')"><mat-icon>chevron_right</mat-icon>Print</button>
+                <button mat-flat-button (click)="openDialog('online')"><mat-icon>chevron_right</mat-icon>Online</button>
+                <button mat-flat-button (click)="openDialog('video')"><mat-icon>chevron_right</mat-icon>Video</button>
+            </div>
+        </div>
+    </div>
+</div>

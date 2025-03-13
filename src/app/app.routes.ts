@@ -31,6 +31,13 @@ import { DigitaldayComponent } from './online/digitalday/digitalday.component';
 import { ContactComponent } from './online/contact/contact.component';
 import { AdspecsComponent } from './online/adspecs/adspecs.component';
 import { TitleComponent } from './title/title.component';
+import { PrintComponent } from './print/print.component';
+import { AuszeichnungenComponent } from './print/auszeichnungen/auszeichnungen.component';
+import { LeserComponent } from './print/leser/leser.component';
+import { PrintStandardComponent } from './print/print-standard/print-standard.component';
+import { SpecialComponent } from './print/special/special.component';
+import { ExklusivComponent } from './print/exklusiv/exklusiv.component';
+import { ExtraComponent } from './print/extra/extra.component';
 
 
 export const routes: Routes = [
@@ -89,5 +96,15 @@ export const routes: Routes = [
         ]
     },
     { path: '', component: StartComponent },
-    { path: 'title', component: TitleComponent }
+    { path: 'title', component: TitleComponent },
+    { path: 'print', component: PrintComponent,
+        children: [
+            { path: '', component: AuszeichnungenComponent, pathMatch: 'full' },
+            { path: 'zielgruppe', component: LeserComponent },
+            { path: 'standard', component: PrintStandardComponent },
+            { path: 'special', component: SpecialComponent },
+            { path: 'exklusiv', component: ExklusivComponent },
+            { path: 'extra', component: ExtraComponent },
+        ]
+     }
 ];
