@@ -1,0 +1,53 @@
+<div class="dialog-container">
+    <button (click)="closeDialog()" class="button-left-bottom-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>close</mat-icon>
+    </button>
+
+    <h1>Cash. {{getTranslation('PRINT.TERMINE.H1')}} {{ getTranslation('PRINT.TERMINE.' + data.contentKey + 'A') }}</h1>
+    <p class="sub">EVT: {{ data.content?.erstverkaufstag }}</p>
+
+    <div class="line"></div>
+
+    <h2>{{getTranslation('PRINT.TOPICS.T5')}}</h2>
+
+    @if (getTranslation('PRINT.TOPICS.T1') !== '') {
+        <div class="element">
+            <h3>{{getTranslation('PRINT.TOPICS.T1')}}</h3>
+            <p> 
+                <b>{{ data.content.topics[0]?.title }}</b> 
+                <br>{{ data.content.topics[0]?.text }}
+            </p>
+        </div>
+    }
+    
+    @if (getTranslation('PRINT.TOPICS.T2') !== '') {
+        <div class="element">
+            <h3>{{getTranslation('PRINT.TOPICS.T2')}}</h3>
+            <p> 
+                <b>{{ data.content.topics[1]?.title }}</b> 
+                <br>{{ data.content.topics[1]?.text }}
+            </p>
+        </div>
+    }
+    
+    @if (getTranslation('PRINT.TOPICS.T3') !== '') {
+        <div class="element">
+            <h3>{{getTranslation('PRINT.TOPICS.T3')}}</h3>
+            <p> 
+                <b>{{ data.content.topics[2]?.title }}</b> 
+                <br>{{ data.content.topics[2]?.text }}
+            </p>
+        </div>
+    }
+    
+    @if (getTranslation('PRINT.TOPICS.T4') !== '') {
+        <div class="element">
+            <h3>{{getTranslation('PRINT.TOPICS.T4')}}</h3>
+            <p> 
+                <b>{{ data.content.topics[3]?.title }}</b> 
+                <br>{{ data.content.topics[3]?.text }}
+            </p>
+        </div>
+    }
+
+</div>

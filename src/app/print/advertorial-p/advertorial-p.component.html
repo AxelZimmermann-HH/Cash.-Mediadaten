@@ -1,0 +1,89 @@
+<div class="container">
+    <div class="row">
+
+        <div class="advertorial-box big">
+            <h2>Cash. Advertorials</h2>
+            <p>{{getTranslation('PRINT.ADVERTORIAL.A1')}}</p>
+        </div>
+        <div class="elements">
+            <div class="element">
+                <div class="illustration">
+                    <div class="one focus">
+                        <div class="header white"></div>
+                        <div class="column-block">
+                            <div class="column">
+                                @for (line of linesMax; track line) {
+                                    <div class="line white"></div>
+                                }
+                            </div>
+                            <div class="column">
+                                @for (line of linesMax; track line) {
+                                    <div class="line white"></div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one focus">
+                        <div class="header-big white"></div>
+                        <div class="column-block-s">
+                            <div class="column">
+                                @for (line of linesS; track line) {
+                                    <div class="line white"></div>
+                                }
+                            </div>
+                            <div class="column">
+                                @for (line of linesS; track line) {
+                                    <div class="line white"></div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advertorial-box">
+                    <h2>{{getTranslation('PRINT.ADVERTORIAL.A2')}}</h2>
+                    <div class="line"></div>
+                    
+
+                    <p class="price"><b>{{getTranslation('PRINT.ADVERTORIAL.A3')}}</b></p>
+                    <div class="infos">
+                        <p>{{getTranslation('PRINT.ADVERTORIAL.A4')}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="illustration">
+                    <div class="one grey">
+                    </div>
+                    <div class="one focus">
+                        <div class="header white"></div>
+                        <div class="column-block">
+                            <div class="column">
+                                @for (line of linesMax; track line) {
+                                    <div class="line white"></div>
+                                }
+                            </div>
+                            <div class="column">
+                                <div class="img"></div>
+                                @for (line of linesS; track line) {
+                                    <div class="line white"></div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advertorial-box">
+                    <h2>{{getTranslation('PRINT.ADVERTORIAL.A5')}}</h2>
+                    <div class="line"></div>
+                    <p class="price"><b>{{getTranslation('PRINT.ADVERTORIAL.A6')}}</b></p>
+                    <div class="infos">
+                        <p>{{getTranslation('PRINT.ADVERTORIAL.A7')}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+

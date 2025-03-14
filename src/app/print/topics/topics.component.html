@@ -1,0 +1,36 @@
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>{{ getTranslation('PRINT.TERMINE.H1') }}</th>
+                <th>{{ getTranslation('PRINT.TOPICS.T1') }}</th>
+                <th>{{ getTranslation('PRINT.TOPICS.T2') }}</th>
+                <th>{{ getTranslation('PRINT.TOPICS.T3') }}</th>
+                <th>{{ getTranslation('PRINT.TOPICS.T4') }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (key of keys; track key) {
+                <tr>
+                    <td>{{ getTranslation('PRINT.TERMINE.' + key + 'A') }}</td>
+                    <td *ngIf="getTranslation('PRINT.TOPICS.' + key + 'VH')">
+                        <span class="topic-title">{{ getTranslation('PRINT.TOPICS.' + key + 'VH') }}</span>
+                        <span>{{ getTranslation('PRINT.TOPICS.' + key + 'V') }}</span>
+                    </td>
+                    <td *ngIf="getTranslation('PRINT.TOPICS.' + key + 'IH')">
+                        <span class="topic-title">{{ getTranslation('PRINT.TOPICS.' + key + 'IH') }}</span>
+                        <span>{{ getTranslation('PRINT.TOPICS.' + key + 'I') }}</span>
+                    </td>
+                    <td *ngIf="getTranslation('PRINT.TOPICS.' + key + 'FH')">
+                        <span class="topic-title">{{ getTranslation('PRINT.TOPICS.' + key + 'FH') }}</span>
+                        <span>{{ getTranslation('PRINT.TOPICS.' + key + 'F') }}</span>
+                    </td>
+                    <td *ngIf="getTranslation('PRINT.TOPICS.' + key + 'SH')">
+                        <span class="topic-title">{{ getTranslation('PRINT.TOPICS.' + key + 'SH') }}</span>
+                        <span>{{ getTranslation('PRINT.TOPICS.' + key + 'S') }}</span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

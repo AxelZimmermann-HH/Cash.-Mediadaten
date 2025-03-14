@@ -1,0 +1,25 @@
+<div class="main-container">
+    <div class="staircase-container">
+        <!-- Malstaffel -->
+        <div class="staircase">
+            <h2 class="staircase-title">{{getTranslation('PRINT.RABATTE.R1')}}</h2>
+            <div class="step" *ngFor="let step of malstaffelSteps; let i = index" [style.animationDelay]="i * 0.3 + 's'">
+                <span class="step-text">{{ step.amount }} →</span> <span class="number">{{ step.discount }}%</span>
+            </div>
+        </div>
+
+        <!-- Mengenstaffel -->
+        <div class="staircase">
+            <h2 class="staircase-title">{{getTranslation('PRINT.RABATTE.R2')}}</h2>
+            <div class="step" *ngFor="let step of mengenstaffelSteps; let i = index" [style.animationDelay]="i * 0.3 + 's'">
+                <span class="step-text">{{ step.pages }} →</span> <span class="number">{{ step.discount }}%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="advertorial-box">
+        <p>{{getTranslation('PRINT.RABATTE.R4')}}</p>
+        <p><b>{{getTranslation('PRINT.RABATTE.R5')}}</b></p>
+        <p>{{getTranslation('PRINT.RABATTE.R6')}}</p>
+    </div>
+</div>

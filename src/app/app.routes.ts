@@ -38,6 +38,12 @@ import { PrintStandardComponent } from './print/print-standard/print-standard.co
 import { SpecialComponent } from './print/special/special.component';
 import { ExklusivComponent } from './print/exklusiv/exklusiv.component';
 import { ExtraComponent } from './print/extra/extra.component';
+import { AdvertorialPComponent } from './print/advertorial-p/advertorial-p.component';
+import { TermineComponent } from './print/termine/termine.component';
+import { TopicsComponent } from './print/topics/topics.component';
+import { TopicsSvComponent } from './print/topics-sv/topics-sv.component';
+import { RabatteComponent } from './print/rabatte/rabatte.component';
+import { BeilagenComponent } from './print/beilagen/beilagen.component';
 
 
 export const routes: Routes = [
@@ -105,6 +111,12 @@ export const routes: Routes = [
             { path: 'special', component: SpecialComponent },
             { path: 'exklusiv', component: ExklusivComponent },
             { path: 'extra', component: ExtraComponent },
+            { path: 'advertorial', component: AdvertorialPComponent },
+            { path: 'termine', component: TermineComponent },
+            { path: 'themen', component: TopicsComponent },
+            { path: 'themen-special-versicherungen', component: TopicsSvComponent },
+            { path: 'rabatte', component: RabatteComponent },
+            { path: 'beilagen', component: BeilagenComponent },
         ]
      }
 ];

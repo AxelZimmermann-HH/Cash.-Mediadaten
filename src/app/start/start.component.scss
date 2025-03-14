@@ -188,7 +188,25 @@ mat-button-toggle {
     }
     .start-container {
         @include dFlex($fd: column, $jc: center, $ai: center);
-        // height: calc(100vh - 170px);
+        > button {
+            @include dFlex($fd: row, $jc: center, $ai: center);
+            width: 200px;
+            height: 100px;
+            font-size: 20px;
+            font-weight: 200;
+    
+            > mat-icon {
+                position: absolute;
+                right: 20px; // Abstand zum Rand, anpassen nach Bedarf
+                width: 30px;
+                height: 30px;
+                font-size: 30px;
+                padding-bottom: 2px;
+                opacity: 0;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                transform: translateX(-10px);
+            }
+        }
     }
 }
 
@@ -230,3 +248,27 @@ mat-button-toggle {
         }
     }
 }
+
+// @media (max-height: 900px) {
+//     .start-container {
+//         > button {
+//             @include dFlex($fd: row, $jc: center, $ai: center);
+//             width: 200px;
+//             height: 100px;
+//             font-size: 20px;
+//             font-weight: 200;
+    
+//             > mat-icon {
+//                 position: absolute;
+//                 right: 20px; // Abstand zum Rand, anpassen nach Bedarf
+//                 width: 30px;
+//                 height: 30px;
+//                 font-size: 30px;
+//                 padding-bottom: 2px;
+//                 opacity: 0;
+//                 transition: opacity 0.3s ease, transform 0.3s ease;
+//                 transform: translateX(-10px);
+//             }
+//         }
+//     }
+// }

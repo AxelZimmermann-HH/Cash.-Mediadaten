@@ -1,0 +1,39 @@
+.table-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: scroll;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #696969;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td {
+            vertical-align: top;
+            background-color: #f4f4f4;
+        }
+
+        .topic-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+    }
+}

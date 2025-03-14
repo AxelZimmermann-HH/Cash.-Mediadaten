@@ -1,0 +1,58 @@
+.table-container {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px;
+    
+    th {
+        background-color: rgba(205, 104, 106, 1);
+        color: white;
+        padding: 12px;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid rgba(200, 200, 200, 0.4);
+    }
+
+    th:first-child, td:first-child {
+        width: 250px; // Setzt eine Mindestbreite für die erste Spalte
+        max-width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis; // Falls der Text zu lang ist, werden "..." angezeigt
+        white-space: nowrap; // Kein Zeilenumbruch
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: rgba(240, 240, 240, 0.6);
+    }
+
+    tbody tr:hover {
+        background-color: rgba(205, 104, 106, 0.15);
+        transition: background 0.1s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.red {
+    color: rgb(205, 6, 6);
+    font-weight: 700;
+    &:hover {
+        cursor: default !important;
+        background: inherit !important; // Verhindert das Hintergrund-Update
+        transition: background 0s !important; // Setzt die Transition auf 0s
+    }
+}
