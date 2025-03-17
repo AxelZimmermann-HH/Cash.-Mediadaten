@@ -7,9 +7,16 @@
     border-radius: 10px;
     background-color: #fff;
     box-sizing: border-box;
+    > p {
+        padding-top: 10px;
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0;
+    }
 
     table {
         width: 100%;
+        min-width: 847px;
         border-collapse: collapse;
         text-align: left;
 
@@ -30,10 +37,19 @@
             background-color: #f4f4f4;
         }
 
+        th:nth-child(1), td:nth-child(1) { width: 10%; } // Erste Spalte
+        th:nth-child(2), td:nth-child(2) { width: 30%; } // Zweite Spalte
+        th:nth-child(3), td:nth-child(3) { width: 30%; } // Dritte Spalte
+        th:nth-child(4), td:nth-child(4) { width: 30%; } // Vierte Spalte
+
         .topic-title {
             font-weight: bold;
             display: block;
             margin-bottom: 5px;
         }
     }
+}
+
+.mt-20 {
+    margin-top: 20px;
 }

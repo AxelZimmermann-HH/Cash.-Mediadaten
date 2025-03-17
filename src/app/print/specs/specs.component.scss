@@ -1,0 +1,82 @@
+@import '../../../styles.scss';
+
+.information {
+    @include dFlex($fd: row, $jc: space-between, $ai: flex-start);
+    gap: 20px;
+}
+
+.company {
+    background: #f9f9f9;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    // margin-top: 20px;
+    min-height: 216px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    > img {
+        width: 150px;
+        padding-top: 4px;
+    }
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-274 {
+    min-height: 274px;
+}
+
+.h-256 {
+    min-height: 256px;
+}
+
+table {
+    margin-top: 5px;
+}
+
+.second {
+    margin-top: 20px;
+}
+
+.advertorial-list {
+    list-style: none;
+    padding: 0;
+}
+
+.advertorial-list li {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    // font-size: 1rem;
+    color: #333;
+}
+
+.advertorial-list li::before {
+    content: "✔"; /* Alternativ ein Icon */
+    color: #b70d20;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+    .information {
+        @include dFlex($fd: column, $jc: flex-start, $ai: center);
+        gap: 20px;
+    }
+    .h-274, .h-256 {
+        min-height: auto;
+    }
+    .company {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .company {
+        width: 100%;
+    }
+}

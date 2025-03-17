@@ -80,28 +80,51 @@ ul {
   padding-inline-start: 0;
   // padding-top: 20px;
   > li {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 16px;
-      padding: 10px 20px;
-      cursor: pointer;
-      &:hover {
-          background-color: rgba(246, 246, 246, 1);
-      };
-      &:focus {
-          background-color: rgba(228,228,228,1);
-      };
-      &.active {
-        background-color: rgba(228, 228, 228, 1); 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(246, 246, 246, 1);
+    };
+    &:focus {
+        // background-color: rgba(228,228,228,1);
+        // background-color: rgba(183, 13, 32, 1);
+        background: linear-gradient(
+          to bottom left, 
+          rgba(183, 13, 32, 0.6),
+          rgba(183, 13, 32, 1), 
+
+      
+        );
+        color: white;
+        > mat-icon {
+          color: white;
+        }
+    };
+    &.active {
+      // background-color: rgba(183, 13, 32, 1); 
+      background: linear-gradient(
+          to bottom left, 
+          rgba(183, 13, 32, 0.6),
+          rgba(183, 13, 32, 1), 
+
+      
+        );
+      color: white;
+      > mat-icon {
+        color: white;
       }
-      mat-icon {
-          font-size: 36px;
-          width: 36px;
-          height: 36px;
-          color: darkgray
-      }
-  }
+    }
+    mat-icon {
+        font-size: 36px;
+        width: 36px;
+        height: 36px;
+        color: darkgray
+    }
+}
 }
 
 .border-bottom {

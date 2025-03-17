@@ -44,6 +44,8 @@ import { TopicsComponent } from './print/topics/topics.component';
 import { TopicsSvComponent } from './print/topics-sv/topics-sv.component';
 import { RabatteComponent } from './print/rabatte/rabatte.component';
 import { BeilagenComponent } from './print/beilagen/beilagen.component';
+import { SpecsComponent } from './print/specs/specs.component';
+import { AgbComponent } from './print/agb/agb.component';
 
 
 export const routes: Routes = [
@@ -117,6 +119,9 @@ export const routes: Routes = [
             { path: 'themen-special-versicherungen', component: TopicsSvComponent },
             { path: 'rabatte', component: RabatteComponent },
             { path: 'beilagen', component: BeilagenComponent },
+            { path: 'specs', component: SpecsComponent },
+            { path: 'agb', component: AgbComponent },
+            { path: 'contact', component: ContactComponent },
         ]
      }
 ];
