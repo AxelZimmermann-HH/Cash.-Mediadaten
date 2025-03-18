@@ -61,6 +61,16 @@ button {
         
   );
   color: white;
+  > button {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 3;
+    > mat-icon {
+      color: white;
+    }
+  }
 }
 
 .mat-drawer img {
@@ -184,6 +194,10 @@ mat-button-toggle-group {
   margin-left: 50px;
   > mat-button-toggle {
       width: 50%;
+  }
+  > .mat-button-toggle-checked {
+    background-color: rgba(205,104,106, 1);
+    color: #fff;
   }
 }
 

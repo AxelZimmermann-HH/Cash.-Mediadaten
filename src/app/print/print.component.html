@@ -4,6 +4,9 @@
     <mat-drawer #drawer class="sidenav" [mode]="drawerMode" [opened]="drawerOpened">
       <div class="sidenav-top">
         <div (click)="toggleDrawer()" routerLink="/" routerLinkActive="active" class="logo">
+          <button (click)="toggleDrawer()" routerLink="/" routerLinkActive="active" mat-mini-fab aria-label="Example icon button with a menu icon">
+            <mat-icon>arrow_back</mat-icon>
+          </button>
           <img src="assets/img/cash-logo-white.png" alt="Logo">
           <h2>PRINT {{ getTranslation('ONLINE.HEADLINE') }} 2025</h2>
         </div>

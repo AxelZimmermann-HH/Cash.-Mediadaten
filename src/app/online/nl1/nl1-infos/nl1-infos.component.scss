@@ -16,6 +16,12 @@
     width: 150px;
 }
 
+.chart-wrapper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
 .circle-chart {
     width: 250px;
     height: 250px;
@@ -35,23 +41,25 @@
     transition: stroke-dasharray 0.8s ease-in-out, stroke 0.5s;
 }
 
-.percentage {
-    font-size: 18px;
-    font-weight: bold;
-    fill: #b70d20;
-    text-anchor: middle;
-    dominant-baseline: middle;
-    transform: rotate(90deg); // Fix für falsche Textausrichtung
-    transform-origin: center;
-}
+.svg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // Rotation bleibt
+    text-align: center;
+    pointer-events: none;
 
-.static-text {
-    font-size: 8px;
-    fill: #666;
-    text-anchor: middle;
-    dominant-baseline: middle;
-    transform: rotate(90deg); // Fix für falsche Textausrichtung
-    transform-origin: center;
+    .percentage {
+        font-size: 32px;
+        font-weight: bold;
+        color: #b70d20;
+        margin-bottom: 5px;
+    }
+
+    .static-text {
+        font-size: 18px;
+        color: #666;
+    }
 }
 
 .pt-5 {

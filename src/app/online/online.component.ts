@@ -11,11 +11,12 @@ import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 
 import { TranslationService } from '../services/translation.service';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-online',
   standalone: true,
-  imports: [CommonModule, MatToolbarModule, MatIconModule, MatSidenavModule, RouterModule, RouterOutlet, MatButtonToggleModule],
+  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, RouterModule, RouterOutlet, MatButtonToggleModule],
   templateUrl: './online.component.html',
   styleUrl: './online.component.scss'
 })
