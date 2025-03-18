@@ -43,6 +43,7 @@
     left: 50%;
     width: 70%;
     height: 55%;
+    min-height: 200px;
     transform: translate(-50%, -50%) translateY(0);
     overflow-y: hidden;
     @include dFlex($fd: column, $jc: flex-start, $ai: center);
@@ -52,12 +53,13 @@
 }
 
 .parallax {
-
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
     align-items: center !important;
+    will-change: transform;
     animation: floating 1.5s ease-in-out infinite alternate;
+    animation-delay: 0.3s;
 }
 
 @keyframes floating {
