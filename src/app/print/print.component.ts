@@ -28,7 +28,7 @@ export class PrintComponent {
 
   constructor(private router: Router, private breakpointObserver: BreakpointObserver) {
 
-    this.breakpointObserver.observe(['(max-width: 1400px)'])
+    this.breakpointObserver.observe(['(max-width: 1300px)'])
       .subscribe(result => {
         if (result.matches) {
           this.drawerMode = 'over'; 

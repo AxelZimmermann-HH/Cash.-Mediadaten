@@ -16,7 +16,7 @@ export class ContactComponent {
 
   contactsSales = [
     {
-      img: "assets/img/foto_ar.JPG",
+      img: "assets/img/foto_ar3.jpeg",
       name: "Andreas Rullmann",
       position1: "Head of Media Sales",
       position2: "",
@@ -25,7 +25,7 @@ export class ContactComponent {
       email: "rullmann@cash-online.de"
     },
     {
-      img: "assets/img/foto_ag.JPG",
+      img: "assets/img/foto_ag3.jpg",
       name: "Anya Geest",
       position1: "Senior Key Account Management",
       position2: "Mediasales Print + Online",
