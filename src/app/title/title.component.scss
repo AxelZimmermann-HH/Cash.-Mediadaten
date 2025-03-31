@@ -42,6 +42,10 @@
     }
 }
 
+.siegel-big {
+    height: 150% !important;
+}
+
 .header-left {
     @include dFlex($fd: row, $jc: flex-start, $ai: flex-end);
     gap: 20px;
@@ -292,6 +296,10 @@ mat-button-toggle {
         padding: 10px 0 0 0;
         border-left: 0px;
         border-right: 0px;
+    }
+    .siegel {
+        gap: 5px;
+        height: 28px;
     }
     .start-container {
         > button {

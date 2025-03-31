@@ -76,7 +76,7 @@ export class ContactComponent {
       email: "langstein@cash-online.de"
     },
     {
-      img: "assets/img/foto_gl.jpg",
+      img: "assets/img/foto_jn.JPG",
       name: "Josephine Noack",
       position1: "Disponentin",
       position2: "",
