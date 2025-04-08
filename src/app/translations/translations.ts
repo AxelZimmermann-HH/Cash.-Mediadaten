@@ -184,13 +184,13 @@ export const translations = {
                 A5B: "2025-05-08",
                 A5C: "2025-04-16",
                 A5D: "2025-04-17",
-                A5E: "2025-04-16",
+                A5E: "2025-04-23",
 
                 SV_A: "Special Insurances",
                 SV_B: "2025-05-08",
                 SV_C: "2025-04-16",
                 SV_D: "2025-04-17",
-                SV_E: "2025-04-16",
+                SV_E: "2025-04-23",
 
                 A6A: "06-2025",
                 A6B: "2025-05-28",
@@ -317,7 +317,7 @@ export const translations = {
             
                 A7: 'Cash. Issue 7/2025',
                 A7VH: 'Private Property Insurance',
-                A7V: 'Residential and natural hazard insurance: Billions in damages due to extreme weather. Yet, too little is being done. Now brokers must step in',
+                A7V: 'Residential buildings and natural hazards: Damage from natural disasters continues to rise. Too little is being done in terms of coverage. Now, policymakers are changing course.',
                 A7IH: 'Multi-Asset Funds',
                 A7I: 'Comeback or decline? The segment remains ambiguous. Where multi-asset funds add value',
                 A7FH: 'Advisor Liability',
@@ -356,8 +356,8 @@ export const translations = {
                 A10S: 'New opportunities with old fund shares',
             
                 A11: 'Cash. Issue 11/2025',
-                A11VH: 'Title: Pension Reform',
-                A11V: 'The Generation Capital and Retirement Investment Fund aim to reshape retirement security. A first assessment',
+                A11VH: 'Title: Reform in Retirement Provision',
+                A11V: 'The state pension system is on shaky ground. Occupational and private pension schemes are more important than ever. Now it’s up to advisors.',
                 A11IH: 'Fixed Income',
                 A11I: 'Government bonds, corporate bonds, or high yield? Which bond funds have the highest return potential?',
                 A11FH: 'Regulations',
@@ -386,15 +386,19 @@ export const translations = {
                 A1S: 'Rents, prices, yields – the trends for the upcoming year'
             },
             TOPICS_V: {
-                H1: 'Retirement Planning',
-                SH1_1: 'Fund Policies – A Shift in Demand?',
-                T1_1: 'Unit-linked insurance policies promise solid returns. The stock market performance within an insurance wrapper proved effective during the COVID-19 crisis. However, with the guaranteed interest rate rising from 0.25% to 1% as of January 1, 2025, the landscape of private retirement planning has changed: What are the implications of this increased guarantee for the market? What do customers really want?',
-                SH1_2: 'Occupational Pensions & the BRSG II – Time to Take Off',
-                T1_2: 'Retaining employees, attracting new talent – occupational pensions are becoming a key component of retirement security. The BRSG II aims to provide new momentum for workplace pension schemes. How do providers assess this reform? And what role do sustainability, unit-linked products, and innovative sales strategies play?',
-                SH1_3: 'The 60+ Generation',
-                T1_3: 'Retirement at the doorstep – A vast majority of people are alarmingly unaware of their expected lifespan and how little money they may need to stretch over decades. What are the smartest investment strategies for the 60+ generation?',
-                SH1_4: 'Retirement Investment Accounts & the Reform of Private Pension Plans',
-                T1_4: 'The proposed reform of private pension plans is expected to have significant effects on the life insurance sector and product development. A current status assessment.',
+                H1: 'Retirement Provision',
+                SH1_1: 'Unit-Linked Policies – Even More Opportunities Through Politics',
+                T1_1: 'Unit-linked insurance policies promise good returns. The power of the stock market within the insurance wrapper proved effective during the COVID crisis. With the increase in the guaranteed interest rate from 0.25 to 1 percent as of January 1, 2025, the landscape of private retirement provision has changed: What are the consequences of the guarantee boost for the market? What do customers want?',
+                SH1_2: 'New Classic',
+                T1_2: 'The old classic is a model of the past. Stock market investments with guaranteed security are the life insurers’ answer for safety-oriented savers. What opportunities does retirement provision with a strong guarantee component offer in times of rising guaranteed interest rates?',
+                SH1_3: 'Occupational Pension – Quo Vadis',
+                T1_3: 'Retaining and attracting employees. Occupational pensions are an essential pillar of retirement provision. The BRSG II is expected to give new momentum. And what role do sustainability, unit-linked offers, and new sales approaches play?',
+                SH1_4: 'Basic Pension',
+                T1_4: 'The basic pension is worthwhile. For self-employed individuals, freelancers, and high-earning employees. Combined with disability insurance, the basic pension becomes a highly attractive option. What new products and concepts are available? And what does the consultation process look like?',
+                SH1_5: 'Riester 2.0 – The Resurrection?',
+                T1_5: 'The reduction of the guaranteed interest rate to 0.25 percent and the lack of political reform had sidelined the Riester pension. With the end of Pension Package II and the increase in the guaranteed interest rate, the conditions are changing. Will the Riester pension rise like a phoenix from the ashes?',
+                SH1_6: 'Reforms',
+                T1_6: 'Pension Package II is history: What should a new retirement provision reform look like? More and more baby boomers are retiring. Pension Package II was intended to reform retirement provision. But with the end of the government, it is now history. What homework does the new government need to complete?',
             
                 H2: 'Income Protection',
                 SH2_1: 'The Risk of Occupational Disability',
@@ -406,7 +410,7 @@ export const translations = {
             
                 H3: 'Private Property Insurance',
                 SH3_1: 'Home Insurance & Natural Disasters',
-                T3_1: 'The severe weather catastrophes along the Ahr and Erft rivers in July 2021 underscored the importance of home insurance and natural disaster coverage for property owners. Why insurance against extreme weather events is now indispensable in the face of climate change.',
+                T3_1: 'The severe weather disasters along the Ahr and Erft rivers in July 2021 clearly demonstrated how important residential building insurance and natural hazard coverage are for property owners. Why is protection against extreme weather events indispensable in the face of climate change? And what are the chances that a government-mandated insurance requirement will be introduced?',
                 SH3_2: 'Pet Insurance – More Than Just a Trend',
                 T3_2: 'The market for pet health and surgery insurance is booming, particularly as veterinary costs have risen sharply. What should pet owners consider when selecting a policy? A market overview.',
                 SH3_3: 'Household Insurance',
@@ -652,8 +656,11 @@ export const translations = {
             STANDARD: {
                 CURRENCY: 'Euros/CPM',
                 SUBTITLE_BIG: '(desktop only)',
-                PL_SUBTITLE: 'Ad in the look of an editorial article with a direct link to your URL. Can be displayed on the home page, all department and article pages. Image delivery only necessary in the largest format.',
-                PL_IMAGE: 'img up to'
+                PL_SUBTITLE: 'Image-text-ad (max. 300 characters) in the look of an editorial article with a direct link to your URL. Can be displayed on the home page, all department and article pages. Image delivery only necessary in the largest format.',
+                PL_IMAGE: 'img up to',
+                MR1: 'MEDIUM RECTANGLE SIDEBAR TOP',
+                MR2: 'MEDIUM RECTANGLE CONTENT TOP',
+                MR3: 'MEDIUM RECTANGLE SIDEBAR BOTTOM',
             },
             LAYER: {
                 TEXT_INTER: 'Surprising and attention-grabbing! The interstitial ad is placed over the content of the website and thus ensures maximum attention from the user.',
@@ -1161,13 +1168,13 @@ export const translations = {
                 A5B: '08.05.2025',
                 A5C: '16.04.2025',
                 A5D: '17.04.2025',
-                A5E: '16.04.2025',
+                A5E: '23.04.2025',
 
                 SV_A: 'Special Versicherungen',
                 SV_B: '08.05.2025',
                 SV_C: '16.04.2025',
                 SV_D: '17.04.2025',
-                SV_E: '16.04.2025',
+                SV_E: '23.04.2025',
 
                 A6A: '6/2025',
                 A6B: '28.05.2025',
@@ -1221,7 +1228,7 @@ export const translations = {
                 SV2_B: '24.10.2025',
                 SV2_C: '01.10.2025',
                 SV2_D: '06.10.2025',
-                SV2_E: '10.10.2025',
+                SV2_E: '09.10.2025',
 
                 A12A: '12/2025',
                 A12B: '20.11.2025',
@@ -1294,7 +1301,7 @@ export const translations = {
 
                 A7: 'Cash. Ausgabe 7/2025',
                 A7VH: 'Private Sachversicherungen',
-                A7V: 'Wohngebäude & Elementar: Milliardenschäden durch Extremwetter. Doch bei der Absicherung passiert zu wenig. Jetzt sind Vermittler gefragt',
+                A7V: 'Wohngebäude & Elementar: Die Schäden durch Naturgefahren steigen weiter. Bei der Absicherung passiert zu wenig. Nun steuert die Politik um.',
                 A7IH: 'Multi-Asset-Fonds',
                 A7I: 'Comeback oder Abgesang? Die Lageim Segment ist mehrdeutig. Wo die Fondsgattung Mehrwert liefern kann',
                 A7FH: 'Beraterhaftung',
@@ -1333,8 +1340,8 @@ export const translations = {
                 A10S: 'Neue Chancen mit alten Fondsanteilen',
 
                 A11: 'Cash. Ausgabe 11/2025',
-                A11VH: 'Titel: Reform der Altersvorsorge',
-                A11V: 'Generationenkapital und Altersvorsorgedepot sollen die Altersvorsorge auf neue und solide Füße stellen. Eine erste Bilanz',
+                A11VH: 'Titel: Reform in der Altersvorsorge',
+                A11V: 'Die gesetzliche Rente steht auf tönernen Füßen. Betriebliche und private Vorsorge werden wichtiger denn je. Jetzt sind Vermittler gefragt.',
                 A11IH: 'Fixed Income',
                 A11I: 'Staatsanleihen, Corporate Bonds oder High Yield? Welche Anleihenfonds das größte Ertragspotenzial besitzen',
                 A11FH: 'Regulierung',
@@ -1364,14 +1371,19 @@ export const translations = {
             },
             TOPICS_V: {
                 H1: 'Altersvorsorge',
-                SH1_1: 'Fondpolicen – Darf es etwas weniger sein',
+                SH1_1: 'Fondpolicen – Noch mehr Chancen durch die Politik',
                 T1_1: 'Fondsgebundene Versicherungen versprechen gute Renditen. Die Börsenpower im Versicherungsmantel funktionierte in der Coronakrise. Mit dem Anheben des Garantiezinses von auf 0,25 auf 1 Prozent zum 1. Januar 2025 haben sich die Vorzeichen in der privaten Altersvorsorge geändert: Welche Folgen hat das Garantieplus für den Markt? Was wollen die Kunden?',
-                SH1_2: 'bAV & das BRSG II – Zeit durchzustarten',
-                T1_2: 'Arbeitskräfte binden, Arbeitskräfte finden. Die betriebliche Altersvorsorge als elementarer Baustein der Altersvorsorge ist gefragt. Das BRSG II soll der bAV neuen Schub verleiten. Wie die Anbieter die Reform einschätzen. Und welche Rolle spielen Nachhaltigkeit, fondsgebundene Angebote und neue Vertriebsansätze.',
-                SH1_3: 'Generation 60plus',
-                T1_3: 'Rente ante portas – Bei den meisten Bürger herrscht erschreckende Unklarheit, wie lange sie durchschnittlich leben und mit wie wenig angesparten Geld sie auskommen müssen. Wie clevere Anlagekonzepte für die Generation 60plus aussehen.',
-                SH1_4: 'Altersvorsorgedepot und die Reform der privaten Altersvorsorge',
-                T1_4: 'Die geplante Reform der privaten Altersvorsorge dürfte deutliche Folgen für die LV-Sparte und die Produktentwicklung haben. Eine Standortbestimmung.',
+                SH1_2: 'Neue Klassik',
+                T1_2: 'Die Alte Klassik ist ein Auslaufmodell. Börseninvestments mit garantierten Sicherheiten sind die Antwort der Lebensversicherer für sicherheitsorientierte Vorsorgesparer. Welche Chancen bietet die Altersvorsorge mit hoher Garantiekomponente bei steigendem Garantiezins?',
+                SH1_3: 'bAV – Quo Vadis',
+                T1_3: 'Arbeitskräfte binden, Arbeitskräfte finden. Die betriebliche Altersvorsorge als elementarer Baustein der Altersvorsorge ist gefragt. Das BRSG II soll neuen Schub verleiten. Und welche Rolle spielen Nachhaltigkeit, fondsgebundene Angebote und neue Vertriebsansätze.',
+                SH1_4: 'Basis-Rente',
+                T1_4: 'Die Basis-Rente lohnt sich. Für Selbstständige, Freiberufler und gutverdienende Angestellte. In Kombination mit einer Berufsunfähigkeitsversicherung wird die Basis-Rente zu einer hochattraktiven Option. Welche neuen Produkte und Konzepte gibt es? Und wie sieht die Beratung aus?',
+                SH1_5: 'Riester 2.0 – Die Auferstehung?',
+                T1_5: 'Die Garantiezinssenkung auf 0,25 Prozent und mangelnder politischer Reformwille hatten die Riester-Rente auf das Abstellgleis geschoben. Mit dem Aus von Rentenpaket II und dem Anstieg des Garantiezinses ändern sich die Vorzeichen. Erhebt sich die Riester-Rente wie Phönix aus der Asche?',
+                SH1_6: 'Reformen', 
+                T1_6: 'Das Rentenpaket II ist Geschichte: Wie eine neue Altersvorsorgereform aussehen sollte. Immer mehr Babyboomer gehen in Rente. Das Rentenpaket II sollte die Altersversorgung reformieren. Doch mit dem Aus der Bundesregierung ist es Geschichte. Welche Hausaufgaben die neue Bundesregierung nun erledigen muss.',
+
 
                 H2: 'Arbeitskraftabsicherung',
                 SH2_1: 'Risiko Berufsunfähigkeit',
@@ -1383,7 +1395,7 @@ export const translations = {
 
                 H3: 'Private Sachversicherungen',
                 SH3_1: 'Wohngebäudeversicherungen und Elementarschäden',
-                T3_1: 'Die Unwetterkatastrophen an Ahr und Erft im Juli 2021 haben deutlich gezeigt, wie wichtig Wohngebäudeversicherungen und Elementarschadenabsicherungen für Immobilienbesitzer sind. Warum eine Absicherung gegen Extremwetter angesichts des Klimawandels unverzichtbar ist.',
+                T3_1: 'Die Unwetterkatastrophen an Ahr und Erft im Juli 2021 haben deutlich gezeigt, wie wichtig Wohngebäudeversicherungen und Elementarschadenabsicherungen für Immobilienbesitzer sind. Warum eine Absicherung gegen Extremwetter angesichts des Klimawandels unverzichtbar ist? Und wie die Chancen stehen, dass eine staatliche Pflichtversicherung kommt.',
                 SH3_2: 'Tierversicherungen – Alles für die Katz',
                 T3_2: 'Das Neugeschäft mit Tierkranken- und Tieroperationskostenversicherungen boomt. Gerade weil die Kosten für Tierärzte deutlich angestiegen sind. Worauf beim Versicherungsschutz für Vierbeiner zu achten ist. Ein Marktüberblick.',
                 SH3_3: 'Hausratversicherung',
@@ -1629,8 +1641,11 @@ export const translations = {
             STANDARD: {
                 CURRENCY: 'Euro/TKP',
                 SUBTITLE_BIG: '(ausschließlich Desktop)',
-                PL_SUBTITLE: 'Anzeige im Look eines redaktionellen Beitrags mit direktem Link auf Ihre URL. Kann auf der Start-, allen Ressort- und Artikelseiten angezeigt werden. Bildanlieferung nur im größten Format notwendig.',
-                PL_IMAGE: 'Bild bis zu'
+                PL_SUBTITLE: 'Bild-Text-Anzeige (max. 300 Zeichen) im Look eines redaktionellen Beitrags mit direktem Link auf Ihre URL. Kann auf der Start-, allen Ressort- und Artikelseiten angezeigt werden. Bildanlieferung nur im größten Format notwendig.',
+                PL_IMAGE: 'Bild bis zu',
+                MR1: 'MEDIUM RECTANGLE SIDEBAR OBEN',
+                MR2: 'MEDIUM RECTANGLE CONTENT OBEN',
+                MR3: 'MEDIUM RECTANGLE SIDEBAR UNTEN',
             },
             LAYER: {
                 TEXT_INTER: 'Überraschend und aufmerksamkeitsstark! Das Interstitial Ad legt sich über den Content der Website und sorgt so für maximale Aufmerksamkeit beim User.',

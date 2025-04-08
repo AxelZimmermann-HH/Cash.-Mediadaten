@@ -27,11 +27,11 @@ export class OnlineStandardComponent {
       heightT: '90', 
       widthM: '300', 
       heightM: '75', 
-      price: '90,– ', 
+      price: '93,– ', 
       infos: '' },
     mrTop: {
       id: 'mrtop', 
-      title: 'MEDIUM RECTANGLE SIDEBAR TOP', 
+      title: 'ONLINE.STANDARD.MR1', 
       subtitle: '',
       plimage: '',
       widthD: '300', 
@@ -45,7 +45,7 @@ export class OnlineStandardComponent {
     },
     mrContent: {
       id: 'mrcontent', 
-      title: 'MEDIUM RECTANGLE CONTENT TOP', 
+      title: 'ONLINE.STANDARD.MR2', 
       subtitle: '',
       plimage: '',
       widthD: '300', 
@@ -59,7 +59,7 @@ export class OnlineStandardComponent {
     },
     mrBottom: {
       id: 'mrbottom', 
-      title: 'MEDIUM RECTANGLE SIDEBAR BOTTOM', 
+      title: 'ONLINE.STANDARD.MR3', 
       subtitle: '',
       plimage: '',
       widthD: '300', 

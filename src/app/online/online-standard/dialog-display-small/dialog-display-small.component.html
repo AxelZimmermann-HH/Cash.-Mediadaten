@@ -2,7 +2,13 @@
     <button (click)="closeDialog()" class="button-left-bottom-corner" mat-icon-button aria-label="Example icon button with a vertical three dot icon">
         <mat-icon>close</mat-icon>
     </button>
-    <h1>{{ data.title }}</h1>
+
+    @if (data.title.startsWith('ONLINE')) {
+        <h1>{{ getTranslation(data.title) }}</h1>
+        } @else {
+        <h1>{{ data.title }}</h1>
+        }
+        
     <p>{{ getTranslation(data.subtitle) }}</p>
     <table class="custom-table">
         <thead>

@@ -95,20 +95,20 @@ export class UserComponent {
       titleKey: 'ONLINE.USER.ICON10',
       subtitleKey: 'ONLINE.USER.ICON10SUB',
       number: '245.232',
-      source: 'IVW Januar 2023'
+      source: 'IVW'
     },
     {
       icon: 'assets/img/icons/visits.png',
       titleKey: 'ONLINE.USER.ICON11',
       subtitleKey: 'ONLINE.USER.ICON10SUB',
       number: '170.384',
-      source: 'IVW Januar 2023'
+      source: 'IVW'
     },
     {
       icon: 'assets/img/icons/user.png',
       titleKey: 'ONLINE.USER.ICON12',
       subtitleKey: 'ONLINE.USER.ICON10SUB',
-      number: '245.232',
+      number: '102.019',
       source: 'Google Analytics'
     },
     {

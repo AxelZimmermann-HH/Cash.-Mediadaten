@@ -34,7 +34,7 @@ export class ContactComponent {
       email: "geest@cash-online.de"
     },
     {
-      img: "assets/img/foto_br.JPG",
+      img: "assets/img/foto_br3.JPG",
       name: "Benjamin Radeke",
       position1: "Key Account Management",
       position2: "Mediasales Print + Online",
@@ -46,7 +46,7 @@ export class ContactComponent {
 
   contactsMedia = [
     {
-      img: "assets/img/foto_uz.JPG",
+      img: "assets/img/foto_uz2.jpg",
       name: "Ulli Zimmermann",
       position1: "",
       position2: "",
