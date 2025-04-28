@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-so-me',
+    standalone: true,
     imports: [],
     templateUrl: './so-me.component.html',
     styleUrl: './so-me.component.scss'

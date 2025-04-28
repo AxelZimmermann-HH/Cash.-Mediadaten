@@ -7,6 +7,7 @@ import { TranslationService } from '../../../../../services/translation.service'
 
 @Component({
     selector: 'app-dialog-tiktok',
+    standalone: true,
     imports: [CommonModule, MatButtonModule, MatIconModule],
     templateUrl: './dialog-tiktok.component.html',
     styleUrl: './dialog-tiktok.component.scss'

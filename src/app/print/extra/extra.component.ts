@@ -8,6 +8,7 @@ import { DialogExtraComponent } from './dialog-extra/dialog-extra.component';
 
 @Component({
     selector: 'app-extra',
+    standalone: true,
     imports: [MatButtonModule, CommonModule, MatIconModule],
     templateUrl: './extra.component.html',
     styleUrl: './extra.component.scss'

@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 
 @Component({
     selector: 'app-topics-sv',
+    standalone: true,
     imports: [CommonModule, MatIconModule],
     templateUrl: './topics-sv.component.html',
     styleUrl: './topics-sv.component.scss'

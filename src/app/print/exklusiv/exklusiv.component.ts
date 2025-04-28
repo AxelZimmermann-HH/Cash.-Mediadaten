@@ -8,6 +8,7 @@ import { DialogExklusivComponent } from './dialog-exklusiv/dialog-exklusiv.compo
 
 @Component({
     selector: 'app-exklusiv',
+    standalone: true,
     imports: [MatButtonModule, CommonModule, MatIconModule],
     templateUrl: './exklusiv.component.html',
     styleUrl: './exklusiv.component.scss'

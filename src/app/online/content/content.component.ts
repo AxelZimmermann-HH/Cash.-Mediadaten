@@ -8,6 +8,7 @@ import { TranslationService } from '../../services/translation.service';
 
 @Component({
     selector: 'app-content',
+    standalone: true,
     imports: [MatButtonModule, RouterModule, RouterOutlet],
     templateUrl: './content.component.html',
     styleUrl: './content.component.scss'

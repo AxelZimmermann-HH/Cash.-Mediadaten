@@ -7,6 +7,7 @@ import { TranslationService } from '../../../../../services/translation.service'
 
 @Component({
     selector: 'app-dialog-xing',
+    standalone: true,
     imports: [CommonModule, MatButtonModule, MatIconModule],
     templateUrl: './dialog-xing.component.html',
     styleUrl: './dialog-xing.component.scss'

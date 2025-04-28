@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-start',
+    standalone: true,
     imports: [CommonModule, MatButtonModule, MatButtonToggleModule, MatIconModule, RouterModule],
     templateUrl: './start.component.html',
     styleUrl: './start.component.scss'

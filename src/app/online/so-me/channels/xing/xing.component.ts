@@ -9,6 +9,7 @@ import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
     selector: 'app-xing',
+    standalone: true,
     imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
     templateUrl: './xing.component.html',
     styleUrl: './xing.component.scss'

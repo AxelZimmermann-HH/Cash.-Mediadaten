@@ -7,6 +7,7 @@ import { TranslationService } from '../../../../../services/translation.service'
 
 @Component({
     selector: 'app-dialog-linkedin',
+    standalone: true,
     imports: [CommonModule, MatButtonModule, MatIconModule],
     templateUrl: './dialog-linkedin.component.html',
     styleUrl: './dialog-linkedin.component.scss'

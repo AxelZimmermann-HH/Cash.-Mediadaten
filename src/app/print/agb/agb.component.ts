@@ -5,6 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 @Component({
     selector: 'app-agb',
+    standalone: true,
     imports: [CommonModule],
     templateUrl: './agb.component.html',
     styleUrl: './agb.component.scss'

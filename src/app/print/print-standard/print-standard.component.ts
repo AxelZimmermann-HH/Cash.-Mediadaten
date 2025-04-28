@@ -4,6 +4,7 @@ import { TranslationService } from '../../services/translation.service';
 
 @Component({
     selector: 'app-print-standard',
+    standalone: true,
     imports: [CommonModule],
     templateUrl: './print-standard.component.html',
     styleUrl: './print-standard.component.scss'

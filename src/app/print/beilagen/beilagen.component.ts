@@ -4,6 +4,7 @@ import { TranslationService } from '../../services/translation.service';
 
 @Component({
     selector: 'app-beilagen',
+    standalone: true,
     imports: [CommonModule],
     templateUrl: './beilagen.component.html',
     styleUrl: './beilagen.component.scss'

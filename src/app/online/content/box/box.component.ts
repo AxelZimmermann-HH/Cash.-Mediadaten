@@ -7,6 +7,7 @@ import { TranslationService } from '../../../services/translation.service';
 
 @Component({
     selector: 'app-box',
+    standalone: true,
     imports: [CommonModule, MatDialogModule],
     templateUrl: './box.component.html',
     styleUrl: './box.component.scss'

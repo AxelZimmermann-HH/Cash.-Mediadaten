@@ -3,6 +3,7 @@ import { TranslationService } from '../../../services/translation.service';
 
 @Component({
     selector: 'app-standalone',
+    standalone: true,
     imports: [],
     templateUrl: './standalone.component.html',
     styleUrl: './standalone.component.scss'

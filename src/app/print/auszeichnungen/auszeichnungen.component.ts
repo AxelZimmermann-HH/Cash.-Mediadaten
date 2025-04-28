@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 @Component({
     selector: 'app-auszeichnungen',
+    standalone: true,
     imports: [MatIconModule, MatButtonModule],
     templateUrl: './auszeichnungen.component.html',
     styleUrl: './auszeichnungen.component.scss'

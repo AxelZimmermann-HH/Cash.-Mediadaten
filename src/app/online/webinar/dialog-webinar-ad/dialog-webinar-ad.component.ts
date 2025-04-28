@@ -7,6 +7,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
     selector: 'app-dialog-webinar-ad',
+    standalone: true,
     imports: [CommonModule, MatButtonModule, MatIconModule],
     templateUrl: './dialog-webinar-ad.component.html',
     styleUrl: './dialog-webinar-ad.component.scss'

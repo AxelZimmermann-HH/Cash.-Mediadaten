@@ -9,6 +9,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
     selector: 'app-dialog-exklusiv',
+    standalone: true,
     imports: [CommonModule, MatButtonModule, MatIconModule],
     templateUrl: './dialog-exklusiv.component.html',
     styleUrl: './dialog-exklusiv.component.scss'

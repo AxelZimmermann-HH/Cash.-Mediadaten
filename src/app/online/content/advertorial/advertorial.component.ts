@@ -3,6 +3,7 @@ import { TranslationService } from '../../../services/translation.service';
 
 @Component({
     selector: 'app-advertorial',
+    standalone: true,
     imports: [],
     templateUrl: './advertorial.component.html',
     styleUrl: './advertorial.component.scss'

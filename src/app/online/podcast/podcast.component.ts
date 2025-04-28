@@ -9,6 +9,7 @@ import { DialogSponsorComponent } from './dialog-sponsor/dialog-sponsor.componen
 
 @Component({
     selector: 'app-podcast',
+    standalone: true,
     imports: [MatIconModule, MatButtonModule],
     templateUrl: './podcast.component.html',
     styleUrl: './podcast.component.scss'

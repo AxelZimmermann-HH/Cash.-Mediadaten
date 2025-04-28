@@ -7,6 +7,7 @@ import { DialogDisplayBigComponent } from './dialog-display-big/dialog-display-b
 
 @Component({
     selector: 'app-online-standard',
+    standalone: true,
     imports: [CommonModule, MatDialogModule],
     templateUrl: './online-standard.component.html',
     styleUrl: './online-standard.component.scss'

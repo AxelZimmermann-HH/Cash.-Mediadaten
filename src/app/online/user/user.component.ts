@@ -4,6 +4,7 @@ import { TranslationService } from '../../services/translation.service';
 
 @Component({
     selector: 'app-user',
+    standalone: true,
     imports: [CommonModule],
     templateUrl: './user.component.html',
     styleUrl: './user.component.scss'

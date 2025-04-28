@@ -7,6 +7,7 @@ import { TranslationService } from '../../../services/translation.service';
 
 @Component({
     selector: 'app-focus',
+    standalone: true,
     imports: [CommonModule, MatDialogModule],
     templateUrl: './focus.component.html',
     styleUrl: './focus.component.scss'

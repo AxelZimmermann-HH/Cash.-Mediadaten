@@ -5,6 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 
 @Component({
     selector: 'app-specs',
+    standalone: true,
     imports: [CommonModule, MatButtonModule],
     templateUrl: './specs.component.html',
     styleUrl: './specs.component.scss'

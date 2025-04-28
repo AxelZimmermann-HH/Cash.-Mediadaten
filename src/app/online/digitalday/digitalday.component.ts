@@ -10,6 +10,7 @@ import { DialogBreakoutPComponent } from './dialog-breakout-p/dialog-breakout-p.
 
 @Component({
     selector: 'app-digitalday',
+    standalone: true,
     imports: [MatIconModule, MatButtonModule],
     templateUrl: './digitalday.component.html',
     styleUrl: './digitalday.component.scss'

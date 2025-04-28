@@ -13,6 +13,7 @@ import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
     selector: 'app-instagram',
+    standalone: true,
     imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
     templateUrl: './instagram.component.html',
     styleUrl: './instagram.component.scss'

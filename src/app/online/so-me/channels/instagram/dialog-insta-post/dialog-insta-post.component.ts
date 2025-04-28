@@ -7,6 +7,7 @@ import { TranslationService } from '../../../../../services/translation.service'
 
 @Component({
     selector: 'app-dialog-insta-post',
+    standalone: true,
     imports: [CommonModule, MatButtonModule, MatIconModule],
     templateUrl: './dialog-insta-post.component.html',
     styleUrl: './dialog-insta-post.component.scss'

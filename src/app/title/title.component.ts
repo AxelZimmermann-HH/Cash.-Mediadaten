@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-title',
+    standalone: true,
     imports: [CommonModule, MatButtonModule, MatButtonToggleModule, MatIconModule, RouterModule],
     templateUrl: './title.component.html',
     styleUrl: './title.component.scss'

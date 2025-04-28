@@ -8,6 +8,7 @@ import { DialogAusgabeComponent } from './dialog-ausgabe/dialog-ausgabe.componen
 
 @Component({
     selector: 'app-termine',
+    standalone: true,
     imports: [MatButtonModule, CommonModule, MatIconModule],
     templateUrl: './termine.component.html',
     styleUrl: './termine.component.scss'

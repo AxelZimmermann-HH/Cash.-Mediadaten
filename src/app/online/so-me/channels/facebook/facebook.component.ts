@@ -10,6 +10,7 @@ import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
     selector: 'app-facebook',
+    standalone: true,
     imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
     templateUrl: './facebook.component.html',
     styleUrl: './facebook.component.scss'
