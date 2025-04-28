@@ -6,11 +6,10 @@ import { DialogMcbComponent } from './dialog-mcb/dialog-mcb.component';
 import { TranslationService } from '../../../services/translation.service';
 
 @Component({
-  selector: 'app-box',
-  standalone: true,
-  imports: [CommonModule, MatDialogModule],
-  templateUrl: './box.component.html',
-  styleUrl: './box.component.scss'
+    selector: 'app-box',
+    imports: [CommonModule, MatDialogModule],
+    templateUrl: './box.component.html',
+    styleUrl: './box.component.scss'
 })
 export class BoxComponent {
 

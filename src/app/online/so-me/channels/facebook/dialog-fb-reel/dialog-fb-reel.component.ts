@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-fb-reel',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-fb-reel.component.html',
-  styleUrl: './dialog-fb-reel.component.scss'
+    selector: 'app-dialog-fb-reel',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-fb-reel.component.html',
+    styleUrl: './dialog-fb-reel.component.scss'
 })
 export class DialogFbReelComponent {
 

@@ -6,11 +6,10 @@ import { DialogDisplaySmallComponent } from './dialog-display-small/dialog-displ
 import { DialogDisplayBigComponent } from './dialog-display-big/dialog-display-big.component';
 
 @Component({
-  selector: 'app-online-standard',
-  standalone: true,
-  imports: [CommonModule, MatDialogModule],
-  templateUrl: './online-standard.component.html',
-  styleUrl: './online-standard.component.scss'
+    selector: 'app-online-standard',
+    imports: [CommonModule, MatDialogModule],
+    templateUrl: './online-standard.component.html',
+    styleUrl: './online-standard.component.scss'
 })
 export class OnlineStandardComponent {
   lines = Array(9);

@@ -9,11 +9,10 @@ import { DialogBreakoutOComponent } from './dialog-breakout-o/dialog-breakout-o.
 import { DialogBreakoutPComponent } from './dialog-breakout-p/dialog-breakout-p.component';
 
 @Component({
-  selector: 'app-digitalday',
-  standalone: true,
-  imports: [MatIconModule, MatButtonModule],
-  templateUrl: './digitalday.component.html',
-  styleUrl: './digitalday.component.scss'
+    selector: 'app-digitalday',
+    imports: [MatIconModule, MatButtonModule],
+    templateUrl: './digitalday.component.html',
+    styleUrl: './digitalday.component.scss'
 })
 export class DigitaldayComponent {
 

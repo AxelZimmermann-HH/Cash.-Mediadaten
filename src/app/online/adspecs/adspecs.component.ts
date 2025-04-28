@@ -4,11 +4,10 @@ import { TranslationService } from '../../services/translation.service';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
-  selector: 'app-adspecs',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule],
-  templateUrl: './adspecs.component.html',
-  styleUrl: './adspecs.component.scss'
+    selector: 'app-adspecs',
+    imports: [CommonModule, MatButtonModule],
+    templateUrl: './adspecs.component.html',
+    styleUrl: './adspecs.component.scss'
 })
 export class AdspecsComponent {
 

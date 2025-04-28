@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-user',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './user.component.html',
-  styleUrl: './user.component.scss'
+    selector: 'app-user',
+    imports: [CommonModule],
+    templateUrl: './user.component.html',
+    styleUrl: './user.component.scss'
 })
 export class UserComponent {
   infoVisibleIndex: { [key: string]: number | null } = { zgElements: null, products: null, kpis: null };

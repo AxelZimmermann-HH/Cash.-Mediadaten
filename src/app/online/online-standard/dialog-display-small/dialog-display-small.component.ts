@@ -7,11 +7,10 @@ import { TranslationService } from '../../../services/translation.service';
 
 
 @Component({
-  selector: 'app-dialog-display-small',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-display-small.component.html',
-  styleUrl: './dialog-display-small.component.scss'
+    selector: 'app-dialog-display-small',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-display-small.component.html',
+    styleUrl: './dialog-display-small.component.scss'
 })
 export class DialogDisplaySmallComponent {
 

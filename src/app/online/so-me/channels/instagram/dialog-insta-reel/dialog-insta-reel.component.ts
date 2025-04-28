@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-insta-reel',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-insta-reel.component.html',
-  styleUrl: './dialog-insta-reel.component.scss'
+    selector: 'app-dialog-insta-reel',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-insta-reel.component.html',
+    styleUrl: './dialog-insta-reel.component.scss'
 })
 export class DialogInstaReelComponent {
 

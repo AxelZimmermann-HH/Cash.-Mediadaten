@@ -9,11 +9,10 @@ import { DialogFbReelComponent } from './dialog-fb-reel/dialog-fb-reel.component
 import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
-  selector: 'app-facebook',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
-  templateUrl: './facebook.component.html',
-  styleUrl: './facebook.component.scss'
+    selector: 'app-facebook',
+    imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
+    templateUrl: './facebook.component.html',
+    styleUrl: './facebook.component.scss'
 })
 export class FacebookComponent {
 

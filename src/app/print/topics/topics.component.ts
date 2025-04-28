@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-topics',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './topics.component.html',
-  styleUrl: './topics.component.scss'
+    selector: 'app-topics',
+    imports: [CommonModule],
+    templateUrl: './topics.component.html',
+    styleUrl: './topics.component.scss'
 })
 export class TopicsComponent {
 

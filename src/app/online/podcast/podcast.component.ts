@@ -8,11 +8,10 @@ import { DialogSpecialComponent } from './dialog-special/dialog-special.componen
 import { DialogSponsorComponent } from './dialog-sponsor/dialog-sponsor.component';
 
 @Component({
-  selector: 'app-podcast',
-  standalone: true,
-  imports: [MatIconModule, MatButtonModule],
-  templateUrl: './podcast.component.html',
-  styleUrl: './podcast.component.scss'
+    selector: 'app-podcast',
+    imports: [MatIconModule, MatButtonModule],
+    templateUrl: './podcast.component.html',
+    styleUrl: './podcast.component.scss'
 })
 export class PodcastComponent {
 

@@ -14,11 +14,10 @@ import { TranslationService } from '../services/translation.service';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-online',
-  standalone: true,
-  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, RouterModule, RouterOutlet, MatButtonToggleModule],
-  templateUrl: './online.component.html',
-  styleUrl: './online.component.scss'
+    selector: 'app-online',
+    imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, RouterModule, RouterOutlet, MatButtonToggleModule],
+    templateUrl: './online.component.html',
+    styleUrl: './online.component.scss'
 })
 export class OnlineComponent {
   @ViewChild('drawer') drawer!: MatDrawer;

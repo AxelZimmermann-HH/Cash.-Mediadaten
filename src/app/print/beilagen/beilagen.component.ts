@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-beilagen',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './beilagen.component.html',
-  styleUrl: './beilagen.component.scss'
+    selector: 'app-beilagen',
+    imports: [CommonModule],
+    templateUrl: './beilagen.component.html',
+    styleUrl: './beilagen.component.scss'
 })
 export class BeilagenComponent {
 

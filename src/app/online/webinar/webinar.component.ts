@@ -7,11 +7,10 @@ import { DialogWebinarExtraComponent } from './dialog-webinar-extra/dialog-webin
 import {MatDialog} from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-webinar',
-  standalone: true,
-  imports: [MatIconModule, MatButtonModule],
-  templateUrl: './webinar.component.html',
-  styleUrl: './webinar.component.scss'
+    selector: 'app-webinar',
+    imports: [MatIconModule, MatButtonModule],
+    templateUrl: './webinar.component.html',
+    styleUrl: './webinar.component.scss'
 })
 export class WebinarComponent {
 

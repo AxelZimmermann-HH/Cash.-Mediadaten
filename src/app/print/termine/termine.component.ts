@@ -7,11 +7,10 @@ import {MatDialog} from '@angular/material/dialog';
 import { DialogAusgabeComponent } from './dialog-ausgabe/dialog-ausgabe.component';
 
 @Component({
-  selector: 'app-termine',
-  standalone: true,
-  imports: [MatButtonModule, CommonModule, MatIconModule],
-  templateUrl: './termine.component.html',
-  styleUrl: './termine.component.scss'
+    selector: 'app-termine',
+    imports: [MatButtonModule, CommonModule, MatIconModule],
+    templateUrl: './termine.component.html',
+    styleUrl: './termine.component.scss'
 })
 export class TermineComponent {
 

@@ -14,11 +14,10 @@ import { TranslationService } from '../services/translation.service';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-print',
-  standalone: true,
-  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, RouterModule, RouterOutlet, MatButtonToggleModule],
-  templateUrl: './print.component.html',
-  styleUrl: './print.component.scss'
+    selector: 'app-print',
+    imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatSidenavModule, RouterModule, RouterOutlet, MatButtonToggleModule],
+    templateUrl: './print.component.html',
+    styleUrl: './print.component.scss'
 })
 export class PrintComponent {
 

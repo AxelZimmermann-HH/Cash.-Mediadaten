@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-xing',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-xing.component.html',
-  styleUrl: './dialog-xing.component.scss'
+    selector: 'app-dialog-xing',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-xing.component.html',
+    styleUrl: './dialog-xing.component.scss'
 })
 export class DialogXingComponent {
 

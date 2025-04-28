@@ -7,11 +7,10 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-dialog-extra',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-extra.component.html',
-  styleUrl: './dialog-extra.component.scss'
+    selector: 'app-dialog-extra',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-extra.component.html',
+    styleUrl: './dialog-extra.component.scss'
 })
 export class DialogExtraComponent {
 

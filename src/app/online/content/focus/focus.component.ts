@@ -6,11 +6,10 @@ import { DialogMcbComponent } from '../box/dialog-mcb/dialog-mcb.component';
 import { TranslationService } from '../../../services/translation.service';
 
 @Component({
-  selector: 'app-focus',
-  standalone: true,
-  imports: [CommonModule, MatDialogModule],
-  templateUrl: './focus.component.html',
-  styleUrl: './focus.component.scss'
+    selector: 'app-focus',
+    imports: [CommonModule, MatDialogModule],
+    templateUrl: './focus.component.html',
+    styleUrl: './focus.component.scss'
 })
 export class FocusComponent {
 

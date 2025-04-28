@@ -6,11 +6,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-dialog-breakout-p',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-breakout-p.component.html',
-  styleUrl: './dialog-breakout-p.component.scss'
+    selector: 'app-dialog-breakout-p',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-breakout-p.component.html',
+    styleUrl: './dialog-breakout-p.component.scss'
 })
 export class DialogBreakoutPComponent {
 

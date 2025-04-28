@@ -2,11 +2,10 @@ import { Component, inject } from '@angular/core';
 import { TranslationService } from '../../../services/translation.service';
 
 @Component({
-  selector: 'app-advertorial',
-  standalone: true,
-  imports: [],
-  templateUrl: './advertorial.component.html',
-  styleUrl: './advertorial.component.scss'
+    selector: 'app-advertorial',
+    imports: [],
+    templateUrl: './advertorial.component.html',
+    styleUrl: './advertorial.component.scss'
 })
 export class AdvertorialComponent {
 

@@ -6,11 +6,10 @@ import { DialogNl1TopicsComponent } from './dialog-nl1-topics/dialog-nl1-topics.
 import { TranslationService } from '../../../services/translation.service';
 
 @Component({
-  selector: 'app-nl1-products',
-  standalone: true,
-  imports: [CommonModule, MatDialogModule],
-  templateUrl: './nl1-products.component.html',
-  styleUrl: './nl1-products.component.scss'
+    selector: 'app-nl1-products',
+    imports: [CommonModule, MatDialogModule],
+    templateUrl: './nl1-products.component.html',
+    styleUrl: './nl1-products.component.scss'
 })
 export class Nl1ProductsComponent {
 

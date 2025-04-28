@@ -8,11 +8,10 @@ import { TranslationService } from '../services/translation.service';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-start',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatButtonToggleModule, MatIconModule, RouterModule],
-  templateUrl: './start.component.html',
-  styleUrl: './start.component.scss'
+    selector: 'app-start',
+    imports: [CommonModule, MatButtonModule, MatButtonToggleModule, MatIconModule, RouterModule],
+    templateUrl: './start.component.html',
+    styleUrl: './start.component.scss'
 })
 export class StartComponent {
 

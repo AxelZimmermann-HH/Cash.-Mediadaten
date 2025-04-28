@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-leser',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './leser.component.html',
-  styleUrl: './leser.component.scss'
+    selector: 'app-leser',
+    imports: [CommonModule],
+    templateUrl: './leser.component.html',
+    styleUrl: './leser.component.scss'
 })
 export class LeserComponent {
 

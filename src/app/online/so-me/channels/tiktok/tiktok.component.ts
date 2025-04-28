@@ -8,11 +8,10 @@ import { DialogTiktokComponent } from './dialog-tiktok/dialog-tiktok.component';
 import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
-  selector: 'app-tiktok',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
-  templateUrl: './tiktok.component.html',
-  styleUrl: './tiktok.component.scss'
+    selector: 'app-tiktok',
+    imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
+    templateUrl: './tiktok.component.html',
+    styleUrl: './tiktok.component.scss'
 })
 export class TiktokComponent {
 

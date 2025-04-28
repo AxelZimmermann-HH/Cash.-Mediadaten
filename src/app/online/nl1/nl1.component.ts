@@ -6,11 +6,10 @@ import { Router } from '@angular/router';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-nl1',
-  standalone: true,
-  imports: [MatButtonModule, RouterModule, RouterOutlet],
-  templateUrl: './nl1.component.html',
-  styleUrl: './nl1.component.scss'
+    selector: 'app-nl1',
+    imports: [MatButtonModule, RouterModule, RouterOutlet],
+    templateUrl: './nl1.component.html',
+    styleUrl: './nl1.component.scss'
 })
 export class Nl1Component {
 

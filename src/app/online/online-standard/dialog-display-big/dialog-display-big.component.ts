@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-display-big',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-display-big.component.html',
-  styleUrl: './dialog-display-big.component.scss'
+    selector: 'app-dialog-display-big',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-display-big.component.html',
+    styleUrl: './dialog-display-big.component.scss'
 })
 export class DialogDisplayBigComponent {
 

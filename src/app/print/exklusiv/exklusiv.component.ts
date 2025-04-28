@@ -7,11 +7,10 @@ import {MatDialog} from '@angular/material/dialog';
 import { DialogExklusivComponent } from './dialog-exklusiv/dialog-exklusiv.component';
 
 @Component({
-  selector: 'app-exklusiv',
-  standalone: true,
-  imports: [MatButtonModule, CommonModule, MatIconModule],
-  templateUrl: './exklusiv.component.html',
-  styleUrl: './exklusiv.component.scss'
+    selector: 'app-exklusiv',
+    imports: [MatButtonModule, CommonModule, MatIconModule],
+    templateUrl: './exklusiv.component.html',
+    styleUrl: './exklusiv.component.scss'
 })
 export class ExklusivComponent {
 

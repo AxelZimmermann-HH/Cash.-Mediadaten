@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-nl1-topics',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-nl1-topics.component.html',
-  styleUrl: './dialog-nl1-topics.component.scss'
+    selector: 'app-dialog-nl1-topics',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-nl1-topics.component.html',
+    styleUrl: './dialog-nl1-topics.component.scss'
 })
 export class DialogNl1TopicsComponent {
 

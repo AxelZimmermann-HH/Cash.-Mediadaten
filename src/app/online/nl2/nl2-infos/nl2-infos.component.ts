@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../../services/translation.service';
 
 @Component({
-  selector: 'app-nl2-infos',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './nl2-infos.component.html',
-  styleUrl: './nl2-infos.component.scss'
+    selector: 'app-nl2-infos',
+    imports: [CommonModule],
+    templateUrl: './nl2-infos.component.html',
+    styleUrl: './nl2-infos.component.scss'
 })
 export class Nl2InfosComponent {
 

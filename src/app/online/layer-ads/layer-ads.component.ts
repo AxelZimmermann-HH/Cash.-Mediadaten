@@ -2,11 +2,10 @@ import { Component, inject } from '@angular/core';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-layer-ads',
-  standalone: true,
-  imports: [],
-  templateUrl: './layer-ads.component.html',
-  styleUrl: './layer-ads.component.scss'
+    selector: 'app-layer-ads',
+    imports: [],
+    templateUrl: './layer-ads.component.html',
+    styleUrl: './layer-ads.component.scss'
 })
 export class LayerAdsComponent {
 

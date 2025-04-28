@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-linkedin',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-linkedin.component.html',
-  styleUrl: './dialog-linkedin.component.scss'
+    selector: 'app-dialog-linkedin',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-linkedin.component.html',
+    styleUrl: './dialog-linkedin.component.scss'
 })
 export class DialogLinkedinComponent {
 

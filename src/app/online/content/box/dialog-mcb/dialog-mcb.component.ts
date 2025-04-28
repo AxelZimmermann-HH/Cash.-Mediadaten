@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-mcb',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-mcb.component.html',
-  styleUrl: './dialog-mcb.component.scss'
+    selector: 'app-dialog-mcb',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-mcb.component.html',
+    styleUrl: './dialog-mcb.component.scss'
 })
 export class DialogMcbComponent {
 

@@ -5,11 +5,10 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { DialogNl1BannerComponent } from './dialog-nl1-banner/dialog-nl1-banner.component';
 
 @Component({
-  selector: 'app-nl1-formats',
-  standalone: true,
-  imports: [CommonModule, MatDialogModule],
-  templateUrl: './nl1-formats.component.html',
-  styleUrl: './nl1-formats.component.scss'
+    selector: 'app-nl1-formats',
+    imports: [CommonModule, MatDialogModule],
+    templateUrl: './nl1-formats.component.html',
+    styleUrl: './nl1-formats.component.scss'
 })
 export class Nl1FormatsComponent {
 

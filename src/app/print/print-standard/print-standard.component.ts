@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-print-standard',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './print-standard.component.html',
-  styleUrl: './print-standard.component.scss'
+    selector: 'app-print-standard',
+    imports: [CommonModule],
+    templateUrl: './print-standard.component.html',
+    styleUrl: './print-standard.component.scss'
 })
 export class PrintStandardComponent {
 

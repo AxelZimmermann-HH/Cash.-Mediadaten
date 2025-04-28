@@ -2,11 +2,10 @@ import { Component, inject } from '@angular/core';
 import { TranslationService } from '../../services/translation.service';
 
 @Component({
-  selector: 'app-mobile',
-  standalone: true,
-  imports: [],
-  templateUrl: './mobile.component.html',
-  styleUrl: './mobile.component.scss'
+    selector: 'app-mobile',
+    imports: [],
+    templateUrl: './mobile.component.html',
+    styleUrl: './mobile.component.scss'
 })
 export class MobileComponent {
 

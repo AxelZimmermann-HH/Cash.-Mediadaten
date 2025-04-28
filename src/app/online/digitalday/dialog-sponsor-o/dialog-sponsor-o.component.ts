@@ -6,11 +6,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-dialog-sponsor-o',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-sponsor-o.component.html',
-  styleUrl: './dialog-sponsor-o.component.scss'
+    selector: 'app-dialog-sponsor-o',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-sponsor-o.component.html',
+    styleUrl: './dialog-sponsor-o.component.scss'
 })
 export class DialogSponsorOComponent {
 

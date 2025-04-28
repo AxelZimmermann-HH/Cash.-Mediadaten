@@ -6,11 +6,10 @@ import { DialogVideoComponent } from './dialog-video/dialog-video.component';
 import {MatDialog} from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-video',
-  standalone: true,
-  imports: [MatIconModule, MatButtonModule],
-  templateUrl: './video.component.html',
-  styleUrl: './video.component.scss'
+    selector: 'app-video',
+    imports: [MatIconModule, MatButtonModule],
+    templateUrl: './video.component.html',
+    styleUrl: './video.component.scss'
 })
 export class VideoComponent {
 

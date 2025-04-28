@@ -7,11 +7,10 @@ import { MatDialogRef } from '@angular/material/dialog';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-dialog-ausgabe',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-ausgabe.component.html',
-  styleUrl: './dialog-ausgabe.component.scss'
+    selector: 'app-dialog-ausgabe',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-ausgabe.component.html',
+    styleUrl: './dialog-ausgabe.component.scss'
 })
 export class DialogAusgabeComponent {
 

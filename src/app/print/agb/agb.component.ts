@@ -4,11 +4,10 @@ import { TranslationService } from '../../services/translation.service';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
-  selector: 'app-agb',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './agb.component.html',
-  styleUrl: './agb.component.scss'
+    selector: 'app-agb',
+    imports: [CommonModule],
+    templateUrl: './agb.component.html',
+    styleUrl: './agb.component.scss'
 })
 export class AgbComponent {
 

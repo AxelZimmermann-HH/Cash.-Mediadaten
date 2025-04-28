@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-nl2-banner',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-nl2-banner.component.html',
-  styleUrl: './dialog-nl2-banner.component.scss'
+    selector: 'app-dialog-nl2-banner',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-nl2-banner.component.html',
+    styleUrl: './dialog-nl2-banner.component.scss'
 })
 export class DialogNl2BannerComponent {
 

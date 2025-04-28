@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-insta-post',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-insta-post.component.html',
-  styleUrl: './dialog-insta-post.component.scss'
+    selector: 'app-dialog-insta-post',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-insta-post.component.html',
+    styleUrl: './dialog-insta-post.component.scss'
 })
 export class DialogInstaPostComponent {
 

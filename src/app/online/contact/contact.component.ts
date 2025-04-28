@@ -4,11 +4,10 @@ import { TranslationService } from '../../services/translation.service';
 import {MatButtonModule} from '@angular/material/button';
 
 @Component({
-  selector: 'app-contact',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule],
-  templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+    selector: 'app-contact',
+    imports: [CommonModule, MatButtonModule],
+    templateUrl: './contact.component.html',
+    styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 

@@ -6,11 +6,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { TranslationService } from '../../../../../services/translation.service';
 
 @Component({
-  selector: 'app-dialog-fb-post',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-fb-post.component.html',
-  styleUrl: './dialog-fb-post.component.scss'
+    selector: 'app-dialog-fb-post',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-fb-post.component.html',
+    styleUrl: './dialog-fb-post.component.scss'
 })
 export class DialogFbPostComponent {
 

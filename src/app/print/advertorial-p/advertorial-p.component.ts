@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslationService } from '../../services/translation.service'
 
 @Component({
-  selector: 'app-advertorial-p',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './advertorial-p.component.html',
-  styleUrl: './advertorial-p.component.scss'
+    selector: 'app-advertorial-p',
+    imports: [CommonModule],
+    templateUrl: './advertorial-p.component.html',
+    styleUrl: './advertorial-p.component.scss'
 })
 export class AdvertorialPComponent {
 

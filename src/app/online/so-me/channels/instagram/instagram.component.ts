@@ -12,11 +12,10 @@ import { DialogInstaStoryComponent } from './dialog-insta-story/dialog-insta-sto
 import { TranslationService } from '../../../../services/translation.service';
 
 @Component({
-  selector: 'app-instagram',
-  standalone: true,
-  imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
-  templateUrl: './instagram.component.html',
-  styleUrl: './instagram.component.scss'
+    selector: 'app-instagram',
+    imports: [MatButtonModule, MatIconModule, CommonModule, MatDialogModule],
+    templateUrl: './instagram.component.html',
+    styleUrl: './instagram.component.scss'
 })
 export class InstagramComponent {
 

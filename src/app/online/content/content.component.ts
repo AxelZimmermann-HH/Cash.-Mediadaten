@@ -7,11 +7,10 @@ import { TranslationService } from '../../services/translation.service';
 
 
 @Component({
-  selector: 'app-content',
-  standalone: true,
-  imports: [MatButtonModule, RouterModule, RouterOutlet],
-  templateUrl: './content.component.html',
-  styleUrl: './content.component.scss'
+    selector: 'app-content',
+    imports: [MatButtonModule, RouterModule, RouterOutlet],
+    templateUrl: './content.component.html',
+    styleUrl: './content.component.scss'
 })
 export class ContentComponent {
   constructor (private router: Router) {}

@@ -6,11 +6,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-dialog-special',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatIconModule],
-  templateUrl: './dialog-special.component.html',
-  styleUrl: './dialog-special.component.scss'
+    selector: 'app-dialog-special',
+    imports: [CommonModule, MatButtonModule, MatIconModule],
+    templateUrl: './dialog-special.component.html',
+    styleUrl: './dialog-special.component.scss'
 })
 export class DialogSpecialComponent {
 

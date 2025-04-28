@@ -4,11 +4,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-auszeichnungen',
-  standalone: true,
-  imports: [MatIconModule, MatButtonModule],
-  templateUrl: './auszeichnungen.component.html',
-  styleUrl: './auszeichnungen.component.scss'
+    selector: 'app-auszeichnungen',
+    imports: [MatIconModule, MatButtonModule],
+    templateUrl: './auszeichnungen.component.html',
+    styleUrl: './auszeichnungen.component.scss'
 })
 export class AuszeichnungenComponent {
 

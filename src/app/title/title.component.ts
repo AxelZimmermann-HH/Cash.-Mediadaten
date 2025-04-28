@@ -8,11 +8,10 @@ import { TranslationService } from '../services/translation.service';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-title',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, MatButtonToggleModule, MatIconModule, RouterModule],
-  templateUrl: './title.component.html',
-  styleUrl: './title.component.scss'
+    selector: 'app-title',
+    imports: [CommonModule, MatButtonModule, MatButtonToggleModule, MatIconModule, RouterModule],
+    templateUrl: './title.component.html',
+    styleUrl: './title.component.scss'
 })
 export class TitleComponent {
 
