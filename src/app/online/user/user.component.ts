@@ -94,21 +94,21 @@ export class UserComponent {
       icon: 'assets/img/icons/pi.png',
       titleKey: 'ONLINE.USER.ICON10',
       subtitleKey: 'ONLINE.USER.ICON10SUB',
-      number: '245.232',
-      source: 'IVW'
+      number: '149.760',
+      source: 'IVW 03/2025'
     },
     {
       icon: 'assets/img/icons/visits.png',
       titleKey: 'ONLINE.USER.ICON11',
       subtitleKey: 'ONLINE.USER.ICON10SUB',
-      number: '170.384',
-      source: 'IVW'
+      number: '107.117',
+      source: 'IVW 03/2025'
     },
     {
       icon: 'assets/img/icons/user.png',
       titleKey: 'ONLINE.USER.ICON12',
       subtitleKey: 'ONLINE.USER.ICON10SUB',
-      number: '102.019',
+      number: '66.696',
       source: 'Google Analytics'
     },
     {
