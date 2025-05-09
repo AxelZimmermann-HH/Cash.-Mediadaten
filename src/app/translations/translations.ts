@@ -49,7 +49,7 @@ export const translations = {
                 A10: 'Cash. takes pride in occupying a top position in the realm of print media, and we look forward to welcoming you as a partner.'
             },
             LESER: {
-                L1: 'Average reading time: 63 minutes. 83% of readers are reading at least half of the issue.',
+                L1: 'Average reading time: 63 minutes. 83% of readers are reading at least half of the issue. Values of target group and products according to the Cash. readership analysis 2019.',
                 L2: 'No. 2',
                 L3: 'Coverage insurance broker',
                 L3A: 'Up-to-dateness insurance broker',
@@ -336,8 +336,8 @@ export const translations = {
                 A8S: 'New concepts after – or perhaps even with – the crisis',
             
                 A9: 'Cash. Issue 9/2025',
-                A9VH: 'Title: Corporate Health Insurance (bKV)',
-                A9V: 'Employee retention at its best: bKV is booming. Can it now also help long-term care insurance emerge from its niche?',
+                A9VH: 'Title: Reform in Private Retirement Provision',
+                A9V: 'The state pension system is on shaky ground. Occupational and private pension schemes are more important than ever. Now it’s up to advisors.',
                 A9IH: 'China, India & Emerging Markets',
                 A9I: 'Emerging markets were the global growth leaders in 2024. Will the trend continue this year?',
                 A9FH: 'Title: Broker Network Rankings',
@@ -346,6 +346,8 @@ export const translations = {
                 A9S: 'Performance analysis of products and strategies of fund managers',
             
                 A10: 'Cash. Issue 10/2025',
+                A10VH2: 'Title: Corporate Health Insurance (bKV)',
+                A10V2: 'Employee retention at its best: bKV is booming. Can it now also help long-term care insurance emerge from its niche?',
                 A10VH: 'Pet Insurance',
                 A10V: 'Pet insurance sales are booming. But penetration rates remain low, leaving room for growth',
                 A10IH: 'Technology Funds',
@@ -356,8 +358,8 @@ export const translations = {
                 A10S: 'New opportunities with old fund shares',
             
                 A11: 'Cash. Issue 11/2025',
-                A11VH: 'Title: Reform in Retirement Provision',
-                A11V: 'The state pension system is on shaky ground. Occupational and private pension schemes are more important than ever. Now it’s up to advisors.',
+                A11VH: 'Title: Reform of Occupational Pension Schemes',
+                A11V: 'Company pension schemes are in demand. Politicians are planning a new boost for company pension schemes.',
                 A11IH: 'Fixed Income',
                 A11I: 'Government bonds, corporate bonds, or high yield? Which bond funds have the highest return potential?',
                 A11FH: 'Regulations',
@@ -631,7 +633,7 @@ export const translations = {
             MENU7: 'References + AdSpecs',
             USER: {
                 HEADLINE1: 'TARGET GROUP',
-                SUBHEADLINE1: '64% of users are visiting www.cash-online.de daily to several times a week.',
+                SUBHEADLINE1: '64% of users are visiting www.cash-online.de daily to several times a week. Values of target group and products according to the Cash. readership analysis 2019.',
                 ICON1: 'Insurance brokers',
                 ICON1GEW: '(according to § 34d GewO)',
                 ICON2: 'Intermediaries of financial assets',
@@ -1033,7 +1035,7 @@ export const translations = {
                 A10: 'Cash. ist stolz darauf, einen Platz an der Spitze der Printmedien einzunehmen, und wir freuen uns darauf, Sie als Partner begrüßen zu dürfen.'
             },
             LESER: {
-                L1: 'Durchschnittliche Lesedauer: 63 Minuten. 83% lesen mindestens die Hälfte der Print-Ausgabe.',
+                L1: 'Durchschnittliche Lesedauer: 63 Minuten. 83% lesen mindestens die Hälfte der Print-Ausgabe. Zielgruppen- und Produktwerte gemäß Cash.-Leserschafts-Analyse 2019.',
                 L2: '2. Platz',
                 L3: 'Reichweite Versicherungsmakler',
                 L3A: 'Aktualität Versicherungsmakler',
@@ -1312,7 +1314,7 @@ export const translations = {
                 A7S: 'Gelingt das Comeback des Klassikers?',
 
                 A8: 'Cash. Ausgabe 8/2025',
-                A8VH: 'Titel: Private Krankenversicherung ',
+                A8VH: 'Titel: Private Krankenversicherung',
                 A8V: 'Die JAEG steigt weiter. Kommt die Bürgerversicherung durch die Hintertür? Wie sich die Privaten Krankenversicherer zukunftsfest machen',
                 A8IH: 'Infrastrukturfonds',
                 A8I: 'Brücken, Straßen Telekommunikation – wie Anleger vom Milliardenmarkt profitieren können',
@@ -1322,8 +1324,8 @@ export const translations = {
                 A8S: 'Neue Konzepte nach – oder vielleicht auch mit – der Krise',
 
                 A9: 'Cash. Ausgabe 9/2025',
-                A9VH: 'Titel: bKV',
-                A9V: 'Mitarbeiterbindung at it‘s best: Die bKV boomt. Hilft sie nun auch der Pflegeversicherung aus der Nische?',
+                A9VH: 'Titel: Reform der Privaten Altersvorsorge',
+                A9V: 'Die gesetzliche Rente steht auf tönernen Füßen. Betriebliche und private Vorsorge werden wichtiger denn je. Jetzt sind Vermittler gefragt.',
                 A9IH: 'China, Indien & Co.',
                 A9I: 'Schwellenländer waren 2024 Wachstums-Weltmeister. Läuft es in diesem Jahr genauso rund?',
                 A9FH: 'Titel: Hitliste Maklerpools',
@@ -1332,6 +1334,8 @@ export const translations = {
                 A9S: 'Die Produkte im Performance-Check, die Strategie der Fondsmanager',
 
                 A10: 'Cash. Ausgabe 10/2025',
+                A10VH2: 'Titel: bKV',
+                A10V2: 'Mitarbeiterbindung at it‘s best: Die bKV boomt. Hilft sie nun auch der Pflegeversicherung aus der Nische?',
                 A10VH: 'Tierversicherungen',
                 A10V: 'Das Neugeschäft mit Tierversicherungen boomt. Doch gibt es bei der Durchdringungsquote noch viel Luft nach oben',
                 A10IH: 'Technologiefonds',
@@ -1342,8 +1346,8 @@ export const translations = {
                 A10S: 'Neue Chancen mit alten Fondsanteilen',
 
                 A11: 'Cash. Ausgabe 11/2025',
-                A11VH: 'Titel: Reform in der Altersvorsorge',
-                A11V: 'Die gesetzliche Rente steht auf tönernen Füßen. Betriebliche und private Vorsorge werden wichtiger denn je. Jetzt sind Vermittler gefragt.',
+                A11VH: 'Titel: Reform der Betrieblichen Altersvorsorge',
+                A11V: 'Die bAV ist gefragt. Die Politik plant einen neuen Schub für die bAV.',
                 A11IH: 'Fixed Income',
                 A11I: 'Staatsanleihen, Corporate Bonds oder High Yield? Welche Anleihenfonds das größte Ertragspotenzial besitzen',
                 A11FH: 'Regulierung',
@@ -1618,7 +1622,7 @@ export const translations = {
             MENU7: 'Hinweise und AdSpecs',
             USER: {
                 HEADLINE1: 'ZIELGRUPPE',
-                SUBHEADLINE1: '64% der User nutzen www.cash-online.de täglich bis mehrmals die Woche.',
+                SUBHEADLINE1: '64% der User nutzen www.cash-online.de täglich bis mehrmals die Woche. Zielgruppen- und Produktwerte gemäß Cash.-Leserschafts-Analyse 2019.',
                 ICON1: 'Versicherungsvermittler',
                 ICON1GEW: '(nach § 34d GewO)',
                 ICON2: 'Finanzanlagenvermittler',

@@ -62,23 +62,37 @@ export class TermineComponent {
     });
   }
 
-  openDialog(terminKey: string) {
-    const dataToSend = {
-      erstverkaufstag: this.getTranslation(`PRINT.TERMINE.${terminKey}B`),
-      topics: [
-        { title: this.getTranslation(`PRINT.TOPICS.${terminKey}VH`), text: this.getTranslation(`PRINT.TOPICS.${terminKey}V`) },
-        { title: this.getTranslation(`PRINT.TOPICS.${terminKey}IH`), text: this.getTranslation(`PRINT.TOPICS.${terminKey}I`) },
-        { title: this.getTranslation(`PRINT.TOPICS.${terminKey}FH`), text: this.getTranslation(`PRINT.TOPICS.${terminKey}F`) },
-        { title: this.getTranslation(`PRINT.TOPICS.${terminKey}SH`), text: this.getTranslation(`PRINT.TOPICS.${terminKey}S`) },
-      ]
+openDialog(terminKey: string) {
+  const get = (key: string) => this.getTranslation(key);
+  const topics = [];
+
+  const vh2 = get(`PRINT.TOPICS.${terminKey}VH2`);
+  const v2 = get(`PRINT.TOPICS.${terminKey}V2`);
+
+  // Die regulären vier Einträge
+  topics.push(
+    { title: get(`PRINT.TOPICS.${terminKey}VH`), text: get(`PRINT.TOPICS.${terminKey}V`) },
+    { title: get(`PRINT.TOPICS.${terminKey}IH`), text: get(`PRINT.TOPICS.${terminKey}I`) },
+    { title: get(`PRINT.TOPICS.${terminKey}FH`), text: get(`PRINT.TOPICS.${terminKey}F`) },
+    { title: get(`PRINT.TOPICS.${terminKey}SH`), text: get(`PRINT.TOPICS.${terminKey}S`) }
+  );
+
+  // Prüfen, ob VH2 und V2 gültig sind
+  if (vh2 && vh2 !== `PRINT.TOPICS.${terminKey}VH2` && v2 && v2 !== `PRINT.TOPICS.${terminKey}V2`) {
+    topics.push({ title: vh2, text: v2 });
+  }
+
+  const dataToSend = {
+    erstverkaufstag: get(`PRINT.TERMINE.${terminKey}B`),
+    topics
   };
 
-    this.dialog.open(DialogAusgabeComponent, {
-      width: '98%',
-      maxWidth: '600px',
-      panelClass: 'custom-dialog',
-      data: { content: dataToSend, contentKey: terminKey }
-    });
+  this.dialog.open(DialogAusgabeComponent, {
+    width: '98%',
+    maxWidth: '600px',
+    panelClass: 'custom-dialog',
+    data: { content: dataToSend, contentKey: terminKey }
+  });
 }
 
   updateTerminData() {

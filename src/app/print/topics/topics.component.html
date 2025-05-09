@@ -14,6 +14,8 @@
                 <tr>
                     <td>{{ getTranslation('PRINT.TERMINE.' + key + 'A') }}</td>
                     <td *ngIf="getTranslation('PRINT.TOPICS.' + key + 'VH')">
+                        <span *ngIf="getTranslation('PRINT.TOPICS.' + key + 'VH2')" class="topic-title">{{ getTranslation('PRINT.TOPICS.' + key + 'VH2') }}</span>
+                        <span class="mb-10" *ngIf="getTranslation('PRINT.TOPICS.' + key + 'V2')">{{ getTranslation('PRINT.TOPICS.' + key + 'V2') }}</span>
                         <span class="topic-title">{{ getTranslation('PRINT.TOPICS.' + key + 'VH') }}</span>
                         <span>{{ getTranslation('PRINT.TOPICS.' + key + 'V') }}</span>
                     </td>

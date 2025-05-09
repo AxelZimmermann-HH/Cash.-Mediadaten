@@ -13,6 +13,12 @@
     @if (getTranslation('PRINT.TOPICS.T1') !== '') {
         <div class="element">
             <h3>{{getTranslation('PRINT.TOPICS.T1')}}</h3>
+            @if (data.content.topics[4]?.title && !data.content.topics[4].title.startsWith('PRINT.TOPICS')) {
+                <p>
+                    <b>{{ data.content.topics[4]?.title }}</b> 
+                    <br>{{ data.content.topics[4]?.text }}
+                </p>
+            }
             <p> 
                 <b>{{ data.content.topics[0]?.title }}</b> 
                 <br>{{ data.content.topics[0]?.text }}
