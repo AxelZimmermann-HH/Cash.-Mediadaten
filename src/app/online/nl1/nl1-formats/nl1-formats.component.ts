@@ -26,7 +26,7 @@ export class Nl1FormatsComponent {
     promolink: {
       title: 'PROMOLINK',
       subtitle: 'ONLINE.NL1.AD_SUBTITLE',
-      size: '235 x 157 px',
+      size: 'ONLINE.NL1.AD_SUBTITLE2',
       price1: 'ONLINE.NL1.PL_PRICE1',
       price2: 'ONLINE.NL1.PL_PRICE2',
       price3: 'ONLINE.NL1.PL_PRICE3'
