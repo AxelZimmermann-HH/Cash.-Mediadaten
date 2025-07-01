@@ -16,7 +16,7 @@
         </div>
     </div> -->
 
-    <!-- ILLUSTRATION -->
+    <!-- FIRST ROW -->
     
         <div class="row">
             <div class="single-page">
@@ -89,6 +89,31 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- SECOND ROW -->
+
+        <div class="row">
+            <div class="double-page">
+                <div class="page">
+                    <div class="title">ROUNDTABLE</div>
+                    <div class="column-block">
+                        <div class="column">
+                            @for (line of linesLess; track line) {
+                                <div class="line"></div>
+                            }
+                            <div class="img"></div>
+                        </div>
+                        <div class="column">
+                            
+                            @for (line of linesMax; track line) {
+                                <div class="line"></div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="page center"><p class="ad">ADVERTORIAL</p></div>
             </div>
         </div>
     
