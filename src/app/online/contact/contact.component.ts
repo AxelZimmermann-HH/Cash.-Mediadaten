@@ -36,7 +36,7 @@ export class ContactComponent {
     {
       img: "assets/img/foto_br3.JPG",
       name: "Benjamin Radeke",
-      position1: "Key Account Management",
+      position1: "Senior Key Account Management",
       position2: "Mediasales Print + Online",
       phone: "+49 40/51444-210",
       fax: "+49 40/51444-120",
