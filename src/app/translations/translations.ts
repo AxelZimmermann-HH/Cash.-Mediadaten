@@ -252,6 +252,12 @@ export const translations = {
                 A12D: "2025-11-03",
                 A12E: "2025-11-03",
 
+                SI2_A: "Special Investment Funds",
+                SI2_B: "2025-11-20",
+                SI2_C: "2025-10-29",
+                SI2_D: "2025-11-03",
+                SI2_E: "2025-11-03",
+
                 A1A: "01-2026",
                 A1B: "2025-12-11",
                 A1C: "2025-11-19",
@@ -876,6 +882,8 @@ export const translations = {
                 P10: '• Conversation with a representative of the company by a Cash. editor',
                 P11: '• Production and topic in coordination between the customer and Cash.',
                 P12: '• Plus promotion of this podcast with a Cash. 5vor5 standalone newsletter',
+                P13: '2,990 Euros',
+                P14: '3,990 Euros'
             },
             VIDEO: {
                 V1: 'CASH. IN TALK: Film production in our greenscreen-studio',
@@ -1240,6 +1248,12 @@ export const translations = {
                 A12C: '27.10.2025',
                 A12D: '29.10.2025',
                 A12E: '03.11.2025',
+
+                SI2_A: 'Special Investmentfonds',
+                SI2_B: '20.11.2025',
+                SI2_C: '27.10.2025',
+                SI2_D: '29.10.2025',
+                SI2_E: '03.11.2025',
 
                 A1A: '1/2026',
                 A1B: '11.12.2025',
@@ -1867,6 +1881,8 @@ export const translations = {
                 P10: '• Führen des Gespräches mit einem Vertreter des Unternehmens durch einen Cash. Redakteur',
                 P11: '• Produktion und Thema in Abstimmung zwischen dem Kunden und Cash. ',
                 P12: '• zzgl. Bewerbung dieses Podcast durch einen Standalone-Newsletter in Cash. 5vor5 und Cash.OnVista',
+                P13: '2.990 Euro',
+                P14: '3.990 Euro'
             },
             VIDEO: {
                 V1: 'CASH. IM TALK: Filmproduktion im Greenscreen-Studio',
